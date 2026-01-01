@@ -1,0 +1,68 @@
+
+From kpi@crc.com Wed Oct 02 13:24:55 1996
+Path: hobbes.crc.com!news.utelfla.com!news.sprintlink.net!news-dc-5.sprintlink.net!www.nntp.primenet.com!nntp.primenet.com!news-peer.gsl.net!news.gsl.net!portc01.blue.aol.com!newsstand.cit.cornell.edu!news.acsu.buffalo.edu!dsinc!newsfeed.pitt.edu!news.duq.edu!newsgate.duke.edu!interpath!news.interpath.net!news.interpath.net!p6dnf.drcoffsite.com!news.kjsl.com!apollo.isisnet.com!ccn.cs.dal.ca!af380
+From: af380@ccn.cs.dal.ca (Norman L. DeForest)
+Newsgroups: comp.sys.ibm.pc.misc,alt.computer.drivers.wanted,comp.lang.asm.x86,comp.os.msdos.apps,comp.os.msdos.misc,comp.os.msdos.programmer,comp.programming
+Subject: Re: Writing a Driver
+Followup-To: comp.sys.ibm.pc.misc,alt.computer.drivers.wanted,comp.lang.asm.x86,comp.os.msdos.apps,comp.os.msdos.misc,comp.os.msdos.programmer,comp.programming
+Date: 26 Sep 1996 06:05:24 GMT
+Organization: Chebucto Community Net
+Lines: 58
+Message-ID: <52d6f4$l0d@apollo.isisnet.com>
+References: <5296rj$4c88@news.gate.net>
+NNTP-Posting-Host: 205.150.72.25
+X-Newsreader: TIN [version 1.2 PL2]
+Xref: hobbes.crc.com comp.sys.ibm.pc.misc:72326 alt.computer.drivers.wanted:591 comp.lang.asm.x86:20505 comp.os.msdos.apps:26268 comp.os.msdos.misc:61847 comp.os.msdos.programmer:66928 comp.programming:27116
+
+clarion@gate.net wrote:
+: Hello,
+
+: I want to write a driver that gets loaded in my CONFIG.SYS file. This
+: is for a 386sx PC running DOS 6.20. I have MASM 6.1. What special
+: things do I have to do to create such a driver? I've been told that I
+: have to include special header information in my assembler file. What
+: is this special information? Also, I was told that I have to use a
+: conversion utility to convert from .EXE to .BIN. Is there such a
+: utility available? Where can I get it?
+
+: Thanks in advance.
+
+: Domenick J. Ginex
+: clarion@gate.net
+
+First of all, I will cover the conversion -- the programme that you were 
+told about is called EXE2BIN.  The bad news:  It used to come with DOS 
+but not any more.  The good news:  you only need it if your assembler 
+creates *.OBJ files that are linked with a linker to create *.EXE files.  
+You then have to convert the *.EXE files to binary format so they can be 
+loaded directly.  One assembler that can assemble directly from source 
+code to binary or *.COM format ia the A86 assembler.  With that, you 
+don't need EXE2BIN at all.  I have a link to the home page of A86's 
+creator and distributor in my "Computer Hints, Tips, and Utilities" page 
+on my web site.  See my signature for the site address.
+
+The format of a device driver is more complicated and I would be logged 
+off before I could describe all of the functions that a device driver has 
+to handle so here are some references:
+
+        DOS Programmer's Reference
+        by Terry R. Dettmann
+        Que Corporation
+        ISBN 0-88022-327-8
+
+        Microsoft MS-DOS Programmer's Reference
+        by "Microsoft Corporation"
+        Microsoft Press
+        ISBN 1-55615-329-5
+
+        Advanced MSDOS Programming, (second edition)
+        by Ray Duncan
+        Microsoft Press
+        ISBN 1-55615-157-8
+
+These should get you started.
+
+                Norman De Forest
+                af380@chebucto.ns.ca
+                http://www.chebucto.ns.ca/~af380/Profile.html
+
