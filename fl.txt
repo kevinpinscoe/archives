@@ -1,0 +1,121 @@
+Florida   (last updated 1/8/99 - send updates to kevin@inscoe.org)
+http://www.inscoe.org/scan-i95
+
+Counties from north to south (MM = mile marker numbers):
+Nassau County MM 
+Duval County MM
+Jacksonville (TRS) MM
+St. Johns County MM                 http://www.inscoe.org/scan-stjohns
+Flagler County MM                   http://www.inscoe.org/scan-flagler
+Bunnel MM                           http://www.inscoe.org/scan-flagler
+Volusia County (TRS-EDACS) MM       http://www,inscoe.org/scan-volusia
+Daytona Beach (TRS-EDACS) MM        http://www.inscoe.org/scan-volusia
+New Symrna Beach MM                 http://www.inscoe.org/scan-volusia
+Brevard County MM                   http://www.inscoe.org/scan-brevard
+Cocoa Beach MM                      http://www.inscoe.org/scan-brevard
+Titusville MM                       http://www.inscoe.org/scan-brevard
+[not yet complete further south]
+
+* = Comfirmed
+(TRS) = Trunking Radio System in use by pricipality
+
+Bank 4 [Florida 1]
+ *61 - 154.6800 FHP Ch. 1 
+ *62 - 154.6950 FHP Ch. 2
+ *63 - 154.6650 FHP Ch. 3
+ *64 - 154.9200 FHP Ch. 4 (car-to-car, car-to-helo)
+       155.3700 Statewide Police Intersystem
+  65 - 170.2450 FHP wireless mikes
+  66 - 171.0450 FHP wireless mikes
+  67 - 171.9050 FHP wireless mikes
+  68 -  39.9000 Nassau County LG
+  69 - 153.7400 Nassau County LG
+  70 - 155.9250 Nassau County LG
+  71 - 158.7750 Nassau County LG
+  72 - 158.8350 Nassau County LG
+  73 - 158.9250 Nassau County LG
+  74 - 159.1950 Nassau County LG
+  75 - 155.1300 Nassau County LG
+  76 - 155.6400 Nassau County LG
+  77 - 156.0300 Nassau County LG
+  78 - 154.4450 Jacksonville FD (dispatch)
+  79 - 154.3550 Jacksonville FD
+       154.3550 St. Johns County FD
+  80 - 460.5750 Jacksonville FD F1
+
+Bank 5 [Florida 2]
+  81 - 460.6000 Jacksonville FD F2
+  82 - 460.6250 Jacksonville FD F3
+  83 -  39.0600 Jacksonville LG (sherrif?)
+  84 - 154.0550 Jacksonville LG
+  85 - 155.8200 Jacksonville LG
+  86 - 158.8050 Jacksonville LG
+  87 -  39.4000 Jacksonville PD
+       453.3250 Jacksonville PD (tactical)
+       453.5250 Jacksonville PD (tactical)
+       453.9250 Jacksonville PD
+       453.9500 Jacksonville PD
+  88 - 154.9500 Intercity
+  89 - 155.8500 Jacksonville PD
+  90 - 155.9100 Jacksonville PD
+  91 - 156.1500 Jacksonville PD
+  92 - 453.0500 Jacksonville PD Zone 3(midcity)
+       453.1000 Jacksonville PD Zone 2 (west)
+       453.1500 Jacksonville PD Zone 1 (north)
+       453.2000 Jacksonville PD F6 (investigation)
+       453.2500 Jacksonville PD (administrative)
+       453.3000 Jacksonville PD F7 (info)
+       453.3500 Jacksonville PD F8 (staff)
+       453.4000 Jacksonville PD F5 (tactical)
+       453.4500 Jacksonville PD Zone 4 (south)
+       453.5500 Jacksonville PD F10 (detectives)
+       453.6000 Jacksonville PD (tactical)
+  93 - 460.4000 Jacksonville PD
+  94 - 159.1050 Jacksonville Roads
+  95 - 155.2800 Jacksonville EMS (dispatch)
+  96 - 154.0400 St. Johns County Sherrif
+  97 - 154.6500 St. Johns County Sherrif
+  98 - 154.7700 St. Johns County Sherrif
+  99 - 154.8450 St. Johns County Sherrif
+ 100 - 154.9500 St. Johns County Sherrif
+
+Bank 6 [Florida 3]
+ 101 - 155.6550 St. Johns County Sherrif
+ 102 -  39.5000 St. Johns County Police Intersystem
+ 103 - 154.4150 St. Johns County FD
+       154.4150 Daytona Beach FD (dispatch)
+ 104 - 154.0700 St. Johns County FD
+ 105 - 155.3400 St. Johns County EMS
+       155.3400 Flagler County EMS
+ 106 - 153.7400 St. Johns County LG
+ 107 - 155.1150 St. Johns County LG
+ 108 - 158.7750 St. Johns County LG
+ 109 - 453.6250 St. Johns County LG
+ 110 -  45.3600 St. Johns County LG
+ 111 - 156.1650 St. Johns County Roads
+ 112 - 154.1300 Flagler County FD
+ 113 - 151.2500 Flagler County Forrestry
+ 114 - 154.3250 Flagler County FD
+ 115 - 154.4000 Flagler County FD
+ 116 -  37.1800 Flagler County LG
+ 117 -  39.5800 Flagler County LG
+ 118 -  39.9800 Flagler County LG
+ 119 - 453.0375 Flagler County LG
+ 120 - 854.9875 Flagler County LG
+
+Bank 7 [Florida 4]
+ 121 - 158.9100 Flagler County PD
+ 122 - 154.1000 Bunnel FD
+ 123 - 154.3400 Volusia County FD (county fire stations dispatch simulcast)
+ 124 - 154.1250 Daytona Beach FD (fireground)
+ 125 - 153.7700 Daytona Beach FD 
+ 126 - 153.9800 Daytona Beach LG
+ 127 - 453.8250 Daytona Beach LG
+ 128 - 453.8750 Daytona Beach LG
+ 129 - 453.9125 Daytona Beach LG
+ 130 - 453.2125 Daytona Beach LG
+*131 - 154.7850 Daytona Beach PD Ch. 1 (west - mainland)
+      *155.0700 Daytona Beach PD Ch. 2 (east - beachside)
+*132 - 154.0400 Daytona Beach PD Ch. 3 (traffic)
+
+ 
