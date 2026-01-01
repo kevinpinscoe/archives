@@ -1,0 +1,44 @@
+Subject: KSC Logs 07/19-20/99
+Date: Tue, 20 Jul 1999 13:45:07 -0400
+
+Here are some additional freqs/nets found
+active supporting the Shuttle launch attempt.
+All times are from about 1700 to 0100 local.
+
+118.625 CCAFS, Skid Strip Tower. At 1748 November 1
+                was cleared to land. Would this have been NASA 1?
+                At 2313 Executive 1 Foxtrot cleared to land.
+125.900 PARRISH 1 (new call, sounded like an aircraft) with unid
+                ground station for comms check. Also comm check on
+                142.125fm.
+126.650 KSC, NASA Weather, NASA 944 reporting area weather
+                conditons to Houston Weather Capcom.
+133.800 KSC, THINKER 1 CHARLIE. Working PATROL 1 (FAA).
+138.450am       DOD CAPE working KING 2 with comms check. Switched
+                from 7461 usb HF. Also AIRBOSS 1 check in after launch
+                abort with DOD CAPE.
+141.300am       CCAFS, VARIETY 1 Range Safety. Working JOLLY 3,
+                JOLLY 4. Paired w/294.600 in Autocat.
+148.485 CCAFS, Photo Net, Net-G. Countdown updates.
+156.800 Coast Guard Ch-16. Launch danger zone information
+                broadcasts. Also on 157.100 Ch-22A
+157.075 Coast Guard Range Control working Cutter Pea Island,
+                and other patrol boats near launch danger zone.
+157.175 Coast Guard Station Port Canaveral working Coast Guard
+                Aux. vessels.
+163.5375        KSC, Public Affairs Office, Net-108. Press Center working
+                Press Maint. for a light generator failure at the press site
+                parking lot.
+164.500 CCAFS, Environmental Health (EH Base), Net-Y
+165.1375        Patrick AFB, Base Transportation. Comms ref picking
+                up passengers for return to Patrick.
+170.175 KSC, Transportation, Net-206. Moving VIP's
+                to viewing areas.
+173.4375        KSC, Medical, Net-117. Comm checks with
+                AIR EVAC 1.
+255.500 Patrick AFB, RESCUE OPS. JOLLY's in air-air comms.
+407.325 KSC, Convoy Command, Net-UHF1. Ready to support
+                launch, also runway/weather updates.
+416.500wfm      KSC, Range Destruct freq, carrier
+
+---------------------
