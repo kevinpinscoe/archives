@@ -1,0 +1,48 @@
+154.7850---Daytona Beach P.D. Ch.1 (West)	
+155.0700---Daytona Beach P.D. Ch.2 (East)	
+154.0400---Daytona Beach P.D. Ch.3 (Tactical)	
+154.1750---Daytona Beach Fire Department	
+154.4150---Daytona Beach Rescue	
+155.7900---South Daytona P.D. Ch.1	
+155.1450---South Daytona P.D. Ch.2	
+154.2500---South Daytona Fire-Rescue	
+
+155.9400---Daytona Beach Shores P.D.	
+154.3100---Daytona B. Shores Fire-Rescue	
+
+155.0100---Ormond Beach P.D.	
+154.3700---Ormond Beach Fire-Rescue	
+
+154.8750---Holly Hill P.D.	
+154.2200---Holly Hill Fire-Rescue	
+
+120.0500---Daytona Airport ATIS
+120.7000---Daytona Airport Tower
+125.8000---Daytona Airport North Approach
+125.3500---Daytona Airport South Approach
+125.9000---Daytona Airport High Approach
+118.8500---Daytona Airport Departure
+121.5000---Aircraft Emergency
+
+154.8150---Port Orange P.D.	
+
+155.1150---Ponce Inlet P.D.	
+
+154.6400---New Smyrna Beach P.D.	
+154.1450---New Smyrna Fire-Rescue	
+
+147.1500---K4BV 2M-Repeater (Space Shuttle)
+
+464.5000---NASCAR
+154.5150---Daytona International Speedway
+464.7750---Daytona International Speedway
+
+472.5000---Florida Power & Light
+451.1000---Florida Power & Light
+451.4250---Florida Power & Light
+453.4250---Florida Power & Light
+
+453.7750---Volusia Co. School Buses
+475.1750---Volusia Co. School Buses
+475.3250---Volusia Co. School Buses
+045.4600---Department Of Corrections	
