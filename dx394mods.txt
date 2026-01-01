@@ -1,0 +1,240 @@
+DX-394 Modifications
+
+The following are modifications to the Realistic DX-394 HF reciever sold by
+Tandy in the UK. All these modifications were taken from postings to the
+Euro-Scanner mailing list. Thanks go to the authors, although no names or
+email addresses are mentioned here. To subscribe to the list, send an email
+to ' euro-scanner-request@grid9.net ' with the message 'subscribe
+euro-scanner' in the body of the email.
+  ------------------------------------------------------------------------
+
+The famous 'Purple wire' mod
+
+Isn't it annoying, when you're fine-tuning the radio and as the frequency
+changes, so it makes that awful 'Chuff Chuff' noise? Here's how to get rid
+of it.
+
+Take off the top cover (mind the speaker wire, it's a bit short). With the
+display facing you, just by the left-hand end of the ferrite bar antenna
+are two connectors. The nearest one is CN1. The second wire in this is
+purple, and needs to be cut. That's it!
+  ------------------------------------------------------------------------
+
+Frequency display calibration
+
+NOTE: This is for SSB Only. (Not tried AM since doing the calibration)
+
+1. Remove the top cover by removing 2 screws at rear & then sliding up &
+back the top cover (Do this with the power off!)
+
+2. With the radio facing you locate 2 Blue crystals named x2 / x2. Near the
+front. Next to these should be a trimmer capacitor with a small screwdriver
+slot. (Note- these are on the underside of the board in my own '394- Ed)
+
+3. The Left one is LSB The right one is USB. (I only adjusted the right on
+mine)
+
+4. Turn the power on.
+
+5. Tune to get the best reception to a constant signal (volmet around 5Mhz
+will do nicely.) Now adjust the right hand preset to 'move' the signal up a
+little. Re-tune the main tuning control toward the correct frequency
+readout - Do these a little at a time 'chasing' yourself until the signal
+sounds good & the readout is correct.
+
+This should be tried against a few signals to get the best overall
+performance. Mine is now within .05 just about all over the range.
+  ------------------------------------------------------------------------
+
+Keyboard Beeps
+
+To disable keyboard beeps, firstly do not take the lid off! Someone
+suggested that the beeps can be disabled by removing a certain resistor
+from the main board; this sounds far too permanent for my taste. It's a lot
+simpler.
+
+To disable beeps, power off and hold down CLEAR key whilst switching back
+on.
+
+To re-enable beeps, power off and hold down PGM key whilst switching back
+on.
+  ------------------------------------------------------------------------
+
+Fast AGC
+
+Bridge C163 with 100uf cap for slow AGC, 47uf for fast AGC. C163 is located
+on the bottom of the main board with the radio knobs facing you. It is on
+the right near center just below Q9 with four surface mount components to
+the left.
+  ------------------------------------------------------------------------
+
+RF Gain
+
+Gain: Bridge a 4.7K ohm resistor across R184 (helps gain control).
+  ------------------------------------------------------------------------
+
+Bandwidth
+
+Bridge .01/.047/.22uf cap across R64 (narrower bandwidth/crosstalk).
+
+Bridge .1/.22uf cap across R91 (narrower bandwidth/crosstalk).
+  ------------------------------------------------------------------------
+
+Noise blanker
+
+Here are 2 easy mods that will make the DX-394 noise blanker perform
+better. The performance on AM is marginal and doesn't work at all on
+CW/SSB. The mods will improve the AM blanker performance significantly and
+allow it to work on CW/SSB.
+
+1. Remove the bottom cover with the front of the receiver facing you.
+Bridge a 150K resistor across R180. This resistor is the third component
+toward the front from Q32 (don't count Q32). R180 should be black with 224
+(220K) on it (microscopes at the ready- Ed). This will re-bias Q33's base
+to a more sensitive threshold.
+
+2. Find Q34. It is to the right of Q32. Solder a Schottky diode (1N5817 or
+similar) from the collector of Q34 to a ground trace. The anode of the
+diode should go to ground and the cathode (banded end) to the collector of
+Q34. The collector is the single pin on the side of the transistor facing
+the rear of the receiver. A 1N4148 or 1N914 will work but not as well. This
+mod will now let the noise blanker work in the CW/SSB mode. It allows
+capacitor C182 to reset (discharge) in between noise pulses.
+
+3. Replace the bottom cover and remove the top cover and find potentiometer
+VR1 (close to the front of the unit). Set the pot about midway and you are
+finished (Leave the pot alone at first. Adjust later after you have checked
+out the mods).
+  ------------------------------------------------------------------------
+
+This is a list of Mods from Deja News, the WWW gateway to uselessnet.
+
+Crosstalk Mods
+
+1) For those with DX-394s with adjacent channel "crosstalk" problems here
+is a fix that will considerably reduce the problem. This applies to strong
+AM stations within 10 to 30kHz of the station you are receiving that "bleed
+over" and can be heard in the background. I am NOT referring to sideband
+splatter from adjacent stations caused by the overly wide stock CF1 AM
+ceramic filter. The problem is caused by the fact that Tandy designers (or
+whoever) forgot one of the CF1 bias decoupling capacitors.
+
+Anyone with a schematic will note that the node at the junction of R58,
+R61, R62 and R64 should have a bypass capacitor to ground from this point.
+Without it there is a resistive signal paththrough R57, R58, and R61 that
+bypasses the CF1 filter and causes broadband bleedthrough. All that is
+necessary is to solder a 0.047 to 0.2uf ceramic capacitor directly across
+R64 and the crosstalk will be significantly reduced.
+
+For those of you without a schematic you can find R64 by removing the
+bottom cover with the receiver knobs facing you. Find the silk-screen
+indent for D15. This is a four leaded surface mount, dual diode package.
+R64 is the third component to the right of D15 and has 222 (2.2K) stamped
+on it(you may need a magnifying glass!) This resistor is also just below
+and slightly to the right of the third pin (from the left) on CF1. It
+should be noted that with real strong adjacent signals there still may be
+some crosstalk, and reducing the Fr gain will help even more.
+
+Good luck and be careful - the parts are all tiny surface mount.
+
+Another note for those who listen to AM only on the 394 - if you swap
+ceramic filters CF1 and CF2 you will have a narrowwer AM bandwidth for
+crowded band conditions. Unfortunately, the SSB and CW will now be wider!
+
+2) Here is another DX-394 modification that will further reduce adjacent
+channel crosstalk from strong short-wave stations (see above). This one may
+be more effective than the previous one and, used together, crosstalk is
+reduced to an insignificant level.
+
+With the bottom cover removed and the front panel knobs facing you find the
+silk-screen indent for Q13. It is a black surface mount transistor with
+three leads (2 on one side, 1 on the other) midway toward the front of the
+unit and left of center. Resistor R91 is just below it and should be marked
+with 102 (1K). Bridge this resistor with a 0.1uf or 0.22uf ceramic
+capacitor (keep leads short) and you're done.
+
+IF signals preceding the ceramic filters are injected into the noise
+blanker transistor Q13 and are somehow amplified and then capacitively
+coupled around the ceramic filters via this circuit path. I have not
+figured exactly how this happens yet. Adding the 0.1uf capacitor around
+Q13's emitter resistor R91 (it already has a 0.01uf cap across it - C81)
+seems to decouple the bleedthrough signal. The operation of the noise
+blanker is not affected at all.
+  ------------------------------------------------------------------------
+
+AGC Mod
+
+Got the service manual and found the cap that sets the AGC timing! This mod
+will give a nice attack and release time (otherwise slow it down) and only
+involves putting a 100uf / 16V (or better) electrolytic cap across C163. I
+chose this value to my liking but you may speed it up or make it slower by
+increasing or decreasing the value. C163 is located on the bottom of the
+main board with the radio knobs facing you. It is to the right near center
+just below Q9 with four surface mount components to it's left. Put the +
+side of your caps towards Q9. A shielded cable could be brought out to a
+small switch and back to one of the cap's leads to select fast and slow if
+you wish- I am currently using 47uf for fast and 220uf for slow with a
+SMALL mini spdt switch mounted just above the headphone jack. It's a tight
+squeeze but entirely possible!
+  ------------------------------------------------------------------------
+
+Gain Control
+
+This modification will improve the linearity of the DX-394's RF Gain
+control and make it easier to use the RF gain as a volume control for SSB
+signals. It will give the gain control better resolution so that the roll
+off won't all occur in the last 40 degrees or so of the knob (in the CCW
+position). To implement the mod solder a 4.7K or 5.1K resistor across
+resistor R184. This resistor is located in the right rear of the main PC
+board when facing it with the bottom cover removed and the knobs facing
+you. One end of it is connected to pin 4 of connector CN4 (has 5 pins
+total), which is located just in front of the 12 volt dc input jack J5 on
+the rear panel.
+  ------------------------------------------------------------------------
+
+Timer Mods
+
+One glaring omission on this otherwise fine (with mods) little radio is the
+lack of an output jack to switch on a tape recorder for use with the 5
+built-in timers. I have added a small 12-volt relay that is energized
+whenever the receiver is powered-up, and a jack on the back tied to the
+relay's normally open contacts. The switched 12 (13.8 actually) volts is
+easily obtained across C140.
+
+With the receiver on its back, C140 is in the front right corner of the
+board, and there is a handy metal shelf nearby that is perfect for
+attaching a small relay. I simply glued the relay on its back on that shelf
+and ran the coil wires across C140, and the contacts out to the jack.
+
+A few caveats:
+*Use a small relay so as not to leach off TOO much juice. Most tape
+recorder's remote inputs don't need a large set of contacts, and besides
+space is limited.
+*Make sure that you put a clamping diode across the coil contacts if there
+is not one inside the relay already. The cathode (banded) end is tied to
+the + side of C140.
+*This ultra-simple mod gave me fits for a while trying to get it to work
+with my cassette recorder until I figured out that the remote input needs
+isolated switch contacts, and didn't like one side of the of the jack tied
+to the radio chassis (ga-DUH!). I had to enlarge the mounting hole for the
+jack so it didn't touch, and also mounted the jack between 2 pieces of
+rubber to keep it off chassis ground.
+
+With this small addition the 394's timers become truly useful. I always
+wondered that their point was if you had to be at the radio anyway to catch
+the program you set the timer for! Now the set-up is automatic and I can
+record whatever, whenever.....a simple mod that should have come standard.
+  ------------------------------------------------------------------------
+
+Antenna Input
+
+If you look at the schematic you will find that the Hi-Z input is coupled
+through a 15pf capacitor which will have significant attenuation when
+coupling to a random wire of the length you are using, so using the Low-Z
+input is actually best. As far as longwave goes the Hi-Z input probably
+gives better coupling to the first RF stage since it bypasses the front-end
+RF coils' primary winding. The 65' total antenna length is very short
+electrically for LW so the antenna appears very Hi-Z itself and the
+impedance match is more appropriate. Find a 2 to 5 mH (that's millihenry)
+Fr choke and put it in series with the antenna for LW, connect it to the
+Low-Z input and you should see a marked improvement in signal to noise.
