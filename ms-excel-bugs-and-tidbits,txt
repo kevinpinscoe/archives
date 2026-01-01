@@ -1,0 +1,679 @@
+I was doing some reasearch on MS-Excel in the computer risks newsgroup and 
+came up with the following tidbits that I thought you might want to know
+about.
+
+Kevin Inscoe (kpi@crc.com)	3/6/96
+
+
+   FORUM ON RISKS TO THE PUBLIC IN COMPUTERS AND RELATED SYSTEMS (comp.risks)
+   ACM Committee on Computers and Public Policy, Peter G. Neumann, moderator
+
+RISKS-LIST: Risks-Forum Digest  Thurs 28 September 1995  Volume 17 : Issue 37
+
+------------------------------
+
+Date: Tue, 26 Sep 1995 17:33:19 -0400
+From: "David M. Palmer" <dmpalmer@clark.net>
+Subject: Re: The latest maths bug in a Microsoft product (RISKS-17.36)
+
+>When does 1.40737488355328 = 0.64? When you're a user of Microsoft's Excel
+>spreadsheet.
+
+If you do this on a Macintosh (Excel v5.0a on a PowerMac 8100/110) you get
+a result of 1.40737488355328 = 1.28, proving that the Macintosh is 6 times
+more accurate than Windows machines.
+
+The (non-Microsoft) Macintosh calculator desk accessory does not have
+this problem.
+
+David Palmer  dmpalmer@clark.net
+
+------------------------------
+
+Date: 28 Sep 1995 10:16:10 PDT
+From: "Coffey, Jim@ARC Mail" <JCOFFEY@msm.epri.com>
+Subject: Re: The latest maths bug in a Microsoft product (Palmer, RISKS-17.36)
+
+> If you do this on a Macintosh (Excel v5.0a on a PowerMac 8100/110) you get a
+> result of 1.40737488355328 = 1.28, proving that the Macintosh is 6 times (as
+> powerful as a PC) ...
+
+Interestingly enough., Excel v5.0a on a Mac IIsi also yields .64; however,
+if you paste the original number as text and then perform a math operation,
+Excell yields the correct result.
+
+What I find interesting (and disturbing) is not that some number that most
+people will never use behaves oddly, but that the program behaves oddly.
+I'm working on a project that will use digital controls for power plant
+applications, and as part of that we need to verify that the system responds
+as expected during operations and transients.  I wonder how we will be able
+to test for obscure bugs such as this (since if one number does this, what
+other features haven't we yet encountered).  More importantly, we need to
+design the system to tolerate such undiscovered flaws and not go nuts when
+it does (a daunting task).
+
+Jim
+   [I have heard some reports that this flaw is actually an intentional 
+   feature intended to detect copyright ripoffs.  Music publishers and
+   dictionary editors have been doing similar things for years.  PGN]
+
+------------------------------
+
+End of RISKS-FORUM Digest 17.38 
+************************
+
+
+Date: Fri, 13 Oct 1995 16:19:49 +0100
+From: fgrieu@micronet.fr (Francois Grieu)
+Subject: Re: Microsoft Excel 1.40737488355328 
+
+Enter       1.40737488355328   in an Excel cell.
+
+Appears     0.64
+
+This is reproducible in version 4.0 or 5.0, under Windows
+and Macintosh OS.  Seen on 486, Pentium, 68040, PowerPC 601 processors.
+Also reported in Excel version 7 under Win 95.
+
+Now, more details on the problem.
+
+It shows for at least the following 3 numbers, and their negative
+   1.40737488355328     2.81474976710656     5.62949953421312
+
+Also happens in scientific notation, e.g.
+   140737488355328E-14  281474976710656E-14  562949953421312E-14
+
+Mathematically these numbers are really
+     2^47 / 10^14         2^48 / 10^14         2^49 / 10^14
+
+In my configuration the bug does not show  VISUALLY  in a cell
+containing  =1.40737488355328 or  = 2^47 / 10^14 .
+Still, such a cell has something badly wrong: taking it's integer
+part gives 0 instead of 1.  That is,   =INT(2^48/10^14)   gives 0.
+
+It appears to be a bug, not a deliberate signature of the code as
+suggested in RISKS DIGEST 17.38.
+
+The fact that the numbers triggering the bug have a simple mathematical
+form make them immensely more likely to appear in an Excel cell than
+if it was for a few arbitrary values.  Still, the spread of the bug by
+Internet is an even more decisive factor ;-)
+
+Microsoft is rumored to acknowledge the problem and have/prepare a fix.
+Still, I failed to find any info on this in the Microsoft Knowledge
+Base on Excel, at   http://www.microsoft.com/kb/indexes/excel.htm
+
+Quoting  Michael J. Lindsay  (lindsay@azstarnet.com):
+" This was discovered by Stuart Worley of Hughes Aircraft Company, Tucson
+  AZ when he input the following formula in a large spreadsheet
+  on September 11, 1995 :     +INT((2^47)/(10^INT(LOG(2^47))))
+  The result  0  instead of  1  stood out of the middle of the spreadsheet.
+  This prompted him to investigate further. "
+
+Francois Grieu
+
+   [Also noted by Mark Brader <msb@sq.com>, who pointed at
+   <http://www.microsoft.com/msoffice/xler0925.htm>, the text of which
+   was also posted recently to comp.apps.spreadsheets, comp.bugs.misc,
+   and comp.arch.arithmetic by Michael J. Lindsay (lindsay@azstarnet.com).
+   There were many other messages on this subject as well.  I have sampled
+   just a few.  PGN]
+
+------------------------------
+
+Date: Mon, 16 Oct 1995 13:38:09 -0700
+From: marv@md.arca.com (Marv Schaefer)
+Subject: Re: Microsoft Excel 1.40737488355328 
+
+> Interestingly enough., Excel v5.0a on a Mac IIsi also yields .64; however,
+> if you paste the original number as text and then perform a math operation,
+> Excel yields the correct result.
+
+Curiouser and curiouser.  Not only does 1.40737488355328 get correctly
+entered if pasted in place on my MAC PowerPC 6100 in Excel v5.0a, it also is
+correct if entered manually as a computation (i.e., as '=1.40737488355328'). 
+The boundary values (viz, 1.40737488355327 and 1.40737488355329) are
+correctly treated in computation and in "Regular" display sans the '='
+symbol.  1.40737488355328 becomes 1.28 if typed in directly, though.
+
+It certainly does look like PGN's suggested special case for copyright
+protection....
+
+Marv
+
+------------------------------
+
+Date: Tue, 10 Oct 1995 14:29:18 -0400 (EDT)
+From: "Joe J. Birsa E-375B 8-284-5192" <birsaj@h01.pgh.wec.com>
+Subject: Re: Microsoft Excel 1.40737488355328 
+
+Map companies also seem to put intentional errors on their maps to detect
+copyright infringement.  One error on a Pittsburgh street map would have had
+drivers going down steps on a hillside where a street ended at the top of a
+set of municipal steps.  Since this was not corrected on the map for many
+years, I suspect that it was intentional.  Usually, this type of error is
+limited to insignificant streets and roads; insignificant, that is, if you
+never have to travel on them.
+
+Your suspicion that the spreadsheet error was intentional may well be not 
+unfounded. 
+
+Joe Birsa  birsaj@h01.pgh.wec.com
+
+------------------------------
+
+Date: Thu, 12 Oct 1995 11:50:20 -0400 (EDT)
+From: John Lane <PSCLANE@ubvms.cc.buffalo.edu>
+Subject: Re: Microsoft Excel 1.40737488355328 
+
+>[I have heard some reports that this flaw is actually an intentional
+>feature intended to detect copyright ripoffs....  PGN]
+
+I have my doubts about that. When the publishers of "Who's Who" put in a
+handful of fake biographical entries, they want to catch anyone who presents
+the contents of "Who's Who" as their own research in, say, a rival
+dictionary or a mailing list.
+
+But Microsoft's great problem is the selling of pirated copies of their
+software packages. The pirates want to present their copy not as their own
+work but as the original product, feature for feature. A copied mistake adds
+to the air of authenticity.
+
+John Lane
+
+------------------------------
+
+
+End of RISKS-FORUM Digest 17.39 
+************************
+
+
+Date: Tue, 17 Oct 1995 05:43:02 -0700
+From: "Ralph D. Clifford" <rdc@world.std.com>
+Subject: Re: Microsoft Excel 1.40737488355328
+
+>[I have heard some reports that this flaw is actually an intentional
+>feature intended to detect copyright ripoffs....  PGN]
+
+     Usually, these inserted flaws are (should be?) in the non-executable
+portion of a program.  Often, a section of code that will never be executed
+is inserted.  To be most effective, this code should, in fact, be
+unexecutable--containing a zero divide, for example.
+
+     The practice stems from a court case, Frank Shepard Co. v. Zachary P.
+Taylor Pub., Co., 193 F. 991 (2d Cir., 1912).  In the case, the publisher of
+a legal research book (Shepard's citator) inserted lists of citations for
+cases that did not exist.  When 138 of these showed up in a competitor's
+publication, the court presumed that the second work had copied the first.
+
+     Thus, I have no doubt that Excel has "bugs" inserted in it to allow 
+Microsoft to more easily prove code copying.  I would be surprised, 
+however, if these bugs were inserted into effective code.
+
+Ralph Clifford, Associate Professor, S. New England School of Law
+
+------------------------------
+
+Date: Wed, 18 Oct 1995 08:49:28 -0700
+From: Kenneth Albanowski <kjahds@kjahds.com>
+Subject: Re: Microsoft Excel 1.40737488355328 
+
+I have no idea whether the "mysterious figure" is really a copyright trap,
+but you can't rule it out this easily. Have we all forgotten the days of
+reverse engineering, and "borrowing" code from other programs? Admittedly, 
+doing this for the calculation engine of Excel seems a rather odd 
+pursuit, though.
+
+Another variation comes to mind, though. Has Microsoft ever licensed out
+source or executable code to other companies. If anyone used the code in a
+"black box" form, this would be a very simple way to track the licensed
+code, and verify it hadn't been distributed improperly. 
+
+Kenneth Albanowski (kjahds@kjahds.com, CIS: 70705,126)
+
+------------------------------
+
+End of RISKS-FORUM Digest 17.40 
+************************
+
+
+----------------------------------------------------------------------
+
+Date: 	Tue, 21 Nov 1995 04:35:32 -1000
+From: "Ray Panko" <PANKO@busadm.cba.hawaii.edu>
+Subject:       Outsmarted by a Smart Spreadsheet
+
+I was entering exam grades in my class spreadsheet file.  I formatted the
+column as percent.  Then I started typing in the grades as usual.  I typed
+89% for 89% sometimes.  Other times, I typed in .89.
+
+Fortunately, before I printed the results, I sorted in decreasing order 
+of score on the exam.  I noted that one of my usual top students was 
+missing.  Checking, I found that he has the lowest score in the class.
+
+The new version of Excel for Windows 95 allows you to type numbers like 89%
+as 89%, .89, OR 89.  It figures that if you are typing 89, you mean percent.
+
+Well my student received a 100% score.  So I typed a 1 (1.00).  It 
+literally gave him 1%.
+
+The new Microsoft algorithm had run into an ambiguous case.  Numbers below 1
+were recognized properly, while numbers above 1 were recognized properly.
+Logically, however, the two methods of treating numbers clash as 1.  Is the
+proper thing to do in such cases to throw up a dialog box, explain the
+situation, and ask the person if he or she wants to make this 1% or 100%?
+The dialog box could even explain the (I believe) new way of handling
+percentages.
+
+As we add more and more intelligence to software, it becomes easier to use
+in most cases but rather dangerous in other cases.  Just as programmers need
+to consider boundary values when the test program with data, designers of
+intelligence will need to consider boundary values.  They should then "open
+the box" and bring the user into the decision.
+
+Raymond R. Panko, Decision Sciences Dept., College of BusAdmin, U. of Hawaii
+2404 Maile Way, Honolulu, HI 96822 Panko@dscience.cba.hawaii.edu (808)956-5049 
+
+------------------------------
+
+
+End of RISKS-FORUM Digest 17.47 
+************************
+
+
+
+------------------------------
+
+Date: Thu, 7 Dec 1995 01:37:05 +1100 (EST)
+From: Andrew Goodman-Jones <goodie@sydney.DIALix.oz.au>
+Subject: Excel Version 7 scary risks
+
+Excel 7 has a new feature where if you are entering data in columns and 
+what you have typed so far matches an entry earlier in the column, then 
+that full entry is placed in the cell you are entering until you press a 
+key that is different from the previous entry.
+
+For example, Say I have a stock list with
+
+BOLT 25mmx.6mm    $4.00
+BOLT 25mmx.8mm    $4.50
+BOLT              $2.50
+
+When I come to entering BOLT the second time, Excel prompts with the
+measurement information and if it is the same, I can just hit enter to
+accept it or I can type over it to replace it. If I'm not looking at the
+screen as I type it it doesn't matter as my typing replaces the selection.
+HOWEVER when I come to entering the third item here, which in this case has
+no further information following it, Excel enters the measurement
+information anyway and as I hit enter it is accepted. If I am working from a
+paper list somewhere and entering lots of information very quickly - not
+looking at the screen very often, then I can enter totally incorrect data.
+My example is not a fantastic one, but I have NOTICED that I have been
+stuffed up several times already by this cute little feature. How many times
+have I not noticed that the information is incorrect?  I think that this
+little feature will cause a lot of heartache around the world as some data
+becomes entered incorrectly.
+
+Andrew Goodman-Jones  goodie@sydney.dialix.oz.au
+
+------------------------------
+
+
+End of RISKS-FORUM Digest 17.52 
+************************
+
+
+
+------------------------------
+
+Date: Sat, 30 Dec 95 08:29:16 EST
+From: pjd@cne.gmu.edu (Peter J. Denning)
+Subject: Inside Microsoft is a floating crap game?
+
+The Cobb Group publishes INSIDE MICROSOFT OFFICE, a monthly newsletter for
+users of Microsoft office products.  In their January 1996 issue, they
+address a problem already discussed at some length in the Risks Forum ---
+floating point expressions in spreadsheets like Excel 5.0 that do not
+evaluate properly.  They say the problem isn't an Excel bug, it's a
+consequence of the IEEE floating point standard 754.  Many numbers with
+exact decimal representations do not have exact binary representations;
+arithmetic operations on the binary approximations may not give the same
+results as the same operations on the decimal numbers.  They suggest a
+"workaround" -- wrap your floating point expressions in the ROUND() function
+-- e.g., ROUND(0.3-0.2-0.1,5) will yield 0 rather than -2.8E-17.
+
+This analysis, while helpful to spreadsheet users worried about the accuracy
+of calculations, is somewhat misleading.  The IEEE 754 standard is an
+innocent bystander because the real problem, finite binary representations
+of decimal numbers, will happen with ANY binary floating point standard.
+The ROUND() function does not eliminate the problem, it only masks it behind
+a larger approximation error at the decimal level.
+
+Modern spreadsheets are so powerful that any user can set up numerically
+intensive computations and invoke all the problems that specialists have
+spent years to learn to avoid.  For example, if you are doing a capacity
+study of a client-server system, you are likely to want to solve balance
+equations of the form x=Ax, where x is a vector of unknown numbers and A is
+a matrix.  It is easy to set this up on a spreadsheet and utterly amazing
+how difficult it is to get the spreadsheet's iterative calculation algorithm
+to converge to a meaningful answer.  This one can't be helped by the ROUND
+function.  A far better answer would be for the makers of spreadsheets to
+offer numerical libraries that contain numerically stable algorithms for
+various problems, and urge users to select those packages rather than
+attempt their own, homegrown solutions.
+
+Peter Denning
+
+   [What comes ROUND goes ROUND?  PGN]
+ 
+------------------------------
+
+
+End of RISKS-FORUM Digest 17.59 
+************************
+
+
+------------------------------
+
+Date: Fri, 1 Mar 96 19:14:03 -0800
+From: tpd6908@cfdd15.cfd.ca.boeing.com (Tom Dickens)
+Subject: 29 Feb 1996 errors in Excel
+
+After reading RISKS-17.81, I checked data in a spreadsheet I was working on,
+and sure enough, a leapyear bug.  Microsoft Excel 3.0, both the Mac and PC
+versions, has trouble with February 29th.  Enter a date for the current year
+as 2/28 in a cell and it is converted to the format 2/28/1996.  Enter 2/29
+and you get 2/1/1929.  I tried setting the system clock to 1992 and 1988
+with the same results.  Excel version 5.0 on the PC does work for 2/29.
+
+Note that by typing the full date, including year, as 2/29/96, and
+then choosing the desired format, you can get what you want.
+
+The risks?  Relying on automated data formatting.  Not upgrading to the
+latest versions of software (upgrading has another set of risks).  And the
+risk of not reading comp.risks, otherwise I would not have caught this
+error.  The year 2000 should be very interesting...
+
+....Tom Dickens   tpd6908@yak.ca.boeing.com
+
+
+End of RISKS-FORUM Digest 17.83 
+************************
+
+
+------------------------------
+
+Date: Tue, 05 Mar 1996 12:11:10 -0800
+From: Geoffrey Cooper <geof@devices.com>
+Subject: More on Excel and leap days (RISKS-17.83)
+
+> Excel version 5.0 on the PC does work for 2/29
+
+This is true.  And Excel version 5.0 knows that the year 2000 is indeed a
+leap year (see RISKS-17.83).  It is very clever.  Actually, it also "knows"
+that the year 1900 was a leap year.  But it wasn't...
+
+The program also doesn't appear to handle dates that are not in the 1900's or
+2000's, so I couldn't check 2/29/1800 or 2/29/2100 or 2/29/2400.  Of course,
+we'll all be using stardates by the time the year 2400 comes around.
+
+- Geof
+
+------------------------------
+
+Subject: More on Excel and leap days
+
+In each version of Excel that I've examined, the 60th day of the calendar is
+29 Feb 1900. Set a cell's format to "date" and type in 60 to see for
+yourself.  This means, of course, that computations such as "number of days
+between x and y" where one or the other date is in early 1900 will be wrong.
+Fixing the bug is also RISKy because that would change the date
+interpretation of all ordinal dates greater than 59, in turn making every
+existing spreadsheet involving a date compute or display something
+unintended. Thought experiment: would YOU fix this bug if Excel were your
+product? How?
+
+-- Carl Hauser
+
+
+------------------------------
+
+End of RISKS-FORUM Digest 17.84 
+************************
+
+
+Date: Tue, 5 Mar 96 16:33:52 -0700
+From: "frank dougherty" <>
+Subject: More on Excel and Lotus Dates (leap year 2000)
+
+A note to followup to Tom Dickens' message regarding 
+29 Feb 1996 errors in Excel (RISKS-17.83) 
+ 
+I use Lotus 1-2-3 Release 5 for Windows and Excel 5.0 on the MAC. 
+My tests revealed the following: 
+ 
+1.	Lotus uses a "date number" system where Day 1 is  
+	January 1, 1900.  The following is a quote from the Lotus 
+	Help file: 
+ 
+date number  
+ 
+A number from 1 through 73050 that 1-2-3 assigns in sequence to each 
+date from January 1, 1900, through December 31, 2099. For example,  
+the date number for July 21, 1991, is 33440. 
+ 
+	Lotus has various number formats for dates including a 
+	day-month-year format that shows today's date, for example, 
+	as 05-Mar-96.  When one enters (or calculates) a date past 
+	December 31, 1999, the format changes such that February 29, 
+	2000 is represented as 29-Feb-2000.  If the column width is 
+	set to accommodate a dd-mmm-yy format, one gets a string of 
+	********* for dates past December 31, 1999.  Also, the @YEAR 
+	function returns a value of 100 for a year 2000 date (@YEAR 
+	returns 96 for a 1996 date). 
+ 
+	These results may surprise spreadsheet users who have expectations 
+	about the consistency of formatting and who do not understand 
+	the convention that Lotus uses.  By the way, the maximum date 
+	for Lotus is December 31, 2099 (date number 73050). 
+ 
+2.	The problems with 2/29 do not appear to occur in Mac 
+	version 5 of Excel.  It represents 2/29/2000 as 
+        02/29/00 is nn-mm-yy format and returns a year value 
+	of 2000 when the @YEAR function is applied.  The  
+	@YEAR function returns 1996 for current year dates. 
+ 
+	Users who work with both Lotus and Excel should be 
+	aware of the differences in how the two programs 
+	handle dates. 
+ 
+Frank Dougherty 
+
+------------------------------
+
+Date: Wed, 06 Mar 1996 16:07:55 +0000
+From: Steve Loughran <slo@HPLB.HPL.HP.COM>
+Subject: Re: 29 Feb 1900 and Excel
+
+After reading about the fact that Excel 5 assumes that there is a leap year in 
+1900, and so all its dates (recorded as days since 1/1/1900) are wrong, I was 
+struck by a horrible thought.
+
+Ole Automation, the Windows inter-application macro programming interface,
+uses data types based upon those of Microsoft's spreadsheets and Visual
+Basic. One of these datatypes is a date. Did this "Date" type deal with the
+leap year properly, or were apps using it meant to assume that 1900 was a
+leap year for compatibility.
+
+I bit of CD searching cam up with the following answer from from the Win32
+SDK, Ole Automation, "Data Types, Structures, and Enumerations":
+
+  VT_DATE	
+
+  A value denoting a date and time was specified. Dates are represented as
+  double-precision numbers, where midnight, January 1, 1900 is 2.0,
+  January 2, 1900 is 3.0, and so on. The value is passed in date. This is
+  the same numbering system used by most spreadsheet programs, although
+  some incorrectly believe that February 29, 1900 existed, and thus set
+  January 1, 1900 to 1.0. 
+
+So, modern apps are meant to assume that 1/1/1900 is really the second day
+of the year/century, rather than the first so that from 1/March/1900 onwards
+the value of a date calculated by a broken (assumes 29/Feb/1900 exists)
+application and a non broken application is the same.
+
+I can't decide if this is an elegant workaround of the problem or not...
+
+Steve Loughran, Hewlett-Packard Laboratories, Bristol
+
+------------------------------
+
+End of RISKS-FORUM Digest 17.85 
+************************
+
+
+Date: Wed, 06 Mar 1996 11:07:08 +0000
+From: Roy Murphy <murphy@panix.com>
+Subject: More on Excel and leap days (Hauser, RISKS-17.84)
+
+> ... This means, of course, that computations such as "number of days 
+> between x and y" where one or the other date is in early 1900 will be wrong.
+
+This is actually a bug introduced by Lotus 1-2-3 and deliberately maintained
+by Excel in the interests of "compatibility". There is an option to use the
+1904 Date System which was developed on the Mac for the original version of
+Excel which does not have this bug.
+
+Roy Murphy  murphy@panix.com
+
+
+End of RISKS-FORUM Digest 17.86 
+************************
+
+
+Francis Hitchens <hitchens@epa001.enet.dec.com> wrote:
+
+>Francis Hitchens wrote:
+>> 
+>> Help,
+>> 
+>> I have the following problem with Excel« Version 5.0 under Windows 3.0.
+>> 
+>> I can no longer open excel spreadsheets that contain Visual Basic for
+>> Applications modules, when I do I just receive the message "File format
+>> no longer supported". This also happens when I click on the VBA insert
+>> module button.
+>> 
+>> I have tried removing and reinstalled excel using the MS Office setup
+>> program, but without success.
+>> 
+>> Can anybody help ?
+>> 
+>> regards francis j. hitchens
+
+>I have solved my Excel problem, and want to share this great discovery
+>with my internet chums. It looks like the installation of
+>Microsoft's Video for Windows utility ...
+
+>ftp://ftp.microsoft.com/Softlib/MSLFILES/wv1160.exe
+
+>replaced some files in the windows system directory.
+
+>I deleted Excel and backed up and deleted the following files, and
+>reinstalled Excel from the MS-Office disks.
+
+>       OLE2.DLL
+>       OLE2.REG
+>       OLE2CONV.DLL
+>       OLE2DISP.DLL
+>       OLE2NLS.DLL
+>       OLE2PROX.DLL
+>       VBA.DLL
+>       VBAEN.DLL
+>       VBAEN.OLB
+>       STDOLE.TLB
+>       STORAGE.DLL
+>       TYPELIB.DLL
+
+>After that is worked fine, so did MS Video for Windows.
+
+>regards francis J. hitchens
+
+Hi
+The problem is in the file VBAEN.OLB. Sometime it's not enough to
+uninstall and install Excel. 
+T solve this problem You must run REGEDIT / V, search for win16 and
+then change the directory to the one contents VBAEN.OLB. 
+Most of the time it'solve the problem.
+
+Good Luck
+Nachum Ginat
+nachum@netvision.net.il
+
+------------------------------------
+
+
+>>From kpi@crc.com Thu Feb 01 17:04:13 1996
+>>Path: hobbes.crc.com!hobbes.crc.com!not-for-mail
+>
+>>hi,
+>>   I have been trying to get the @DATE function in Qpro for windows to work 
+>>with the year 2000.  I am running Quatto Pro for Windoze ver 1.0.  Whenever
+>>I use 2000+ for a year it gives an error.  If I use 00 it thinks I mean 1900.
+>>Does anyone know of a patch or workaround for this problem?  Also, does 
+>>anyone know if the latest version of QPro still has this problem and if so
+>>what other products do not? BTW: This problem also exists in Excel 5.0
+>>as well!
+
+>From the QPW.HLP file on @DATE : 
+Format - @DATE(Yr, Mo, Day)
+
+Yr = a numeric value between -300 and 1299;
+                     -300 = 1600, 0 = 1900, 1299 = 3199
+Mo = a numeric value between 1 and 12
+Day = a numeric value between 1 and 31
+
+@DATE returns the date/time "serial number" of the date specified with year,
+month, and day arguments. This serial number can range from -109,571
+(January 1,1600) to 474,816 (December 31, 3199). December 30, 1899 is 0, so
+a positive number represents the number of days from December 30, 1899 up to
+the date referenced in the formula.
+
+Date/time serial numbers are used in notebook calculations. (The fractional
+portion of a serial number is used for the time @functions.)  To display a
+date/time serial number in a date format, choose Numeric Format in the Block
+Object Inspector. This shows the date in its more common form (for example,
+Jan-1-94 instead of 34335).
+
+Any illegal dates return ERR as their value, for example, @DATE(87,2,29).
+(This date corresponds to February 29, 1987, which is impossible; 1987 was
+not a leap year.)
+
+Examples
+@DATE(93,1,1) = 33970 (January 1, 1993)
+@DATE(91,9,13) = 33494 (September 13, 1991)
+@DATE(0,1,1) = 2 (January 1, 1900)
+@DATE(-300,1,1) = -109571 (January 1, 1600)
+@DATE(1299,12,31) = 474816 (December 31, 3199)
+
+Michael
+
+
+---------------------------------------------
+
+
+
+Here's a useful web page for you Excel hackers.
+
+
+http://www.cts.com/browse/jwalk/
+
+Kevin
+
+
+
+-------------------------------------------------
+
+
+
+[End of EXCEL_R.TXT]	Last revised 3/6/96
