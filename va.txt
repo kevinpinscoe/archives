@@ -1,0 +1,193 @@
+Virgina  (last updated 1/7/99 - send updates to kevin@inscoe.org)
+http://www.inscoe.org/scan-i95
+
+Counties from north to south (MM = mile marker numbers):
+Alexandra (TRS) MM                             http://www.geocities.com/SiliconValley/Way/7686/index.html
+Prince William County MM
+Woodbridge MM
+Dale City MM
+Stafford County MM
+Fredericksburg MM
+Spotsylvania County (TRS-GE) MM
+Caroline County MM
+Doswell MM
+Kings Dominion MM
+Hanover County (TRS-GE) MM 87-
+Richmond MM
+Henrico County MM
+Chesterfield County MM 57-                      http://mh106.infi.net/~jmccolma/trunk.html
+Colonial Heights MM
+Petersburg MM
+Prince George County MM
+Sussex County MM 18-
+Emporia
+Greensville County 1-
+
+* = Comfirmed
+(TRS) = Trunking Radio System in use by pricipality
+
+Bank 5 [Virgina 1]
+ *81 - 155.2800 Greensville County Rescue Squad
+  82 -  39.9000 Greensville County LG
+  83 -  39.8600 Greensville County LG
+  84 -  33.8000 Emporia FD
+ *85 - 154.3400 Sussex County FD
+       154.3400 Henrico County FD
+  86 -  39.1000 Sussex County PD
+  87 - 460.3000 Sussex County PD
+  88 - 853.8625 Sussex County PD
+  89 -  39.6000 Sussex County PD
+  90 -  39.8400 Sussex County PD
+  91 - 853.4125 Sussex County TRS
+  92 - 853.9625 Sussex County TRS
+  93 - 854.3375 Sussex County TRS
+  94 - 155.0550 Prince George County
+  95 - 155.1150 Prince George County
+  96 - 460.5250 Petersburg FD Ch. 1
+  97 - 460.6000 Petersburg FD Ch. 2
+  98 - 453.6750 Petersburg LG
+  99 - 458.2000 Petersburg LG
+ 100 - 460.5500 Petersburg LG
+
+Bank 6 [Virgina 2]
+ 101 - 460.2500 Petersburg LG
+ 102 - 460.3750 Petersburg LG
+ 103 - 460.4750 Petersburg LG
+ 104 - 154.1900 Petersburg FD
+ 105 - 154.2050 Colonial Heights FD
+       154.2050 Stafford County FD
+ 106 - 154.3250 Colonial Heights FD
+       154.3250 Prince William County FD F2 (dispatch)
+ 107 - 154.9800 Colonial Heights FD
+ 108 - 855.7375 Colonial Heights LG
+ 109 - 856.7375 Colonial Heights LG
+ 110 - 453.9500 Colonial Heights LG
+ 111 -  46.3400 Chesterfield County FD
+*112 -  46.4600 Chesterfield County FD
+ 113 - 154.1600 Chesterfield County FD
+ 114 -  45.1200 Chesterfield County LG
+ 115 -  45.3200 Chesterfield County LG
+*116 - 153.9650 Chesterfield County LG (intersystem?)
+ 117 - 154.0550 Chesterfield County LG
+ 118 - 154.9950 Chesterfield County LG
+ 119 - 155.7000 Chesterfield County LG
+ 120 - 155.7600 Chesterfield County LG
+
+Bank 7 [Virgina 3]
+ 121 - 453.1000 Chesterfield County LG
+ 122 - 852.4875 Chesterfield County LG
+ 123 - 154.7550 Chesterfield County PD
+ 124 - 154.8750 Chesterfield County PD
+ 125 - 155.5650 Chesterfield County PD
+ 126 - 155.2350 Chesterfield County EMS
+ 127 - 155.2650 Chesterfield County EMS
+ 128 - 154.4300 Henrico County FD
+       154.4300 Alexandria FD (dispatch)
+ 129 - 154.0250 Henrico County LG
+ 130 - 154.0850 Henrico County LG
+ 131 - 453.9250 Henrico County LG
+ 132 -  37.1400 Henrico County PD
+ 133 - 156.2100 Henrico County PD
+ 134 - 460.0750 Henrico County PD
+ 135 - 460.1250 Henrico County PD
+ 136 - 460.1750 Henrico County PD
+ 137 - 460.2250 Henrico County PD
+ 138 - 460.2750 Henrico County PD
+ 139 - 460.3500 Henrico County PD
+ 140 - 460.4500 Henrico County PD
+
+Bank 8 [Virgina 4]
+ 141 - 155.2050 Henrico County Rescue
+*142 - 155.2200 Henrico County Rescue
+ 143 - 154.1300 Richmond FD
+ 144 - 453.7500 Richmond FD
+ 145 - 453.3000 Richmond FD
+ 146 - 453.5000 Richmond FD
+ 147 - 453.6500 Richmond FD
+ 148 - 453.7500 Richmond FD
+ 149 - 453.9750 Richmond FD
+ 150 - 154.2950 Hanover County FD
+ 151 - 158.7600 Hanover County FD
+ 152 - 155.4300 Hanover County PD
+ 153 - 156.0300 Hanover County PD
+ 154 - 154.0100 Hanover County FD
+*155 - 154.3850 Caroline County FD
+ 156 - 154.9650 Caroline County LG
+ 157 -  39.2000 Caroline County PD
+ 158 - 158.7900 Caroline County PD
+ 159 - 158.7750 Caroline County LG
+ 160 - 158.8050 Caroline County LG
+ 
+Bank 9 [Virgina 5]
+ 161 -  39.5800 Spotsylvania County LG
+ 162 - 156.1950 Spotsylvania County LG (fire?)
+ 163 -  39.2800 Spotsylvania County PD
+ 164 -  39.4400 Spotsylvania County PD
+ 165 - 856.4825 Spotsylvania County TRS
+ 166 - 857.4875 Spotsylvania County TRS
+ 167 - 858.4875 Spotsylvania County TRS
+ 168 - 859.4875 Spotsylvania County TRS
+ 169 - 860.4875 Spotsylvania County TRS
+ 170 - 154.4150 Fredericksburg FD
+ 171 - 153.7700 Fredericksburg FD
+ 172 -  45.3600 Fredericksburg FD
+ 173 - 153.8150 Fredericksburg LG
+ 174 - 155.7150 Fredericksburg LG
+ 175 - 155.9250 Fredericksburg LG
+ 176 - 158.8350 Fredericksburg LG
+ 177 - 154.1750 Stafford County FD
+ 178 -  39.1800 Stafford County LG
+       488.5375 Stafford County LG
+       488.5625 Stafford County LG
+       489.0625 Stafford County LG
+       489.1125 Stafford County LG
+       489.5625 Stafford County LG
+       490.0625 Stafford County LG
+       490.3125 Stafford County LG
+       490.6125 Stafford County LG
+       490.6625 Stafford County LG
+       490.8125 Stafford County LG
+ 179 -  39.4000 Staford County PD
+       488.8125 Stafford County PD
+       489.3125 Stafford County PD
+       489.8375 Stafford County PD
+ 180 - 
+
+Bank 0 [Virgina 6]
+ 181 - 154.3700 Prince William County FD F1 (fireground-west)
+ 182 - 154.4450 Prince William County FD F2 (fireground-east)
+       453.1500 Prince William County PD F3/F7 (west)
+ 183 - 453.3750 Prince William County PD F2/F6 (east)
+       453.4750 Prince William County PD F1/F5
+       453.7000 Prince William County PD F4/F8 (detectives)
+ 184 -  39.6800 Prince William County Sheriff
+ 185 - 154.4300 Alexandria FD Ch. 1 (dispatch)
+       494.8125 Alexandria LG
+       854.2125 Alexandria LG
+       855.5125 Alexandria LG
+       866.9500 Alexandria LG
+       866.9750 Alexandria LG
+       868.7375 Alexandria LG
+        39.0400 Alexandria Sheriff
+       460.3750 Alexandria PD F1/F4 (dispatch)
+       460.0750 Alexandria PD F2/F5 (tactical)
+       460.0500 Alexandria PD F3/F6 (service)
+ 186 -  39.5000 Commonly-used Police Intersystem
+*187 -  39.5400 State Interagency Radio System (SIRS) (statewide)
+*188 - 158.9850 VSP F2? Richmond East Division 1
+*189 - 159.0000 VSP F11? Richmond (south/west?) Divison 1
+       159.0000 VSP F11? Alexandria/Fairfax Division 7
+*190 - 159.1350 VSP F13? Chesapeake Division ? (Prince William County)
+*191 - 159.1650 VSP F? Culpepper (west of Blue Ridge Mountains - Winchester)
+       159.1650 VSP F? Culpepper (Stafford & Corline Counties)
+*192 - 154.6650 VSP F? (tactical car-to-car)
+*193 - 154.6950 VSP F? (surveillance)
+ 194 - 154.6800 VSP F?
+ 195 -  47.0400 VDOT F1
+ 196 -  47.2200 VDOT F1
+ 197 -  47.2400 VDOT
+*198 -  47.2800 VDOT F3
+ 199 -  47.3000 VDOT F4
+ 200 -  47.3400 VDOT F2
+
+
