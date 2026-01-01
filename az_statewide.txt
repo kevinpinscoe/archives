@@ -1,0 +1,53 @@
+Emergency/Statewide/DOT
+460.3750 InterAgency Mutual Aid
+155.2800 Mutual Aid 
+155.3250 AirEvac Helicopter 
+462.0625 AirEvac Helicopter
+464.2500 AirEvac Helicopter  
+128.8500 AirEvac Helicopter 
+462.3500 Southwest Ambulance (West Valley) 
+462.9750 Southwest Ambulance (East Valley) 
+463.0250 Ambulance 
+155.3250 AIREVAC Dispatch 
+155.2350 Arizona Medical Transport 
+463.1000 DPS Ranger 
+155.1600 PMT Ambulance 
+128.8250 Air Evac - Helicopter Control
+128.8500 Air Evac - Fixed Wing Control
+155.3250 Air Evac - Helicopter DispatCh
+462.0625 Air Evac - Phoenix Admin.
+464.2500 Air Evac - Samaritan Admin.
+155.2800 Am Evac Ambulance Ch-1
+155.2950 Am Evac Ambulance Ch-2 (DispatCh)
+155.2350 Eagle Rescue Helicopter
+461.2250 CRITICAL AIR HELIO's
+156.1200 Arizona Department Of Transportation - F1 
+156.1050 Arizona Department Of Transportation - F2 
+
+DPS
+156.0900 Department Of Public Safety 
+453.0250 Department Of Public Safety - Call Boxes 
+154.7850 Department Of Public Safety - Car To Car Surveillan 
+155.4450 Department Of Public Safety - Drug Investigation 
+154.7850 Department Of Public Safety - Helicopters 
+155.1900 Department Of Public Safety - Helicopters 
+453.0500 Department Of Public Safety - Radio Telephone 
+460.5000 Department Of Public Safety - Special Details / Criminal Investigation Ch 2 / 4 
+460.2250 Department Of Public Safety - State Frequency (car to car)
+154.9350 Department Of Public Safety - State Frequency 
+460.3000 Department Of Public Safety [D11/D14] (All except I-17) Phoenix West / Quartzsite
+460.4250 Department Of Public Safety [D12/D8/D14] (I-17) / Tucson to border area / Prescott / Seligman / Tucson / Nogales / East Pima County
+460.4000 Department Of Public Safety [D13] Yuma (Tucson Dispatched) / West Pima County
+460.3250 Department Of Public Safety [D5/D7/D13/17] Metro-1 Phoenix Central / Holbrook / Winslow / Sierra Vista / Safford
+154.9050 Department Of Public Safety [D1] 
+154.6650 Department Of Public Safety [D2] 
+460.0250 Department Of Public Safety [D2/D6] Casa Grande / Florence / Flagstaff / Page 
+39.1800 Department Of Public Safety [D3] 
+155.5050 Department Of Public Safety [D4] 
+155.4600 Department Of Public Safety [D5] 
+460.2750 Department Of Public Safety [D5] Criminal Investigation Ch 1 / 3 
+460.4750 Department Of Public Safety [D7] Show Low / Payson / Globe / Kingman / Lake Havasu 
+453.225 Metro-2 [D5/D7/D13] (Main Dispatch) 
+ 
+
+
