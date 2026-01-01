@@ -1,0 +1,125 @@
+<HTML>
+<HEAD>
+<!-- SS~~0001 -->
+<TITLE>Compiling & Developing Software on Sun Solaris 2.x</TITLE>
+</HEAD>
+<! - {COMPILESUN.HTM} - !>
+<! - You just had to view my source code didn't you!! That's ok. Wanna see how I did it !>
+<! ----------------------------------------- written by Kevin P. Inscoe - kevin@inscoe.org ---------!>
+<BODY bgcolor="#000000" TEXT="#bbffff" LINK="#FFFF00" VLINK="#22AA22" >
+<CENTER>
+<H2>Compiling & Developing Software on Sun Solaris 2.x</H2>
+</CENTER>
+<p></p>An article I wrote for the Sun Solaris 2.x FAQ back in 1996.</BODY></p>
+First of all read the
+<a href="http://www.phys.ufl.edu/docs/porting-faq.html">
+Solaris 2 Porting FAQ</a>
+<br>and
+<a href="ftp://ftp.wins.uva.nl/pub/solaris/solaris2.html#q6">The Solaris 2.x FAQ section 6 - Software Development</a><BR><BR>
+For info on using GNU C compiler in general get the book
+<a href="http://www.oreilly.com/catalog/prognu/">Programming with GNU Software
+</a>
+<BR>
+I also recommend
+<a href="http://www.amazon.com/exec/obidos/ASIN/0201563177/o/qid=926541543/sr=2-2/002-3176368-0498259">Advanced Programming in the Unix Environment</a>.
+<BR>
+<BR>
+Relealize that Solaris 2.x does not come with a C compiler.<BR>
+<a href="http://www.fsf.org/">Free Software Foundation's</a> 
+GNU Compiler Collection (<a href="http://www.gnu.org/software/gcc/gcc.html">gcc</a>) is recommended.<BR>
+See my entry into the Sun Manager's FAQ (section 10.2) on how to do this <a href="ftp://ftp.cs.toronto.edu/pub/jdd/sun-managers/faq">here</a>.<BR><BR>
+You can also download an already compiled version of gcc from
+<a href="http://sunfreeware.com">http://sunfreeware.com</a>.
+<BR>
+<BR>
+However if you need you can also purchase the 
+<a href="http://www.sun.com/forte/buy.html">Sun Visual WorkShop</a> (tm) 
+<BR>a commercial development package from
+Sun.
+It contains a commercial C++ compiler.
+<BR>
+<BR>
+In either case make sure you install the SUNWlibC, SUNWlibCf, 
+SUNWlibm, SUNWlibms, SUNWscbcp, SUNWtoo, SUNWarc and SUNWhea packages as that
+contains the header files.
+<BR><BR>
+If you have loaded the SUNWbtool package you will find the /usr/ccs/bin
+CCS tools that are bundled with Solaris.
+<BR><BR>
+Include the following environment variable in your login script:
+<BR><BR>
+LD_LIBRARY_PATH=/usr/lib:/usr/openwin/lib:/opt/gnu/lib:/opt/gnu/lib/gcc-lib/sparc-sun-solaris2.6/2.7.2.3<BR><BR>
+Of course this needs to point to your compiler library and the
+actualy directory will vary.
+<BR><BR>
+An <a href="http://www.visi.com/~barr/ldpath.html">article</a> on why setting LD_LIBRARY_PATH is bad. But hey sometimes you have to.<br><br>
+The default library path is hard-linked into:<BR><PRE>
+	/usr/lib/ld.so.*
+	/usr/lib/libld.so.*
+</PRE>
+Some older notes on installing gcc on Solaris <a href="http://www.lucky.net/docs/gcc_2.7.0/gcc_51.html#SEC54">here</a>.
+<br>
+<br>
+If you experience the following error while running configure scripts:
+<br>
+<pre>
+checking for gcc... cc
+checking whether the C compiler (cc  ) works... no
+configure: error: installation or configuration problem: C compiler cannot create executables.
+</pre>
+This means that configure is trying to use the Solaris /usr/ucb/cc compiler
+instead of the GNU c (gcc) compiler. To fix this make sure you have the
+environment variable CC defined as gcc:
+<pre># CC=gcc;export CC</pre>
+or
+<pre># setenv CC gcc</pre>
+There are other reasons for this error to occur. Check the output of your
+"config.log" file. If you see:
+<pre>
+configure: cc: not found
+</pre>
+This indicates that that configure is indeed looking for the Solaris
+compiler.<br>
+<br>
+Other kinds of problems such as libg++ issues can be resolved by reviewing
+the install notes for <a href="http://www.mysql.com/">MySQL</a> under section 
+<a href="http://www.mysql.com/documentation/mysql/bychapter/manual_Installing.html#Solaris">4.12.1 Solaris Notes</a>.
+<br>
+<br>
+Remember configure uses a cache. So you sometimes have to remove the cache
+and start over if you have made big changes to the compiler.
+<pre># rm -f config.cache</pre>
+<h4>General GNU configure errors:</h4>
+It is imperitive you have the SUNWbtools package installed otherwise you
+will have to install the GNU make and library tools. If SUNWbtools is
+not installed you will see errors like:
+<pre>
+checking for ar... missing_ar
+configure: error: No ar utility found.
+</pre>
+If you wish to use the GNU make tools (and that's probably not a bad idea
+anyway) you can download a pre-compiled make for Solaris from either
+<a href="http://sunfreeware.com">http://sunfreeware.com</a>.
+<br>
+<br>
+Some additional resources which may be of help:
+<br>
+<br>
+The <a href="http://www.faqs.org/faqs/g++-FAQ/plain/">Libg++ FAQ</a>.<br>
+<br>
+Using <a href="http://lclint.cs.virginia.edu/">LClint</a> for ANSI C.<br>
+<br>
+Some <a href="http://www.lysator.liu.se/c/c-www.html">resources</a> for C programming.<br>
+<br>
+<a href="http://www.cit.ac.nz/smac/cprogram/">An Introduction to C Programming</a>.<br>
+<br>
+<a href="http://dir.yahoo.com/computers_and_internet/programming_languages/c_and_c__/">Yahoo's C & C++ Directory</a>
+<br>
+<br>
+<a href="http://www.eskimo.com/~scs/C-faq/top.html">Programming in C FAQ</a>
+<br>
+<br>
+A <a href="http://home.netcom.com/~tjensen/ptr/pointers.htm">tutorial on pointers and arrays in C</a><br>
+<br>
+Please send comments (and corrections :^) ) and updates, etc.. to
+<a href="mailto:kevin@inscoe.org">kevin@inscoe.org</a><br>
