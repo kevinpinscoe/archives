@@ -1,0 +1,127 @@
+North Carolina   (last updated 1/7/99 - send updates to kevin@inscoe.org)
+http://www.inscoe.org/scan-i95
+
+Counties from north to south (MM = mile marker numbers):
+Northampton County MM 
+Halifax County MM
+Nash County MM
+Wilson County (TRS) MM 
+Johnston County MM
+Harnett County (TRS) MM
+Cumberland County MM
+Robeson County MM
+
+* = Comfirmed
+(TRS) = Trunking Radio System in use by pricipality
+
+Bank 4 [North Carolina 1]
+  61 -  42.3800 HP F-13/14
+ *62 -  42.5000 HP F-9/10
+ *63 -  42.5200 HP F-3/4
+  64 -  42.5600 HP
+  65 -  42.5800 HP F-5/8
+  66 -  42.6000 HP Ch. 6?
+  67 -  42.6200 HP F-1/2 Ch. 2? (car-to-car)
+  68 -  42.6400 HP F-7/8 Ch. 8 (car-to-car)
+  69 -  42.8000 HP F-11/12 Ch. 3? (car-to-base)
+  70 -  42.8400 HP Ch. 11?
+  71 -  42.8800 HP
+  72 -  42.9000 HP
+  73 -  42.9200 HP F-17/18
+ *74 -  42.9400 HP F-15/16
+  75 - 154.6800 HP
+  76 - 154.9200 HP
+  77 - 154.6950 HP
+  78 - 155.4750 HP
+  79 -  47.0200 HP
+  80 -  47.1400 HP
+
+Bank 5 [North Carolina 2]
+  81 -  47.2600 HP
+  82 -  47.3200 HP
+  83 -  47.3800 HP
+  84 - 155.1600 Robeson County Ambulance
+       155.1600 Halifax County EMS
+       155.1600 Johnston County Ambulance
+  85 -  46.1400 Robeson County FD
+  86 -  46.4800 Robeson County FD
+  87 - 154.1450 Robeson County FD
+  88 - 154.1900 Robeson County FD
+  89 - 154.3250 Robeson County FD
+  90 - 155.8500 Robeson County LG
+  91 - 158.8350 Robeson County LG
+  92 - 453.3750 Robeson County LG
+  93 -  39.5000 Robeson County LG
+  94 - 155.1900 Robeson County PD
+  95 - 453.6000 Robeson County PD
+  96 - 453.7000 Robeson County PD
+  97 - 460.5250 Robeson County PD
+  98 - 155.2350 Robeson County EMS
+  99 - 155.3400 Robeson County Rescue
+       155.3400 Nash County EMS
+       155.3400 Wilson County EMS
+       155.3400 Johnston County Ambulance
+       155.3400 Halifax County EMS
+ 100 - 154.2500 Cumberland County FD F1
+
+Bank 6 [North Carolina 3]
+ 101 - 154.3550 Cumberland County FD F2
+ 102 - 154.4450 Cumberland County FD 
+       154.4450 Halifax County FD 
+ 103 - 154.2800 Cumberland County FD F3
+       154.2800 Nash County FD
+ 104 - 153.7550 Cumberland County LG
+ 105 - 453.5750 Cumberland County LG
+ 106 - 460.0250 Cumberland County PD
+ 107 - 460.3750 Cumberland County PD
+       460.3750 Johnston County PD
+       460.3750 Harnett County PD
+ 108 - 460.4500 Cumberland County PD
+ 109 - 154.2050 Harnett County FD
+ 110 - 154.4150 Harnett County FD
+ 111 - 155.7600 Harnett County LG
+ 112 - 460.2500 Harnett County PD
+ 113 - 155.2800 Johnston County EMS
+       155.2800 Northampton County EMS
+       155.2800 Halifax County EMS
+       155.2800 Nash County EMS
+       155.2800 Wilson County EMS
+ 114 - 155.2200 Johnston County EMS
+       155.2200 Wilson County Rescue
+ 115 - 153.9500 Johnston County FD
+ 116 - 154.2650 Johnston County FD
+ 117 - 154.3400 Johnston County FD
+ 118 - 154.4450 Johnston County FD
+ 119 - 158.8350 Johnston County LG
+ 120 - 855.7125 Joshnton County LG
+
+Bank 0 [North Carolina 4]
+ 181 - 460.0500 Johnston County PD
+ 182 - 460.2750 Johnston County PD
+ 183 - 155.2350 Johnston County Rescue
+ 184 - 154.1000 Wilson County LG
+ 185 - 154.9800 Wilson County LG
+ 186 - 453.6250 Wilson County LG
+ 187 - 453.7750 Wilson County LG
+ 188 - 155.2500 Wilson County PD
+       155.2500 Halifax County PD
+       155.2500 Northampton County PD
+       155.2500 Nash County PD
+ 189 - 155.5500 Wilson County PD
+ 190 - 158.7900 Wilson County PD
+ 191 - 155.2950 Wilson County EMS
+ 192 - 154.4300 Nash County FD
+ 193 - 155.0550 Nash County LG
+ 194 - 155.8200 Nash County LG
+ 195 - 155.5950 Nash County PD
+ 196 - 155.6250 Halifax County PD
+ 197 -  39.1000 Halifax County PD
+        39.1000 Northampton County PD
+ 198 - 154.3700 Northampton County FD
+ 199 - 155.8800 Northampton County LG
+ 200 - 453.2250 Northampton County LG
+
+Bank 1 [Nationwide and local emergency and mutual aid]
+  14 -  45.2800 Northampton County LG
+
+                
