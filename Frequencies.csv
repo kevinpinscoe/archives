@@ -1,0 +1,1167 @@
+Frequency,User,Location,State,County,Last Confirmed,Monitored From,Strength (1-5),Notes,Mode,Licensee,Allocation,Profile,Transmitter Location,URL
+452.9375,FRED/End of Train - Signal transmitted from locomotive,,US,,,,,,,,,AAR,,
+457.9375,FRED/End of Train - Signal transmitted from end of train,,US,,,,,,,,,AAR,,
+161.1150,FRED/End of Train - Signal transmitted from end of train (Norfolk Southern - being phased out),,US,,,,,,,,,AAR,,
+159.5700,"AAR Ch. 1 - ""In Western Canada, Some Radios Are Programmed For The B.C. Rail Freq (159.570) On AAR Channel 01.",,US,,,,,,,,,AAR,,
+159.8100,AAR Ch.  2,,US,,,,,,,,,AAR,,
+159.9300,AAR Ch. 3,,US,,,,,,,,,AAR,,
+160.0500,AAR Ch. 4,,US,,,,,,,,,AAR,,
+160.1850,AAR Ch. 5,,US,,,,,,,,,AAR,,
+160.2000,AAR Ch. 6,,US,,,,,,,,,AAR,,
+160.2150,AAR Ch. 7,,US,,,,,,,,,AAR,,
+160.2300,AAR Ch. 8,,US,,,,,,,,,AAR,,
+160.2450,AAR Ch. 9,,US,,,,,,,,,AAR,,
+160.2600,AAR Ch. 10,,US,,,,,,,,,AAR,,
+160.2750,AAR Ch. 11,,US,,,,,,,,,AAR,,
+160.2900,AAR Ch. 12,,US,,,,,,,,,AAR,,
+160.3050,AAR Ch. 13,,US,,,,,,,,,AAR
+160.3200,AAR Ch. 14,,US,,,,,,,,,AAR
+160.3350,AAR Ch. 15,,US,,,,,,,,,AAR
+160.3500,AAR Ch. 15,,US,,,,,,,,,AAR
+160.3650,AAR Ch. 17,,US,,,,,,,,,AAR
+160.3800,AAR Ch. 18,,US,,,,,,,,,AAR
+160.3950,AAR Ch. 19,,US,,,,,,,,,AAR
+160.4100,AAR Ch. 20,,US,,,,,,,,,AAR
+160.4250,AAR Ch. 21,,US,,,,,,,,,AAR
+160.4400,AAR Ch. 22,,US,,,,,,,,,AAR
+160.4550,AAR Ch. 23,,US,,,,,,,,,AAR
+160.4700,AAR Ch. 24,,US,,,,,,,,,AAR
+160.4850,AAR Ch. 25,,US,,,,,,,,,AAR
+160.5000,AAR Ch. 26,,US,,,,,,,,,AAR
+160.5150,AAR Ch. 27,,US,,,,,,,,,AAR
+160.5300,AAR Ch. 28,,US,,,,,,,,,AAR
+160.5450,AAR Ch. 29,,US,,,,,,,,,AAR
+160.5600,AAR Ch. 30,,US,,,,,,,,,AAR
+160.5750,AAR Ch. 31,,US,,,,,,,,,AAR
+160.5900,AAR Ch. 32,,US,,,,,,,,,AAR
+160.6050,AAR Ch. 33,,US,,,,,,,,,AAR
+160.6200,AAR Ch. 34,,US,,,,,,,,,AAR
+160.6350,AAR Ch. 35,,US,,,,,,,,,AAR
+160.6500,AAR Ch. 36,,US,,,,,,,,,AAR
+160.6650,AAR Ch. 37,,US,,,,,,,,,AAR
+160.6800,AAR Ch. 38,,US,,,,,,,,,AAR
+160.6950,AAR Ch. 39,,US,,,,,,,,,AAR
+160.7100,AAR Ch. 40,,US,,,,,,,,,AAR
+160.7250,AAR Ch. 41,,US,,,,,,,,,AAR
+160.7400,AAR Ch. 42,,US,,,,,,,,,AAR
+160.7550,AAR Ch. 43,,US,,,,,,,,,AAR
+160.7700,AAR Ch. 44,,US,,,,,,,,,AAR
+160.7850,AAR Ch. 45,,US,,,,,,,,,AAR
+160.8000,AAR Ch. 46,,US,,,,,,,,,AAR
+160.8150,AAR Ch. 47,,US,,,,,,,,,AAR
+160.8300,AAR Ch. 48,,US,,,,,,,,,AAR
+160.8450,AAR Ch. 49,,US,,,,,,,,,AAR
+160.8600,AAR Ch. 50,,US,,,,,,,,,AAR
+160.8750,AAR Ch. 51,,US,,,,,,,,,AAR
+160.8900,AAR Ch. 52,,US,,,,,,,,,AAR
+160.9050,AAR Ch. 53,,US,,,,,,,,,AAR
+160.9200,AAR Ch. 54,,US,,,,,,,,,AAR
+160.9350,AAR Ch. 55,,US,,,,,,,,,AAR
+160.9500,AAR Ch. 56,,US,,,,,,,,,AAR
+160.9650,AAR Ch. 57,,US,,,,,,,,,AAR
+160.9800,AAR Ch. 58,,US,,,,,,,,,AAR
+160.9950,AAR Ch. 59,,US,,,,,,,,,AAR
+161.0100,AAR Ch. 60,,US,,,,,,,,,AAR
+161.0250,AAR Ch. 61,,US,,,,,,,,,AAR
+161.0400,AAR Ch. 62,,US,,,,,,,,,AAR
+161.0550,AAR Ch. 63,,US,,,,,,,,,AAR
+161.0700,AAR Ch. 64,,US,,,,,,,,,AAR
+161.0850,AAR Ch. 65,,US,,,,,,,,,AAR
+161.1000,AAR Ch. 66,,US,,,,,,,,,AAR
+161.1150,AAR Ch. 67,,US,,,,,,,,,AAR
+161.1300,AAR Ch. 68,,US,,,,,,,,,AAR
+161.1450,AAR Ch. 69,,US,,,,,,,,,AAR
+161.1600,AAR Ch. 70,,US,,,,,,,,,AAR
+161.1750,AAR Ch. 71,,US,,,,,,,,,AAR
+161.1900,AAR Ch. 72,,US,,,,,,,,,AAR
+161.2050,AAR Ch. 73,,US,,,,,,,,,AAR
+161.2200,AAR Ch. 74,,US,,,,,,,,,AAR
+161.2350,AAR Ch. 75,,US,,,,,,,,,AAR
+161.2500,AAR Ch. 76,,US,,,,,,,,,AAR
+161.2650,AAR Ch. 77,,US,,,,,,,,,AAR
+161.2800,AAR Ch. 78,,US,,,,,,,,,AAR
+161.2950,AAR Ch. 79,,US,,,,,,,,,AAR
+161.3100,AAR Ch. 80,,US,,,,,,,,,AAR
+161.3250,AAR Ch. 81,,US,,,,,,,,,AAR
+161.3400,AAR Ch. 82,,US,,,,,,,,,AAR
+161.3550,AAR Ch. 83,,US,,,,,,,,,AAR
+161.3700,AAR Ch. 84,,US,,,,,,,,,AAR
+161.3850,AAR Ch. 85,,US,,,,,,,,,AAR
+161.4000,AAR Ch. 86,,US,,,,,,,,,AAR
+161.4150,AAR Ch. 87,,US,,,,,,,,,AAR
+161.4300,AAR Ch. 88,,US,,,,,,,,,AAR
+161.4450,AAR Ch. 89,,US,,,,,,,,,AAR
+161.4600,AAR Ch. 90,,US,,,,,,,,,AAR
+161.4750,AAR Ch. 91,,US,,,,,,,,,AAR
+161.4900,AAR Ch. 92,,US,,,,,,,,,AAR
+161.5050,AAR Ch. 93,,US,,,,,,,,,AAR
+161.5200,AAR Ch. 94,,US,,,,,,,,,AAR
+161.5350,AAR Ch. 95,,US,,,,,,,,,AAR
+161.5500,AAR Ch. 96,,US,,,,,,,,,AAR
+161.5650,AAR Ch. 97,,US,,,,,,,,,AAR
+161.6100,"AAR Ch. 98 - While We're At It, Don't Forget AAR Channel 98, The 'Grandfathered' Rock Island Frequency Of 161.610 That Is Still Licensed In Some Areas For RR Use.""",,US,,,,,,,,,AAR
+153.0350,Arrow Materials & Excavating Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+452.7250,Austin Environmental,,FL,Flagler,,,,,,,,"Flagler County, FL"
+457.7250,Austin Environmental,,FL,Flagler,,,,,,,,"Flagler County, FL"
+464.7250,Bunnell Cypress Company,,FL,Flagler,,,,,,,,"Flagler County, FL"
+464.7750,Bunnell Cypress Company,,FL,Flagler,,,,,,,,"Flagler County, FL"
+154.1000,City Of Bunnell,Bunnell,FL,Flagler,,,,,,,,"Flagler County, FL"
+452.4750,Clegg Sod Farm Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+457.4750,Clegg Sod Farm Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+37.1800,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+39.5800,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+39.9800,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+151.1750,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+153.7550,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+154.3250,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+154.4000,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+154.9500,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+155.0100,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+155.2500,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+155.3700,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+155.4900,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+155.9100,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+156.2100,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+158.9100,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+159.2100,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+453.0375,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+809.9875,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+854.9875,Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+154.1300,Flagler County Firefighters Association Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+154.2950,Flagler County Firefighters Association Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+461.6750,Flagler County Heating Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+466.6750,Flagler County Heating Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+463.7625,Flagler Palm Coast High School,,FL,Flagler,,,,,,,,"Flagler County, FL"
+464.2125,Flagler Palm Coast High School,,FL,Flagler,,,,,,,,"Flagler County, FL"
+462.2500,Greenes Farms Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+467.2500,Greenes Farms Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+35.9400,Knight Jon Boy Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+42.9600,"Logan, Ronald A",,FL,Flagler,,,,,,,,"Flagler County, FL"
+153.3050,M & L Timber Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+158.3700,M & L Timber Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+152.0075,Memorial Hospital Flagler County,,FL,Flagler,,,,,,,,"Flagler County, FL"
+461.5000,Mobile Communications Of Flagler County Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+461.7750,Mobile Communications Of Flagler County Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+466.5000,Mobile Communications Of Flagler County Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+466.7750,Mobile Communications Of Flagler County Inc,,FL,Flagler,,,,,,,,"Flagler County, FL"
+152.4500,Rogers Towing & Recovery Service,,FL,Flagler,,,,,,,,"Flagler County, FL"
+157.4700,Rogers Towing & Recovery Service,,FL,Flagler,,,,,,,,"Flagler County, FL"
+159.3150,National Capitol Park Commission Police Ch. 1,Washington,DC,,,,,,,,,"Frederick, MD"
+159.3900,National Capitol Park Commission Police Ch. 4,Washington,DC,,,,,,,,,"Frederick, MD"
+33.9400,"Caroll County, MD Fire dispatch simulcast",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.1375,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.1875,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.2250,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.3875,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.4250,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.4500,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.4750,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.5000,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.5875,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+867.9375,"Caroll County, MD TRS",,MD,Caroll,,,,,,,,"Frederick, MD"
+36.0500,US Army Base Ft. Detrick Operations,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+37.4200,Gambrills State Park,,MD,Frederick,,,,,,,,"Frederick, MD"
+39.0200,"Frederick County, MD Sheriff",,MD,Frederick,,,,,,,,"Frederick, MD"
+45.2000,"Frederick County, MD LG",,MD,Frederick,,,,,,,,"Frederick, MD"
+46.2400,"Frederick County, MD Fire Ch. 3 - Fireground",,MD,Frederick,,,,,,,,"Frederick, MD"
+46.3400,"Frederick County, MD Fire Ch. 2 - Dispatch",,MD,Frederick,,,,,,,,"Frederick, MD"
+46.3400,"Frederick County, MD Fire Ch. 2 - Dispatch",,MD,Frederick,,,,,,,,"Frederick, MD"
+46.4200,"Frederick County, MD Fire Ch. 1 - Fireground",,MD,Frederick,,,,,,,,"Frederick, MD"
+46.4400,"Frederick County, MD Fire Ch. 4",,MD,Frederick,,,,,,,,"Frederick, MD"
+151.0700,"Frederick County, MD Forestry",,MD,Frederick,,,,,,,,"Frederick, MD"
+151.2050,Gambrills State Park,,MD,Frederick,,,,,,,,"Frederick, MD"
+153.8450,"Frederick County, MD Dispatch",,MD,Frederick,,,,,,,,"Frederick, MD"
+155.0550,Frederick City LG,,MD,Frederick,,,,,,,,"Frederick, MD"
+155.4900,"Frederick County, MD Fire - Police",,MD,Frederick,,,,,,,,"Frederick, MD"
+165.0625,US Army Base Ft. Detrick Fire,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+171.4750,US Army Base Ft. Detrick Operations,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+406.3500,US Army Fort Detrick TRS,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+407.0750,US Army Fort Detrick TRS,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+408.5500,US Army Fort Detrick TRS,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+409.1500,US Army Fort Detrick TRS,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+419.6000,US Army Base Ft. Detrick Health Services,Frederick,MD,Frederick,,,,,,,,"Frederick, MD"
+490.2625,"Frederick County, MD LG",,MD,Frederick,,,,,,,,"Frederick, MD"
+154.1750,"Howard County, MD Fire Ch. ? - Training",,MD,Howard,,,,,,,,"Frederick, MD"
+154.2200,"Howard County, MD Fire Ch. 2 - Fireground",,MD,Howard,,,,,,,,"Frederick, MD"
+154.2500,"Howard County, MD Fire Ch. 1 - Dispatch",,MD,Howard,,,,,,,,"Frederick, MD"
+155.1150,"Howard County, MD Fire Ch. 4 - Countywide",,MD,Howard,,,,,,,,"Frederick, MD"
+155.3700,"Howard County, MD Police Ch. 3 - Tactical",,MD,Howard,,,,,,,,"Frederick, MD"
+155.4600,"Howard County, MD Police Ch. 7 - Unit-to-Unit/Surveillance",,MD,Howard,,,,,,,,"Frederick, MD"
+155.5950,"Howard County, MD Police Ch. 2 - Data/Emergencies/Special Events",,MD,Howard,,,,,,,,"Frederick, MD"
+155.9250,"Howard County, MD Sheriff",,MD,Howard,,,,,,,,"Frederick, MD"
+159.0900,"Howard County, MD Police Ch. 1 - Main",,MD,Howard,,,,,,,,"Frederick, MD"
+461.6500,Johns Hopkins Applied Physics,Laurel,MD,Howard,,,,,,,,"Frederick, MD"
+464.3250,Westvaco,Laurel,MD,Howard,,,,,,,,"Frederick, MD"
+153.9500,"Montgomery County, MD Fire Ch. 2 - Dispatch",,MD,Montgomery,,,,,,,,"Frederick, MD"
+154.1600,"Montgomery County, MD Fire Ch. 2 - Dispatch",,MD,Montgomery,,,,,,,,"Frederick, MD"
+155.1000,"Montgomery County, MD Fire Ch. 4 - Countywide 1",,MD,Montgomery,,,,,,,,"Frederick, MD"
+155.3400,"Montgomery County, MD Fire Ch. 5 - Fireground",,MD,Montgomery,,,,,,,,"Frederick, MD"
+155.5200,"Montgomery County, MD Fire Ch. 3 - Investigation",,MD,Montgomery,,,,,,,,"Frederick, MD"
+155.9850,"Montgomery County, MD Fire Ch. 4 - Countywide 2",,MD,Montgomery,,,,,,,,"Frederick, MD"
+495.3375,"Montgomery County, MD Police Ch. 5 - Germantown District (Sectors M, N, P) ",,MD,Montgomery,,,,,,,,"Frederick, MD"
+33.8600,"Washington County, MD Fire Ch. 1 - Dispatch",,MD,Washington,,,,,,,,"Frederick, MD"
+33.8600,"Washington County, MD Fire Dispatch",,MD,Washington,,,,,,,,"Frederick, MD"
+170.0500,Antietam National Battlefield (Washington County),,MD,Washington,,,,,,,,"Frederick, MD"
+31.3400,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+31.4600,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+31.5000,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+31.9000,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+39.1000,Maryland State Police Statewide,,MD,,,,,,,,,"Frederick, MD"
+39.2000,Maryland State Police Statewide,,MD,,,,,,,,,"Frederick, MD"
+39.2200,Maryland State Marine Patrol,,MD,,,,,,,,,"Frederick, MD"
+39.4000,Maryland State Police Barracks 'B' - Frederick,,MD,,,,,,,,,"Frederick, MD"
+39.4200,Maryland State Police Barracks 'A' - Waterloo,,MD,,,,,,,,,"Frederick, MD"
+39.5200,Maryland State Police Barracks 'G' - Westminster,,MD,,,,,,,,,"Frederick, MD"
+39.6600,Maryland State Police Investigators,,MD,,,,,,,,,"Frederick, MD"
+44.7400,Maryland State Police SysCom (Trooper Helicopter Operations) ,,MD,,,,,,,,,"Frederick, MD"
+44.9000,Maryland State Police Emergency Management ,,MD,,,,,,,,,"Frederick, MD"
+47.0200,"Maryland State Highway Administration Ch. ? - District 5 (Anne Arundel, Calvert, Charles, St. Mary's)",,MD,,,,,,,,,"Frederick, MD"
+47.1000,"Maryland State Highway Administration Ch. ? - District 6 (Allegany, Garrett, Washington)",,MD,,,,,,,,,"Frederick, MD"
+47.1200,"Maryland State Highway Administration Ch. ? - District 7 (Carroll, Frederick, Howard) ",,MD,,,,,,,,,"Frederick, MD"
+47.1400,"Maryland State Highway Administration Ch. 4 - District 2 (Caroline, Cecil, Kent, Queen Anne's, Talbot)",,MD,,,,,,,,,"Frederick, MD"
+47.2000,"Maryland State Highway Administration Ch. 5 - District 3 (Montgomery, Prince George's)",,MD,,,,,,,,,"Frederick, MD"
+47.2600,"Maryland State Highway Administration Ch. 2 - District 4 (Baltimore, Hartford) ",,MD,,,,,,,,,"Frederick, MD"
+47.3200,Maryland State Highway Administration Ch. 1 - Statewide,,MD,,,,,,,,,"Frederick, MD"
+47.4000,"Maryland State Highway Administration Ch. 3 - District 1 (Dorchester, Somerset, Wicomico, Worcester) ",,MD,,,,,,,,,"Frederick, MD"
+47.5000,Maryland State,,MD,,,,,,,,,"Frederick, MD"
+47.6000,Maryland State,,MD,,,,,,,,,"Frederick, MD"
+143.0400,Maryland Emergency Operations Centers (EOC) Net,,MD,,,,,,,,,"Frederick, MD"
+150.9950,Maryland Transportation Management Center,,MD,,,,,,,,,"Frederick, MD"
+151.0400,Maryland State Police Barracks - I95 Patrol,,MD,,,,,,,,,"Frederick, MD"
+151.1450,Maryland DNR Ch. 3 - Forestry/Parks Statewide,,MD,,,,,,,,,"Frederick, MD"
+151.2500,Maryland DNR Ch. 6 - Forestry Southern,,MD,,,,,,,,,"Frederick, MD"
+151.3100,Maryland DNR Ch. 7 - Parks/Enforcement Southern,,MD,,,,,,,,,"Frederick, MD"
+151.3250,Maryland DNR Ch. 2 - Parks/Enforcement Eastern/Western,,MD,,,,,,,,,"Frederick, MD"
+151.3550,Maryland DNR Ch. 4 - Forestry Central,,MD,,,,,,,,,"Frederick, MD"
+151.4150,Maryland DNR Ch. 5 - Parks/Enforcement - Central,,MD,,,,,,,,,"Frederick, MD"
+151.4600,Maryland DNR Ch. 1 - Forestry Eastern/Western,,MD,,,,,,,,,"Frederick, MD"
+155.1900,Maryland State Police Barrick-to-Barrick,,MD,,,,,,,,,"Frederick, MD"
+159.2400,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+159.2700,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+159.2850,Maryland DNR Ch. 8 - Forest Fire Common,,MD,,,,,,,,,"Frederick, MD"
+159.4050,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+159.4500,Maryland DNR Parks Statewide (Base: Tawes/Long Hill),,MD,,,,,,,,,"Frederick, MD"
+166.9500,Ft. McHenry National Historic Park,Baltimore,MD,,,,,,,,,"Frederick, MD"
+172.2750,Maryland DNR ,,MD,,,,,,,,,"Frederick, MD"
+453.0500,Maryland State Highway,,MD,,,,,,,,,"Frederick, MD"
+453.2500,Maryland State Transportation Authority,,MD,,,,,,,,,"Frederick, MD"
+488.4875,Maryland State,,MD,,,,,,,,,"Frederick, MD"
+489.4875,Maryland State,,MD,,,,,,,,,"Frederick, MD"
+46.1800,"Adams County, PA Fire",,PA,Adams,,,,,,,,"Frederick, MD"
+46.1600,"Franklin County, PA Fire",,PA,Franklin,,,,,,,,"Frederick, MD"
+33.9000,"York County, PA Fire",,PA,York,,,,,,,,"Frederick, MD"
+29.6000,10-meter Amateur Radio Calling Frequency,Nationwide,US,,,,,,,,,"Frederick, MD"
+121.5000,US Aero Emergency,Nationwide,US,,,,,,,,,"Frederick, MD"
+146.4900,Ham railfan,Nationwide,US,,,,,,,,,"Frederick, MD"
+146.5650,Ham railfan,Nationwide,US,,,,,,,,,"Frederick, MD"
+148.1375,Civil Air Patrol Ground Operations,Nationwide,US,,,,,,,,,"Frederick, MD"
+148.1500,Civil Air Patrol,Nationwide,US,,,,,,,,,"Frederick, MD"
+149.5375,Civil Air Patrol Air-to-Ground Operations,Nationwide,US,,,,,,,,,"Frederick, MD"
+151.5050,Itinerant,Nationwide,US,,,,,,,,,"Frederick, MD"
+151.6250,Red Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+151.9550,Purple Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+154.5700,Blue Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+154.6000,Green Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+155.1600,National Search and Rescue,Nationwide,US,,,,,,,,,"Frederick, MD"
+155.1750,National Search and Rescue,Nationwide,US,,,,,,,,,"Frederick, MD"
+155.4750,Nationwide Police Mutual Aid,Nationwide,US,,,,,,,,,"Frederick, MD"
+158.4000,Itinerant,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.2300,OML& Metro Sub. Road,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.2900,CSX Yard - Amtrak DC Area,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.3200,OML& Metro Sub. Dispatch.,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.5450,FCEN Dispatcher,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.5600,CSX Police,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.7850,CSX MoW / Engineering,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.8000,Ex-Conrail Ch. 1 - Landover Line,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.8450,Autotrain,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.8750,CSX Police,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.8900,Amtrak PBX,Nationwide,US,,,,,,,,,"Frederick, MD"
+160.9200,CSX Dispatcher AA'',Nationwide,US,,,,,,,,,"Frederick, MD"
+161.1000,CSX Yard - Ex WM road,Nationwide,US,,,,,,,,,"Frederick, MD"
+161.2650,Amtrak PBX,Nationwide,US,,,,,,,,,"Frederick, MD"
+161.2950,Amtrak police,Nationwide,US,,,,,,,,,"Frederick, MD"
+161.4300,Amtrak PBX,Nationwide,US,,,,,,,,,"Frederick, MD"
+161.4750,FCEN Operations,Nationwide,US,,,,,,,,,"Frederick, MD"
+161.5200,CSX Jacksonville Dispatch - Ex - WM Dispatch.,Nationwide,US,,,,,,,,,"Frederick, MD"
+161.5500,Autotrain,Nationwide,US,,,,,,,,,"Frederick, MD"
+171.0450,Wireless Mikes,Nationwide,US,,,,,,,,,"Frederick, MD"
+171.8450,Wireless Mikes,Nationwide,US,,,,,,,,,"Frederick, MD"
+171.9050,Wireless Mikes,Nationwide,US,,,,,,,,,"Frederick, MD"
+173.0750,LoJack,Nationwide,US,,,,,,,,,"Frederick, MD"
+418.7500,DEA,Nationwide,US,,,,,,,,,"Frederick, MD"
+418.7500,DEA Surveillance,Nationwide,US,,,,,,,,,"Frederick, MD"
+451.8000,Itinerant,Nationwide,US,,,,,,,,,"Frederick, MD"
+452.9375,Train EOT/FRED,Nationwide,US,,,,,,,,,"Frederick, MD"
+456.8000,Itinerant,Nationwide,US,,,,,,,,,"Frederick, MD"
+457.9375,Train EOT/FRED,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.5500,GMRS,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.5625,GMRS/FRS Ch. 1,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.5750,GMRS - White Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.5875,GMRS/FRS Ch. 2,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6000,GMRS,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6125,GMRS/FRS Ch. 3,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6250,GMRS - Black Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6375,FRS Ch. 4 (Railfan),Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6375,GMRS/FRS Ch. 4,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6500,GMRS,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6625,GMRS/FRS Ch. 5,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6750,GMRS - Orange Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6750,GMRS Emergency/Calling/REACT,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.6875,GMRS/FRS Ch. 6,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.7000,GMRS,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.7125,GMRS/FRS Ch. 7,Nationwide,US,,,,,,,,,"Frederick, MD"
+462.7250,GMRS,Nationwide,US,,,,,,,,,"Frederick, MD"
+464.5000,Brown Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+464.5500,Yellow Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.5625,FRS Ch. 8,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.5875,FRS Ch. 9,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.6125,FRS Ch. 10,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.6375,FRS Ch. 11,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.6625,FRS Ch. 12,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.6875,FRS Ch. 13,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.7125,FRS Ch. 14,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.7625,J Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.8125,K Dot,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.8500,Silver Star,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.8750,Gold Star,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.9000,Red Star,Nationwide,US,,,,,,,,,"Frederick, MD"
+467.9250,Blue Star,Nationwide,US,,,,,,,,,"Frederick, MD"
+469.5000,Itinerant,Nationwide,US,,,,,,,,,"Frederick, MD"
+469.5500,Itinerant,Nationwide,US,,,,,,,,,"Frederick, MD"
+866.0125,Nationwide Fire Mutual Aid - 800 (Calling),Nationwide,US,,,,,,,,,"Frederick, MD"
+866.5125,Nationwide Fire Mutual Aid - 800 (TAC 1),Nationwide,US,,,,,,,,,"Frederick, MD"
+867.0125,Nationwide Fire Mutual Aid - 800 (TAC 2),Nationwide,US,,,,,,,,,"Frederick, MD"
+867.5125,Nationwide Fire Mutual Aid - 800 (TAC 3),Nationwide,US,,,,,,,,,"Frederick, MD"
+868.0125,Nationwide Fire Mutual Aid - 800 (TAC 4),Nationwide,US,,,,,,,,,"Frederick, MD"
+46.5400,"Clarke County, VA Fire",,VA,Clarke,,,,,,,,"Frederick, MD"
+39.5000,Loudon County Sheriff Ch. ?,,VA,Loudon,,,,,,,,"Frederick, MD"
+39.7800,Loudon County Sheriff Ch. ?,,VA,Loudon,,,,,,,,"Frederick, MD"
+46.3800,Loudon County Fire Ch. 1 - Dispatch,,VA,Loudon,,,,,,,,"Frederick, MD"
+46.3800,"Loudon County, VA Fire",,VA,Loudon,,,,,,,,"Frederick, MD"
+46.4000,Loudon County Fire Ch. 2 - Fireground,,VA,Loudon,,,,,,,,"Frederick, MD"
+147.3000,"Sterling, VA SKYWARN",Sterling,VA,Loudon,,,,,,,,"Frederick, MD"
+145.3500,KA3TQD repeater Harpers Ferry,Harpers Ferry,WV,Jefferson,,,,,,,,"Frederick, MD"
+146.9850,N8EIV repeater Charles Town,Charlestown,WV,Jefferson,,,,,,,,"Frederick, MD"
+153.8150,"Jefferson County, WV Police-Fire Countywide",,WV,Jefferson,,,,,,,,"Frederick, MD"
+153.8300,"Jefferson County, WV FD Ch. 3 Fireground",,WV,Jefferson,,,,,,,,"Frederick, MD"
+153.8600,"Jefferson County, WV FD Ch. 1 Alert",,WV,Jefferson,,,,,,,,"Frederick, MD"
+153.8600,"Jefferson County, WV Fire",,WV,Jefferson,,,,,,,,"Frederick, MD"
+153.8900,"Jefferson County, WV FD Ch. 2 Fireground",,WV,Jefferson,,,,,,,,"Frederick, MD"
+154.5400,"Citizens of Shannondale, Inc.",,WV,Jefferson,,,,,,,,"Frederick, MD"
+154.8750,Jefferson County Sheriff,,WV,Jefferson,,,,,,,,"Frederick, MD"
+155.0400,Harpers Ferry LG,Harpers Ferry,WV,Jefferson,,,,,,,,"Frederick, MD"
+168.4250,Harpers Ferry NHP,Harpers Ferry,WV,Jefferson,,,,,,,,"Frederick, MD"
+31.5800,West Virginia Division of Forestry and Division of Natural Resources,,WV,,,,,,,,,"Frederick, MD"
+42.0600,West Virginia State Police Base,,WV,,,,,,,,,"Frederick, MD"
+45.7800,West Virginia State Police Mobile,,WV,,,,,,,,,"Frederick, MD"
+47.3600,West Virginia Department of Highways,,WV,,,,,,,,,"Frederick, MD"
+153.9350,West Virginia State Police High band Repeater,,WV,,,,,,,,,"Frederick, MD"
+156.0300,West Virginia State Police Mobex & Car to car,,WV,,,,,,,,,"Frederick, MD"
+159.2700,West Virginia Division of Forestry and Division of Natural Resources,,WV,,,,,,,,,"Frederick, MD"
+159.3150,West Virginia Division of Forestry and Division of Natural Resources - Mobex,,WV,,,,,,,,,"Frederick, MD"
+453.7000,West Virginia Department of Highways - Mountain top relay,,WV,,,,,,,,,"Frederick, MD"
+33.0800,Western Maryland Fire Mutual Aid,,,,,,,,,,,"Frederick, MD"
+39.5400,Virginia SIRS Interagency Channel for Police Depts.,,,,,,,,,,,"Frederick, MD"
+122.9000,,,,,,,,,,,,"Frederick, MD"
+123.0250,,,,,,,,,,,,"Frederick, MD"
+151.8050,Thomas J Dailey,,,,,,,,,,,"Frederick, MD"
+154.2650,DC/MD/VA/PA/WV Fire Mutual Aid,,,,,,,,,,,"Frederick, MD"
+154.2800,DC/MD/VA/PA/WV Fire Mutual Aid,,,,,,,,,,,"Frederick, MD"
+154.2950,DC/MD/VA/PA/WV Fire Mutual Aid,,,,,,,,,,,"Frederick, MD"
+159.0000,Virginia State Police Division 7 - Fairfax,,,,,,,,,,,"Frederick, MD"
+160.5300,,,,,,,,,,,,"Frederick, MD"
+160.5900,Amtrak/CSX Road,,,,,,,,,,,"Frederick, MD"
+160.9500,,,,,,,,,,,,"Frederick, MD"
+161.3400,,,,,,,,,,,,"Frederick, MD"
+161.7000,?,,,,,,,,,,,"Frederick, MD"
+161.7300,WTTG Skyfox Chopper,,,,,,,,,,,"Frederick, MD"
+161.7600,WTTG Skyfox Chopper,,,,,,,,,,,"Frederick, MD"
+166.9500,C&O Canal Rangers - Unit-to-Unit,,,,,,,,,,,"Frederick, MD"
+168.3000,C&O Canal NHP,,,,,,,,,,,"Frederick, MD"
+173.3750,Washington Post,,,,,,,,,,,"Frederick, MD"
+450.2125,WUSA TV-9 Newsdesk,,,,,,,,,,,"Frederick, MD"
+450.2375,Metro Traffic Control,,,,,,,,,,,"Frederick, MD"
+450.6500,WMAL Traffic Reports,,,,,,,,,,,"Frederick, MD"
+450.7500,?,,,,,,,,,,,"Frederick, MD"
+452.6500,SmarTraveler,,,,,,,,,,,"Frederick, MD"
+452.9750,Citywide Radio,,,,,,,,,,,"Frederick, MD"
+452.9750,'Firebuffs',,,,,,,,,,,"Frederick, MD"
+455.1125,WJLA TV-7 Chopper,,,,,,,,,,,"Frederick, MD"
+455.1500,WRC TV-4 IFB,,,,,,,,,,,"Frederick, MD"
+455.5500,TV-7 WJLA Chopper,,,,,,,,,,,"Frederick, MD"
+455.9125,WUSA TV-9 Newsdesk,,,,,,,,,,,"Frederick, MD"
+460.0500,Baltimore Area 'Metro' Police Mutual Aid,,,,,,,,,,,"Frederick, MD"
+856.4875,,,,,,,,,,,,"Frederick, MD"
+857.4875,,,,,,,,,,,,"Frederick, MD"
+858.4875,,,,,,,,,,,,"Frederick, MD"
+859.4875,,,,,,,,,,,,"Frederick, MD"
+860.4875,,,,,,,,,,,,"Frederick, MD"
+866.3625,DC Metro Area P-MARS,,,,,,,,,,,"Frederick, MD"
+154.4450,Jacksonville Fire Department (dispatch),Jacksonville,FL,Duval,,,,,,,,I95
+154.3550,Jacksonville Fire Department,Jacksonville,FL,Duval,,,,,,,,I95
+154.3550,St. Johns County Fire Department,Jacksonville,FL,Duval,,,,,,,,I95
+460.5750,Jacksonville Fire Department F1,Jacksonville,FL,Duval,,,,,,,,I95
+460.6000,Jacksonville Fire Department F2,Jacksonville,FL,Duval,,,,,,,,I95
+460.6250,Jacksonville Fire Department F3,Jacksonville,FL,Duval,,,,,,,,I95
+39.0600,Jacksonville Local Government (sheriff?),Jacksonville,FL,Duval,,,,,,,,I95
+154.0550,Jacksonville Local Government,Jacksonville,FL,Duval,,,,,,,,I95
+155.8200,Jacksonville Local Government,Jacksonville,FL,Duval,,,,,,,,I95
+158.8050,Jacksonville Local Government,Jacksonville,FL,Duval,,,,,,,,I95
+39.4000,Jacksonville Police Department,Jacksonville,FL,Duval,,,,,,,,I95
+453.3250,Jacksonville Police Department (tactical),Jacksonville,FL,Duval,,,,,,,,I95
+453.5250,Jacksonville Police Department (tactical),Jacksonville,FL,Duval,,,,,,,,I95
+453.9250,Jacksonville Police Department,Jacksonville,FL,Duval,,,,,,,,I95
+453.9500,Jacksonville Police Department,Jacksonville,FL,Duval,,,,,,,,I95
+155.8500,Jacksonville Police Department,Jacksonville,FL,Duval,,,,,,,,I95
+155.9100,Jacksonville Police Department,Jacksonville,FL,Duval,,,,,,,,I95
+156.1500,Jacksonville Police Department,Jacksonville,FL,Duval,,,,,,,,I95
+453.0500,Jacksonville Police Department Zone 3(midcity),Jacksonville,FL,Duval,,,,,,,,I95
+453.1000,Jacksonville Police Department Zone 2 (west),Jacksonville,FL,Duval,,,,,,,,I95
+453.1500,Jacksonville Police Department Zone 1 (north),Jacksonville,FL,Duval,,,,,,,,I95
+453.2000,Jacksonville Police Department F6 (investigation),Jacksonville,FL,Duval,,,,,,,,I95
+453.2500,Jacksonville Police Department (administrative),Jacksonville,FL,Duval,,,,,,,,I95
+453.3000,Jacksonville Police Department F7 (info),Jacksonville,FL,Duval,,,,,,,,I95
+453.3500,Jacksonville Police Department F8 (staff),Jacksonville,FL,Duval,,,,,,,,I95
+453.4000,Jacksonville Police Department F5 (tactical),Jacksonville,FL,Duval,,,,,,,,I95
+453.4500,Jacksonville Police Department Zone 4 (south),Jacksonville,FL,Duval,,,,,,,,I95
+453.5500,Jacksonville Police Department F10 (detectives),Jacksonville,FL,Duval,,,,,,,,I95
+453.6000,Jacksonville Police Department (tactical),Jacksonville,FL,Duval,,,,,,,,I95
+460.4000,Jacksonville Police Department,Jacksonville,FL,Duval,,,,,,,,I95
+159.1050,Jacksonville Roads,Jacksonville,FL,Duval,,,,,,,,I95
+155.2800,Jacksonville EMS (dispatch),Jacksonville,FL,Duval,,,,,,,,I95
+155.3400,Flagler County EMS,,FL,Flagler,,,,,,,,I95
+154.1300,Flagler County Fire Department,,FL,Flagler,,,,,,,,I95
+151.2500,Flagler County Forestry,,FL,Flagler,,,,,,,,I95
+154.3250,Flagler County Fire Department,,FL,Flagler,,,,,,,,I95
+154.4000,Flagler County Fire Department,,FL,Flagler,,,,,,,,I95
+37.1800,Flagler County Local Government,,FL,Flagler,,,,,,,,I95
+39.5800,Flagler County Local Government,,FL,Flagler,,,,,,,,I95
+39.9800,Flagler County Local Government,,FL,Flagler,,,,,,,,I95
+453.0375,Flagler County Local Government,,FL,Flagler,,,,,,,,I95
+854.9875,Flagler County Local Government,,FL,Flagler,,,,,,,,I95
+158.9100,Flagler County Police Department,,FL,Flagler,,,,,,,,I95
+154.1000,Bunnell Fire Department,Bunnell,FL,Flagler,,,,,,,,I95
+39.9000,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+153.7400,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+155.9250,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+158.7750,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+158.8350,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+158.9250,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+159.1950,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+155.1300,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+155.6400,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+156.0300,Nassau County Local Government,,FL,Nassau,,,,,,,,I95
+154.0400,St. Johns County Sheriff,,FL,St. Johns,,,,,,,,I95
+154.6500,St. Johns County Sheriff,,FL,St. Johns,,,,,,,,I95
+154.7700,St. Johns County Sheriff,,FL,St. Johns,,,,,,,,I95
+154.8450,St. Johns County Sheriff,,FL,St. Johns,,,,,,,,I95
+154.9500,St. Johns County Sheriff,,FL,St. Johns,,,,,,,,I95
+155.6550,St. Johns County Sheriff,,FL,St. Johns,,,,,,,,I95
+39.5000,St. Johns County Police Intersystem,,FL,St. Johns,,,,,,,,I95
+154.4150,St. Johns County Fire Department,,FL,St. Johns,,,,,,,,I95
+154.0700,St. Johns County Fire Department,,FL,St. Johns,,,,,,,,I95
+155.3400,St. Johns County EMS,,FL,St. Johns,,,,,,,,I95
+153.7400,St. Johns County Local Government,,FL,St. Johns,,,,,,,,I95
+155.1150,St. Johns County Local Government,,FL,St. Johns,,,,,,,,I95
+158.7750,St. Johns County Local Government,,FL,St. Johns,,,,,,,,I95
+453.6250,St. Johns County Local Government,,FL,St. Johns,,,,,,,,I95
+45.3600,St. Johns County Local Government,,FL,St. Johns,,,,,,,,I95
+156.1650,St. Johns County Roads,,FL,St. Johns,,,,,,,,I95
+154.4150,Daytona Beach Fire Department (dispatch),Daytona Beach,FL,Volusia,,,,,,,,I95
+154.3400,Volusia County Fire Department (county fire stations dispatch simulcast),,FL,Volusia,,,,,,,,I95
+154.1250,Daytona Beach Fire Department (fireground),Daytona Beach,FL,Volusia,,,,,,,,I95
+153.7700,Daytona Beach Fire Department,Daytona Beach,FL,Volusia,,,,,,,,I95
+153.9800,Daytona Beach Local Government,Daytona Beach,FL,Volusia,,,,,,,,I95
+453.8250,Daytona Beach Local Government,Daytona Beach,FL,Volusia,,,,,,,,I95
+453.8750,Daytona Beach Local Government,Daytona Beach,FL,Volusia,,,,,,,,I95
+453.9125,Daytona Beach Local Government,Daytona Beach,FL,Volusia,,,,,,,,I95
+453.2125,Daytona Beach Local Government,Daytona Beach,FL,Volusia,,,,,,,,I95
+154.7850,Daytona Beach Police Department Ch. 1 (west - mainland),Daytona Beach,FL,Volusia,,,,,,,,I95
+155.0700,Daytona Beach Police Department Ch. 2 (east - beachside),Daytona Beach,FL,Volusia,,,,,,,,I95
+154.0400,Daytona Beach Police Department Ch. 3 (traffic),Daytona Beach,FL,Volusia,,,,,,,,I95
+154.6800,Florida Highway Patrol Ch. 1,,FL,,,,,,,,,I95
+154.6950,Florida Highway Patrol Ch. 2,,FL,,,,,,,,,I95
+154.6650,Florida Highway Patrol Ch. 3,,FL,,,,,,,,,I95
+154.9200,"Florida Highway Patrol Ch. 4 (car-to-car, car-to-helo)",,FL,,,,,,,,,I95
+155.3700,Statewide Police Intersystem,,FL,,,,,,,,,I95
+170.2450,Florida Highway Patrol wireless mikes,,FL,,,,,,,,,I95
+171.0450,Florida Highway Patrol wireless mikes,,FL,,,,,,,,,I95
+171.9050,Florida Highway Patrol wireless mikes,,FL,,,,,,,,,I95
+154.9500,Intercity,,FL,,,,,,,,,I95
+155.1150, Camden County LG,,GA,Camden,,,,,,,,I95
+155.0100, Camden County LG,,GA,Camden,,,,,,,,I95
+155.8800, Camden County LG,,GA,Camden,,,,,,,,I95
+153.7550, Camden County LG,,GA,Camden,,,,,,,,I95
+159.1650, Camden County PD,,GA,Camden,,,,,,,,I95
+154.8450, Camden County PD,,GA,Camden,,,,,,,,I95
+155.1600, Camden County Emergency,,GA,Camden,,,,,,,,I95
+153.8150, Camden County LG,,GA,Camden,,,,,,,,I95
+453.2250, Camden County LG,,GA,Camden,,,,,,,,I95
+154.3850, Chatham/Glynn County Fire,,GA,Chatham,,,,,,,,I95
+155.3400, Chatham County EMS (HEAR),,GA,Chatham,,,,,,,,I95
+155.1300, Chatham County PD Dispatch,,GA,Chatham,,,,,,,,I95
+155.1600, Chatham County EMS,,GA,Chatham,,,,,,,,I95
+154.3850,Glynn County Fire,,GA,Glynn,,,,,,,,I95
+154.1750, Glynn County Fire,,GA,Glynn,,,,,,,,I95
+158.8350, Glynn County LG,,GA,Glynn,,,,,,,,I95
+453.8000, Glynn County LG,,GA,Glynn,,,,,,,,I95
+159.2100, Glynn County LG,,GA,Glynn,,,,,,,,I95
+154.2050, Liberty County Fire,,GA,Liberty,,,,,,,,I95
+153.9800, Liberty County LG,,GA,Liberty,,,,,,,,I95
+155.9250, Liberty County LG,,GA,Liberty,,,,,,,,I95
+155.9700, Liberty County Sheriff,,GA,Liberty,,,,,,,,I95
+154.4150, McIntosh County Fire,,GA,McIntosh,,,,,,,,I95
+159.1050, McIntosh County Police,,GA,McIntosh,,,,,,,,I95
+159.1950, McIntosh County Police,,GA,McIntosh,,,,,,,,I95
+155.7750, McIntosh County Police,,GA,McIntosh,,,,,,,,I95
+154.3250, Richmond Hill FD,Richmond Hill,GA,,,,,,,,,I95
+155.5200, Richmond Hill PD,Richmond Hill,GA,,,,,,,,,I95
+154.9050, Statewide Police Intersystem,,GA,,,,,,,,,I95
+154.9350, Statewide Police Intersystem,,GA,,,,,,,,,I95
+42.0200, State Police Intersystem,,GA,,,,,,,,,I95
+154.6800, Georgia State Police Ch. 2 car-to-car,,GA,,,,,,,,,I95
+155.3700, Georgia Intercity Coordination,,GA,,,,,,,,,I95
+155.4750, GEORGIA STATE POLICE,,GA,,,,,,,,,I95
+47.3000, Georgia Department of Transportation Ch. 1,,GA,,,,,,,,,I95
+47.3200, Georgia Department of Transportation Ch. 2,,GA,,,,,,,,,I95
+47.3400, Georgia Department of Transportation Ch. 3,,GA,,,,,,,,,I95
+47.4000, Georgia Department of Transportation Ch. 4,,GA,,,,,,,,,I95
+154.4450, Cumberland County Fire Department,,NC,Cumberland,,,,,,,,I95
+154.2500, Cumberland County Fire Department F1,,NC,Cumberland,,,,,,,,I95
+154.3550, Cumberland County Fire Department F2,,NC,Cumberland,,,,,,,,I95
+154.2800, Cumberland County Fire Department F3,,NC,Cumberland,,,,,,,,I95
+153.7550, Cumberland County LG,,NC,Cumberland,,,,,,,,I95
+453.5750, Cumberland County LG,,NC,Cumberland,,,,,,,,I95
+460.0250, Cumberland County Police Department,,NC,Cumberland,,,,,,,,I95
+460.3750, Cumberland County Police Department,,NC,Cumberland,,,,,,,,I95
+460.4500, Cumberland County Police Department,,NC,Cumberland,,,,,,,,I95
+155.1600, Halifax County EMS,,NC,Halifax,,,,,,,,I95
+155.2800, Halifax County EMS,,NC,Halifax,,,,,,,,I95
+155.3400, Halifax County EMS,,NC,Halifax,,,,,,,,I95
+154.4450, Halifax County Fire Department,,NC,Halifax,,,,,,,,I95
+39.1000, Halifax County Police Department,,NC,Halifax,,,,,,,,I95
+155.2500, Halifax County Police Department,,NC,Halifax,,,,,,,,I95
+155.6250, Halifax County Police Department,,NC,Halifax,,,,,,,,I95
+154.2050, Harnett County Fire Department,,NC,Harnett,,,,,,,,I95
+154.4150, Harnett County Fire Department,,NC,Harnett,,,,,,,,I95
+155.7600, Harnett County LG,,NC,Harnett,,,,,,,,I95
+460.2500, Harnett County Police Department,,NC,Harnett,,,,,,,,I95
+460.3750, Harnett County Police Department,,NC,Harnett,,,,,,,,I95
+155.1600, Johnston County Ambulance,,NC,Johnston,,,,,,,,I95
+155.3400, Johnston County Ambulance,,NC,Johnston,,,,,,,,I95
+155.2200, Johnston County EMS,,NC,Johnston,,,,,,,,I95
+155.2800, Johnston County EMS,,NC,Johnston,,,,,,,,I95
+153.9500, Johnston County Fire Department,,NC,Johnston,,,,,,,,I95
+154.2650, Johnston County Fire Department,,NC,Johnston,,,,,,,,I95
+154.3400, Johnston County Fire Department,,NC,Johnston,,,,,,,,I95
+154.4450, Johnston County Fire Department,,NC,Johnston,,,,,,,,I95
+158.8350, Johnston County LG,,NC,Johnston,,,,,,,,I95
+460.0500, Johnston County Police Department,,NC,Johnston,,,,,,,,I95
+460.2750, Johnston County Police Department,,NC,Johnston,,,,,,,,I95
+460.3750, Johnston County Police Department,,NC,Johnston,,,,,,,,I95
+155.2350, Johnston County Rescue,,NC,Johnston,,,,,,,,I95
+855.7125, Joshnton County LG,,NC,Johnston,,,,,,,,I95
+155.2800, Nash County EMS,,NC,Nash,,,,,,,,I95
+155.3400, Nash County EMS,,NC,Nash,,,,,,,,I95
+154.2800, Nash County Fire Department,,NC,Nash,,,,,,,,I95
+154.4300, Nash County Fire Department,,NC,Nash,,,,,,,,I95
+155.0550, Nash County LG,,NC,Nash,,,,,,,,I95
+155.8200, Nash County LG,,NC,Nash,,,,,,,,I95
+155.2500, Nash County Police Department,,NC,Nash,,,,,,,,I95
+155.5950, Nash County Police Department,,NC,Nash,,,,,,,,I95
+155.2800, Northampton County EMS,,NC,Northampton,,,,,,,,I95
+154.3700, Northampton County Fire Department,,NC,Northampton,,,,,,,,I95
+45.2800, Northampton County LG,,NC,Northampton,,,,,,,,I95
+155.8800, Northampton County LG,,NC,Northampton,,,,,,,,I95
+453.2250, Northampton County LG,,NC,Northampton,,,,,,,,I95
+39.1000, Northampton County Police Department,,NC,Northampton,,,,,,,,I95
+155.2500, Northampton County Police Department,,NC,Northampton,,,,,,,,I95
+155.1600, Robeson County Ambulance,,NC,Robeson,,,,,,,,I95
+155.2350, Robeson County EMS,,NC,Robeson,,,,,,,,I95
+46.1400, Robeson County Fire Department,,NC,Robeson,,,,,,,,I95
+46.4800, Robeson County Fire Department,,NC,Robeson,,,,,,,,I95
+154.1450, Robeson County Fire Department,,NC,Robeson,,,,,,,,I95
+154.1900, Robeson County Fire Department,,NC,Robeson,,,,,,,,I95
+154.3250, Robeson County Fire Department,,NC,Robeson,,,,,,,,I95
+39.5000, Robeson County LG,,NC,Robeson,,,,,,,,I95
+155.8500, Robeson County LG,,NC,Robeson,,,,,,,,I95
+158.8350, Robeson County LG,,NC,Robeson,,,,,,,,I95
+453.3750, Robeson County LG,,NC,Robeson,,,,,,,,I95
+155.1900, Robeson County Police Department,,NC,Robeson,,,,,,,,I95
+453.6000, Robeson County Police Department,,NC,Robeson,,,,,,,,I95
+453.7000, Robeson County Police Department,,NC,Robeson,,,,,,,,I95
+460.5250, Robeson County Police Department,,NC,Robeson,,,,,,,,I95
+155.3400, Robeson County Rescue,,NC,Robeson,,,,,,,,I95
+155.2800, Wilson County EMS,,NC,Wilson,,,,,,,,I95
+155.2950, Wilson County EMS,,NC,Wilson,,,,,,,,I95
+155.3400, Wilson County EMS,,NC,Wilson,,,,,,,,I95
+154.1000, Wilson County LG,,NC,Wilson,,,,,,,,I95
+154.9800, Wilson County LG,,NC,Wilson,,,,,,,,I95
+453.6250, Wilson County LG,,NC,Wilson,,,,,,,,I95
+453.7750, Wilson County LG,,NC,Wilson,,,,,,,,I95
+155.2500, Wilson County Police Department,,NC,Wilson,,,,,,,,I95
+155.5500, Wilson County Police Department,,NC,Wilson,,,,,,,,I95
+158.7900, Wilson County Police Department,,NC,Wilson,,,,,,,,I95
+155.2200, Wilson County Rescue,,NC,Wilson,,,,,,,,I95
+42.5600, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+42.8800, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+42.9000, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+47.0200, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+47.1400, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+47.2600, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+47.3200, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+47.3800, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+154.6800, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+154.6950, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+154.9200, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+155.4750, North Carolina Highway Patrol,,NC,,,,,,,,,I95
+42.8400, North Carolina Highway Patrol Ch. 11?,,NC,,,,,,,,,I95
+42.6000, North Carolina Highway Patrol Ch. 6?,,NC,,,,,,,,,I95
+42.6200, North Carolina Highway Patrol F-1/2 Ch. 2? (car-to-car),,NC,,,,,,,,,I95
+42.8000, North Carolina Highway Patrol F-11/12 Ch. 3? (car-to-base),,NC,,,,,,,,,I95
+42.3800, North Carolina Highway Patrol F-13/14,,NC,,,,,,,,,I95
+42.9400, North Carolina Highway Patrol F-15/16,,NC,,,,,,,,,I95
+42.9200, North Carolina Highway Patrol F-17/18,,NC,,,,,,,,,I95
+42.5200, North Carolina Highway Patrol F-3/4,,NC,,,,,,,,,I95
+42.5800, North Carolina Highway Patrol F-5/8,,NC,,,,,,,,,I95
+42.6400, North Carolina Highway Patrol F-7/8 Ch. 8 (car-to-car),,NC,,,,,,,,,I95
+42.5000, North Carolina Highway Patrol F-9/10,,NC,,,,,,,,,I95
+155.4000, Clarendon County EMS,,SC,Clarendon,,,,,,,,I95
+154.3700, Clarendon County Fire,,SC,Clarendon,,,,,,,,I95
+155.3400, Clarendon County Hospital,,SC,Clarendon,,,,,,,,I95
+153.7400, Clarendon County LG,,SC,Clarendon,,,,,,,,I95
+155.1900, Clarendon County PD,,SC,Clarendon,,,,,,,,I95
+155.2650, Clarendon County Rescue Squad,,SC,Clarendon,,,,,,,,I95
+155.1750, Colleton County EMS,,SC,Colleton,,,,,,,,I95
+154.1450, Colleton County Fire,,SC,Colleton,,,,,,,,I95
+154.1450, Colleton County Fire,,SC,Colleton,,,,,,,,I95
+155.3400, Colleton County Hospital,,SC,Colleton,,,,,,,,I95
+154.0250, Colleton County LG,,SC,Colleton,,,,,,,,I95
+155.1750, Colleton County Medical Emergency,,SC,Colleton,,,,,,,,I95
+155.3400, Colleton County Medical Emergency,,SC,Colleton,,,,,,,,I95
+460.2750, Colleton County PD,,SC,Colleton,,,,,,,,I95
+460.3500, Colleton County PD,,SC,Colleton,,,,,,,,I95
+460.4500, Colleton County PD,,SC,Colleton,,,,,,,,I95
+155.0700, Colleton County PD ,,SC,Colleton,,,,,,,,I95
+155.2350, Colleton County React,,SC,Colleton,,,,,,,,I95
+156.2250, Colleton Rural FD,Colleton,SC,Colleton,,,,,,,,I95
+155.2200, Darlington County EMS,,SC,Darlington,,,,,,,,I95
+155.3400, Darlington County EMS,,SC,Darlington,,,,,,,,I95
+154.4450, Darlington County FD,,SC,Darlington,,,,,,,,I95
+154.0550, Darlington County LG,,SC,Darlington,,,,,,,,I95
+460.1000, Darlington County PD,,SC,Darlington,,,,,,,,I95
+460.2000, Darlington County PD,,SC,Darlington,,,,,,,,I95
+460.2500, Darlington County PD,,SC,Darlington,,,,,,,,I95
+159.1050, Darlington County Roads,,SC,Darlington,,,,,,,,I95
+460.2250, Dillon PD,Dillon,SC,Dillon,,,,,,,,I95
+460.2500, Dillon PD,Dillon,SC,Dillon,,,,,,,,I95
+460.4750, Dillon PD,Dillon,SC,Dillon,,,,,,,,I95
+155.2200, Dillon County EMS,,SC,Dillon,,,,,,,,I95
+39.1000, Dillon County LG,,SC,Dillon,,,,,,,,I95
+39.1800, Dillon County LG,,SC,Dillon,,,,,,,,I95
+460.2250, Dillon County PD,,SC,Dillon,,,,,,,,I95
+460.2500, Dillon County PD,,SC,Dillon,,,,,,,,I95
+155.2200, Dillon EMS,Dillon,SC,Dillon,,,,,,,,I95
+155.2200, Dorchester County EMS,,SC,Dorchester,,,,,,,,I95
+153.7550, Dorchester County FD,,SC,Dorchester,,,,,,,,I95
+154.2050, Dorchester County FD,,SC,Dorchester,,,,,,,,I95
+156.1800, Dorchester County LG,,SC,Dorchester,,,,,,,,I95
+155.3400, Dorchester County Medical Emergency,,SC,Dorchester,,,,,,,,I95
+154.8900, Dorchester County PD,,SC,Dorchester,,,,,,,,I95
+155.0700, Dorchester County PD,,SC,Dorchester,,,,,,,,I95
+155.7300, Dorchester County PD,,SC,Dorchester,,,,,,,,I95
+45.6400,Dorchester County LG,,SC,Dorchester,,,,,,,,I95
+155.2050, Florence County EMS,,SC,Florence,,,,,,,,I95
+155.2200, Florence County EMS,,SC,Florence,,,,,,,,I95
+453.1750, Florence County EMS,,SC,Florence,,,,,,,,I95
+46.3800, Florence County FD,,SC,Florence,,,,,,,,I95
+461.0500, Medical Transport System (Florence),Florence,SC,Florence,,,,,,,,I95
+154.2200, Hampton County FD,,SC,Hampton,,,,,,,,I95
+453.4500, Hampton County LG,,SC,Hampton,,,,,,,,I95
+460.0750, Hampton County PD,,SC,Hampton,,,,,,,,I95
+154.4150, Jasper County Fire,,SC,Jasper,,,,,,,,I95
+155.1750, Jasper County Hospital,,SC,Jasper,,,,,,,,I95
+155.3400, Jasper County Hospital,,SC,Jasper,,,,,,,,I95
+45.4400, Jasper County LG,,SC,Jasper,,,,,,,,I95
+460.1500, Jasper County Police,,SC,Jasper,,,,,,,,I95
+154.3850, Orangeburg County FD (Dispatch),,SC,Orangeburg,,,,,,,,I95
+154.1750, Orangeburg County FD (Fireground),,SC,Orangeburg,,,,,,,,I95
+158.8500, Orangeburg County PD,,SC,Orangeburg,,,,,,,,I95
+453.0500, Orangeburg County PD Ch. 3 (East),,SC,Orangeburg,,,,,,,,I95
+154.3400, Sumter FD,Sumter,SC,Sumter,,,,,,,,I95
+155.8650, Sumter LG,Sumter,SC,Sumter,,,,,,,,I95
+33.9000, Sumter County LG,,SC,Sumter,,,,,,,,I95
+154.0400, Sumter County LG,,SC,Sumter,,,,,,,,I95
+154.8000, Sumter County PD,,SC,Sumter,,,,,,,,I95
+154.8450, Sumter County PD,,SC,Sumter,,,,,,,,I95
+154.8750, Sumter County PD,,SC,Sumter,,,,,,,,I95
+155.5500, Sumter County PD,,SC,Sumter,,,,,,,,I95
+159.0300, Sumter County PD,,SC,Sumter,,,,,,,,I95
+158.7600, Walterboro LG,,SC,Walterboro,,,,,,,,I95
+47.2200, South Carolina DOT,,SC,,,,,,,,,I95
+42.1000, South Carolina Highway Patrol F-1/2 (District 6 - Beaufort),,SC,,,,,,,,,I95
+42.1200, South Carolina Highway Patrol F-3 (District 4 - Chester),,SC,,,,,,,,,I95
+42.0800, South Carolina Highway Patrol F-4 (District 5 - Florence),,SC,,,,,,,,,I95
+42.2600, South Carolina Highway Patrol F-5 (TAC),,SC,,,,,,,,,I95
+42.3400, South Carolina Highway Patrol F-6 (District 1 - Columbia),,SC,,,,,,,,,I95
+42.1400, South Carolina Highway Patrol F-7 District 3 - Greenville),,SC,,,,,,,,,I95
+42.0600, South Carolina Highway Patrol F-8 (District 7 - Orangeburg),,SC,,,,,,,,,I95
+155.9550, South Carolina State Police Intersystem,,SC,,,,,,,,,I95
+154.3850,Caroline County FD,,VA,Caroline,,,,,,,,I95
+154.9650,Caroline County LG,,VA,Caroline,,,,,,,,I95
+158.7750,Caroline County LG,,VA,Caroline,,,,,,,,I95
+158.8050,Caroline County LG,,VA,Caroline,,,,,,,,I95
+39.2000,Caroline County PD,,VA,Caroline,,,,,,,,I95
+158.7900,Caroline County PD,,VA,Caroline,,,,,,,,I95
+155.2350,Chesterfield County EMS,,VA,Chesterfield,,,,,,,,I95
+155.2650,Chesterfield County EMS,,VA,Chesterfield,,,,,,,,I95
+46.3400,Chesterfield County FD,,VA,Chesterfield,,,,,,,,I95
+46.4600,Chesterfield County FD,,VA,Chesterfield,,,,,,,,I95
+154.1600,Chesterfield County FD,,VA,Chesterfield,,,,,,,,I95
+45.1200,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+45.3200,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+154.0550,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+154.9950,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+155.7000,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+155.7600,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+453.1000,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+852.4875,Chesterfield County LG,,VA,Chesterfield,,,,,,,,I95
+153.9650,Chesterfield County LG (intersystem?),,VA,Chesterfield,,,,,,,,I95
+154.7550,Chesterfield County PD,,VA,Chesterfield,,,,,,,,I95
+154.8750,Chesterfield County PD,,VA,Chesterfield,,,,,,,,I95
+155.5650,Chesterfield County PD,,VA,Chesterfield,,,,,,,,I95
+39.8600,Greensville County LG,,VA,Greensville,,,,,,,,I95
+39.9000,Greensville County LG,,VA,Greensville,,,,,,,,I95
+155.2800,Greensville County Rescue Squad,,VA,Greensville,,,,,,,,I95
+154.0100,Hanover County FD,,VA,Hanover,,,,,,,,I95
+154.2950,Hanover County FD,,VA,Hanover,,,,,,,,I95
+158.7600,Hanover County FD,,VA,Hanover,,,,,,,,I95
+155.4300,Hanover County PD,,VA,Hanover,,,,,,,,I95
+156.0300,Hanover County PD,,VA,Hanover,,,,,,,,I95
+154.3400,Henrico County FD,,VA,Henrico,,,,,,,,I95
+154.4300,Henrico County FD,,VA,Henrico,,,,,,,,I95
+154.0250,Henrico County LG,,VA,Henrico,,,,,,,,I95
+154.0850,Henrico County LG,,VA,Henrico,,,,,,,,I95
+453.9250,Henrico County LG,,VA,Henrico,,,,,,,,I95
+37.1400,Henrico County PD,,VA,Henrico,,,,,,,,I95
+156.2100,Henrico County PD,,VA,Henrico,,,,,,,,I95
+460.0750,Henrico County PD,,VA,Henrico,,,,,,,,I95
+460.1250,Henrico County PD,,VA,Henrico,,,,,,,,I95
+460.1750,Henrico County PD,,VA,Henrico,,,,,,,,I95
+460.2250,Henrico County PD,,VA,Henrico,,,,,,,,I95
+460.2750,Henrico County PD,,VA,Henrico,,,,,,,,I95
+460.3500,Henrico County PD,,VA,Henrico,,,,,,,,I95
+460.4500,Henrico County PD,,VA,Henrico,,,,,,,,I95
+155.2050,Henrico County Rescue,,VA,Henrico,,,,,,,,I95
+155.2200,Henrico County Rescue,,VA,Henrico,,,,,,,,I95
+154.1900,Petersburg FD,Petersburg,VA,,,,,,,,,I95
+460.5250,Petersburg FD Ch. 1,Petersburg,VA,,,,,,,,,I95
+460.6000,Petersburg FD Ch. 2,Petersburg,VA,,,,,,,,,I95
+453.6750,Petersburg LG,Petersburg,VA,,,,,,,,,I95
+458.2000,Petersburg LG,Petersburg,VA,,,,,,,,,I95
+460.2500,Petersburg LG,Petersburg,VA,,,,,,,,,I95
+460.3750,Petersburg LG,Petersburg,VA,,,,,,,,,I95
+460.4750,Petersburg LG,Petersburg,VA,,,,,,,,,I95
+460.5500,Petersburg LG,Petersburg,VA,,,,,,,,,I95
+155.0550,Prince George County,,VA,Prince George,,,,,,,,I95
+155.1150,Prince George County,,VA,Prince George,,,,,,,,I95
+154.3700,Prince William County FD F1 (fireground-west),,VA,Prince William,,,,,,,,I95
+154.3250,Prince William County FD F2 (dispatch),,VA,Prince William,,,,,,,,I95
+154.4450,Prince William County FD F2 (fireground-east),,VA,Prince William,,,,,,,,I95
+453.4750,Prince William County PD F1/F5,,VA,Prince William,,,,,,,,I95
+453.3750,Prince William County PD F2/F6 (east),,VA,Prince William,,,,,,,,I95
+453.1500,Prince William County PD F3/F7 (west),,VA,Prince William,,,,,,,,I95
+453.7000,Prince William County PD F4/F8 (detectives),,VA,Prince William,,,,,,,,I95
+39.6800,Prince William County Sheriff,,VA,Prince William,,,,,,,,I95
+39.5800,Spotsylvania County LG,,VA,Spotsylvania,,,,,,,,I95
+156.1950,Spotsylvania County LG (fire?),,VA,Spotsylvania,,,,,,,,I95
+39.2800,Spotsylvania County PD,,VA,Spotsylvania,,,,,,,,I95
+39.4400,Spotsylvania County PD,,VA,Spotsylvania,,,,,,,,I95
+856.4825,Spotsylvania County TRS,,VA,Spotsylvania,,,,,,,,I95
+857.4875,Spotsylvania County TRS,,VA,Spotsylvania,,,,,,,,I95
+858.4875,Spotsylvania County TRS,,VA,Spotsylvania,,,,,,,,I95
+859.4875,Spotsylvania County TRS,,VA,Spotsylvania,,,,,,,,I95
+860.4875,Spotsylvania County TRS,,VA,Spotsylvania,,,,,,,,I95
+154.1750,Stafford County FD,,VA,Stafford,,,,,,,,I95
+154.2050,Stafford County FD,,VA,Stafford,,,,,,,,I95
+39.1800,Stafford County LG,,VA,Stafford,,,,,,,,I95
+488.5375,Stafford County LG,,VA,Stafford,,,,,,,,I95
+488.5625,Stafford County LG,,VA,Stafford,,,,,,,,I95
+489.0625,Stafford County LG,,VA,Stafford,,,,,,,,I95
+489.1125,Stafford County LG,,VA,Stafford,,,,,,,,I95
+489.5625,Stafford County LG,,VA,Stafford,,,,,,,,I95
+490.0625,Stafford County LG,,VA,Stafford,,,,,,,,I95
+490.3125,Stafford County LG,,VA,Stafford,,,,,,,,I95
+490.6125,Stafford County LG,,VA,Stafford,,,,,,,,I95
+490.6625,Stafford County LG,,VA,Stafford,,,,,,,,I95
+490.8125,Stafford County LG,,VA,Stafford,,,,,,,,I95
+488.8125,Stafford County PD,,VA,Stafford,,,,,,,,I95
+489.3125,Stafford County PD,,VA,Stafford,,,,,,,,I95
+489.8375,Stafford County PD,,VA,Stafford,,,,,,,,I95
+39.4000,Stafford County PD,,VA,Stafford,,,,,,,,I95
+154.3400,Sussex County FD,,VA,Sussex,,,,,,,,I95
+39.1000,Sussex County PD,,VA,Sussex,,,,,,,,I95
+39.6000,Sussex County PD,,VA,Sussex,,,,,,,,I95
+39.8400,Sussex County PD,,VA,Sussex,,,,,,,,I95
+460.3000,Sussex County PD,,VA,Sussex,,,,,,,,I95
+853.8625,Sussex County PD,,VA,Sussex,,,,,,,,I95
+853.4125,Sussex County TRS,,VA,Sussex,,,,,,,,I95
+853.9625,Sussex County TRS,,VA,Sussex,,,,,,,,I95
+854.3375,Sussex County TRS,,VA,Sussex,,,,,,,,I95
+154.4300,Alexandria FD (dispatch),Alexandria,VA,,,,,,,,,I95
+154.4300,Alexandria FD Ch. 1 (dispatch),Alexandria,VA,,,,,,,,,I95
+494.8125,Alexandria LG,Alexandria,VA,,,,,,,,,I95
+854.2125,Alexandria LG,Alexandria,VA,,,,,,,,,I95
+855.5125,Alexandria LG,Alexandria,VA,,,,,,,,,I95
+866.9500,Alexandria LG,Alexandria,VA,,,,,,,,,I95
+866.9750,Alexandria LG,Alexandria,VA,,,,,,,,,I95
+868.7375,Alexandria LG,Alexandria,VA,,,,,,,,,I95
+460.3750,Alexandria PD F1/F4 (dispatch),Alexandria,VA,,,,,,,,,I95
+460.0750,Alexandria PD F2/F5 (tactical),Alexandria,VA,,,,,,,,,I95
+460.0500,Alexandria PD F3/F6 (service),Alexandria,VA,,,,,,,,,I95
+39.0400,Alexandria Sheriff,Alexandria,VA,,,,,,,,,I95
+154.2050,Colonial Heights FD,Colonial Heights,VA,,,,,,,,,I95
+154.3250,Colonial Heights FD,Colonial Heights,VA,,,,,,,,,I95
+154.9800,Colonial Heights FD,Colonial Heights,VA,,,,,,,,,I95
+855.7375,Colonial Heights LG,Colonial Heights,VA,,,,,,,,,I95
+856.7375,Colonial Heights LG,Colonial Heights,VA,,,,,,,,,I95
+453.9500,"Colonial Heights LG,",Colonial Heights,VA,,,,,,,,,I95
+39.5000,Commonly-used Police Intersystem,,VA,,,,,,,,,I95
+33.8000,Emporia FD,Emporia,VA,,,,,,,,,I95
+45.3600,Fredericksburg FD,Fredericksburg,VA,,,,,,,,,I95
+153.7700,Fredericksburg FD,Fredericksburg,VA,,,,,,,,,I95
+154.4150,Fredericksburg FD,Fredericksburg,VA,,,,,,,,,I95
+153.8150,Fredericksburg LG,Fredericksburg,VA,,,,,,,,,I95
+155.7150,Fredericksburg LG,Fredericksburg,VA,,,,,,,,,I95
+155.9250,Fredericksburg LG,Fredericksburg,VA,,,,,,,,,I95
+158.8350,Fredericksburg LG,Fredericksburg,VA,,,,,,,,,I95
+154.1300,Richmond FD,Richmond,VA,,,,,,,,,I95
+453.3000,Richmond FD,Richmond,VA,,,,,,,,,I95
+453.5000,Richmond FD,Richmond,VA,,,,,,,,,I95
+453.6500,Richmond FD,Richmond,VA,,,,,,,,,I95
+453.7500,Richmond FD,Richmond,VA,,,,,,,,,I95
+453.7500,Richmond FD,Richmond,VA,,,,,,,,,I95
+453.9750,Richmond FD,Richmond,VA,,,,,,,,,I95
+39.5400,State Interagency Radio System (SIRS) (statewide),,VA,,,,,,,,,I95
+47.2400,Virginia Department of Transportation,,VA,,,,,,,,,I95
+47.0400,Virginia Department of Transportation F1,,VA,,,,,,,,,I95
+47.2200,Virginia Department of Transportation F1,,VA,,,,,,,,,I95
+47.3400,Virginia Department of Transportation F2,,VA,,,,,,,,,I95
+47.2800,Virginia Department of Transportation F3,,VA,,,,,,,,,I95
+47.3000,Virginia Department of Transportation F4,,VA,,,,,,,,,I95
+154.6800,Virginia State Police F?,,VA,,,,,,,,,I95
+154.6950,Virginia State Police F? (surveillance),,VA,,,,,,,,,I95
+154.6650,Virginia State Police F? (tactical car-to-car),,VA,,,,,,,,,I95
+159.1650,Virginia State Police F? Culpepper (Stafford & Caroline Counties),,VA,,,,,,,,,I95
+159.1650,Virginia State Police F? Culpepper (west of Blue Ridge Mountains - Winchester),,VA,,,,,,,,,I95
+159.0000,Virginia State Police F11? Alexandria/Fairfax Division 7,,VA,,,,,,,,,I95
+159.0000,Virginia State Police F11? Richmond (south/west?) Division 1,,VA,,,,,,,,,I95
+159.1350,Virginia State Police F13? Chesapeake Division ? (Prince William County),,VA,,,,,,,,,I95
+158.9850,Virginia State Police F2? Richmond East Division 1,,VA,,,,,,,,,I95
+118.6250, CCAFS tower. ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+118.9000, Space Coast RAP (launch-related aircraft).,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+121.0500," Patrick discrete for FAA PATROL 1, 2, 3.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+122.9000, FAA Patrol aircraft Air-air,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+125.9000," Cape Ctrl,CCAFS RSO, range clearance comms;RELAY 1;VARIETY 1.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+126.6500," CCAFS Cape Tower, NASA WX aircraft pre-launch.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+128.5500, KSC-Shuttle Landing Facility Tower.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+132.6500, Daytona Approach/Departure South.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+133.7500, Patrick AFB Tower.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+133.8000," CCAFS Sr RSO, THINKER 1 CHARLIE, aircraft clearance into Restricted Area.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+134.9500, Daytona Approach/Departure North.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+138.4750, JOLLYs,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+141.3000," CCAFS RSO, Cape Leader, VARIETY 1, KINGs, JOLLYs.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+145.1300," HAM repeater - Vero Beach, rexmsn of NASA Select.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+146.9400," HAM Repeater - Melbourne, rexmsn of NASA Select.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+147.1500," HAM Repeater -Daytona Beach, rexmsn of NASA Select.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+148.0350, CCAFS TV Net,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+148.4850, KSC Photo (Net G).,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+156.8000, Marine Ch 16 CG Range ctrl.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+157.0750," Marine Ch 81A pre-launch comms, CG cutters",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+157.1000," Marine Ch 22 pre-launch comms, cutters.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+157.1500," Marine 23A pre-launch comms, cutters.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+157.1750, Marine 83A pre-launch comms.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+162.6125, Launch Support ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+163.0000," CCAFS Security, JOLLYs.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+163.4625, KSC/CCAFS Security.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+163.5125, CCAFS Disaster Ops. ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+163.5375, KSC PR.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+165.1875, KSC Safety.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+165.4125, Launch Pad Ops  ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+165.6125, NASA Tower Repeater .,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+170.1500, KSC Base Ops  ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+171.0000, KSC Utilities ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+171.2625, KSC Media Coordination.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+173.1750, KSC Security.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+173.4375, Cape Medical (Net 117) ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+173.6625, KSC Safety  .,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+239.2750, Daytona Beach Approach/Departure,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+259.7000, STS A-G Comms during ascent/descent.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+261.7500," Cape Osbourne,KINGs,Dod-Cape SATCOM ",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+261.9500," STS SATCOM NFM Downlink, Cape Osbourne,KINGs. ",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+263.6250," STS SATCOM NFM Downlink, DoD Cape. ",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+264.8000, CCAS Sr RSO Thinker 1 Charlie.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+269.3750, Patrick Tower,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+281.4250, Daytona Beach Approach/Departure,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+284.0000, KSC SLF Tower.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+291.8000, CCAFS STS Support.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+294.6000," CCAFS STS Support, RSO, KINGs, JOLLYs, Cape Leader, VARIETY",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+297.2250," STS SATCOM NFM Uplink, DoD Cape.",Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+393.0000, CCAFS Tower,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+407.3250, Convoy Command Net (UHF-1) ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+407.5250, Boeing for Delta Launches.,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+409.1750, Convoy Cooling Net (UHF-8) ,Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+416.5000, ETR Command Destruct Signal (Carrier heard),Cape Canaveral Air Force Station,FL,Melbourne,,,,,,,,KSC
+853.3875,FL FIRE MUTUAL AID STATEWIDE,,FL,,,,,,,,,
+10.7800,NASA Cape Radio,,,,,,,,,,,
+26.6200,,,,,,,,,,,,
+26.9650,,,,,,,,,,,,
+27.0650,,,,,,,,,,,,
+27.1650,,,,,,,,,,,,
+27.1850,,,,,,,,,,,,
+29.5200,,,,,,,,,,,,
+29.6200,,,,,,,,,,,,
+29.6400,,,,,,,,,,,,
+29.6600,,,,,,,,,,,,
+29.6800,,,,,,,,,,,,
+33.8600,,,,,,,,,,,,
+33.9000,,,,,,,,,,,,
+33.9200,,,,,
+44.7600,FL State Park PD,,,,
+46.4200,,,,,
+46.4600,,,,,
+118.2000,,,,,
+118.6250,,,,,
+118.8500,,,,,
+118.9000,,,,,
+119.4000,,,,,
+120.3000,SFO Tower,,,,
+120.7000,,,,,
+121.5000,aero emergency,,,,
+122.8500,,,,,
+123.5000,,,,,
+123.5250,,,,,
+124.8000,,,,,
+125.0750,
+125.1750,
+126.2000,
+126.5500,
+127.4750,
+127.7500,
+127.9750,
+128.0500,
+128.5500,
+129.0750,
+129.5500,
+129.8500,
+131.5000,
+131.8000,
+132.6500,
+133.0500,
+133.5000,,,,,
+133.7500,Patrick AFB Tower,,,,
+135.9750,,,,,
+146.4800,,,,,
+146.5200,,,,,
+146.7300,,,,,
+146.8200,,,,,
+147.2400,,,,,
+148.1250,Civil Air Patrol,,,,
+148.1500,CAP,,,,
+150.9350,AAA Towing,,,,
+150.9500,AAA Towing,,,,
+151.4600,,,,,
+151.5050,,,,,
+151.6250,,,,,
+151.9550,,,,,
+153.2300,,,,,
+153.2900,,,,,
+153.5000,,,,,
+153.6350,,,,,
+153.8000,,,,,
+153.8600,,,,,
+153.9200,,,,,
+153.9650,,,,,
+154.2650,mutual aid,,,,
+154.2800,,,,,
+154.2950,,,,,
+154.3400,VCFD alert,,,,
+154.3700,Osceola co Fire Department,,,,
+154.5700,,,,,
+154.6000,,,,,
+154.6650,FHP,,,,
+154.7100,Leesburg pd,,,,
+154.8450,Eustis pd,,,,
+154.9200,FHP Car to Car,,,,
+154.9500,North FL Sheriff's Net,,,,
+155.0400,,,,,
+155.1000,,,,,
+155.1600,American Medical Transport,,,,
+155.1750,Polk County School Busses,,,,
+155.2200,Florida Hospital Faith Flight,,,,
+155.3400,Life Flight,,,,
+155.3700,Police Intersystem,,,,
+155.4000,FL Hosp.,,,,
+155.4750,,,,,
+155.6400,wildwood pd,,,,
+155.7300,lake county so,,,,
+155.7450,Putnam co pd,,,,
+155.8500,lake co pd alt.
+155.8650,
+155.8950,Marion co pd
+156.8000,
+157.1000,
+157.5150,
+158.4000,
+158.8350,Oviedo Police ch. 2
+158.8500,
+158.9100,Flagler County/Oviedo pd
+159.3300,
+160.1850,
+162.4000,NWS
+228.3750,
+235.1000,
+237.9000,
+238.7000,,,,,
+238.9000,,,,,
+241.0000,,,,,
+243.0000,,,,,
+251.9000,,,,,
+282.8000,,,,,
+282.8000,,,,,
+287.8000,,,,,
+294.7000,,,,,
+308.8500,,,,,
+317.0000,,,,,
+342.5000,,,,,
+364.5000,,,,,
+380.8500,,,,,
+381.8000,,,,,
+381.8000,,,,,
+383.9000,,,,,
+383.9000,,,,,
+450.0250,,,,,
+450.0875,,,,,
+450.1875,,,,,
+450.2125,,,,,
+450.5500,,,,,
+450.5875,,,,,
+450.6625,,,,,
+450.9875,,,,,
+451.1500,,,,,
+451.2250,,,,,
+451.3750,FP&L,,,,
+451.4250,,,,,
+451.7750,,,,,
+451.8250,,,,,
+452.0500,,,,,,,
+452.2500,,,,,,,
+452.3000,,,,,,,
+452.3750,,,,,,,
+452.7250,,,,,,,
+452.8000,,,,,,,
+452.8500,,,,,,,
+453.0750,Rural Metro Ambulance,,,,,,
+453.3250,,,,,,,
+453.4250,,,,,,,
+453.6500,,,,,,,
+453.7750,,,,,,,
+453.9250,,,,,,,
+454.1500,,,,,,,
+454.2750,,,,,,,
+454.3250,,,,,,,
+454.4250,,,,,
+454.4250,,,,,
+454.5250,,,,,
+454.5500,,,,,
+454.5500,,,,,
+454.6000,,,,,
+455.2125,,,,,
+455.4875,,,,,
+455.6375,,,,,
+455.9750,,,,,
+460.3250,,,,,
+460.3250,,,,,
+460.3750,,,,,
+460.4300,,,,,
+461.3000,,,,,
+461.3250,,,,,
+461.4000,,,,,
+461.5500,,,,,
+461.8750,,,,,
+462.0250,,,,,
+462.0790,,,,,
+462.5000,,,,,
+462.5500,,,,,
+462.5625,,,,,
+462.5750,,,,,
+462.6000,,,,,
+462.6125,,,,,
+462.6250,,,,,
+462.6375,,,,,
+462.6750,,,,,
+462.9500,Lake county ambo,,,,
+462.9750,,,,,
+462.9875,,,,,
+463.2750,,,,,
+463.3250,,,,,
+463.3500,,,,,
+463.3500,,,,,
+463.5000,,,,,
+463.6500,,,,,
+463.7000,,,,,
+463.7500,,,,,
+464.0250,,,,,
+464.1250,,,,,
+464.1500,,,,,
+464.1750,,,,,
+464.3750,,,,,
+464.4750,,,,,
+464.5000,,,,,
+464.5500,
+464.5750,
+464.8500,
+467.7625,
+467.8125,
+467.8500,
+467.8750,
+467.9000,
+467.9250,
+469.5500,
+806.4875,
+855.4625,
+855.7375,
+856.2625,
+856.4875,
+856.7375,
+856.7625,
+856.9875,
+857.2625,
+857.4875,
+857.7375,
+857.7625,
+858.2625,
+858.7125,
+858.7375,
+858.7625,
+859.2625,
+859.4875,
+859.7125,
+859.7375,
+859.7625,
+860.2625,
+860.4875,,,,,
+860.7125,,,,,
+860.7375,,,,,
+860.7625,,,,,
+861.6125,Aalcom Electronics SMR,,,,
+862.6125,Aalcom Electronics,,,,
+863.6125,Aalcom Electronics SMR,,,,
+864.6125,Aalcom Electronics SMR,,,,
+866.0125,,,,,
+866.0125,,,,,
+866.5125,,,,,
+867.0125,,,,,
+867.5125,,,,,
+868.0125,,,,,
+914.8500,,,,,
