@@ -1,0 +1,60 @@
+Georgia (last updated 1/7/99 - send updates to kevin@inscoe.org)
+http://www.inscoe.org/scan-i95
+
+Counties from north to south (MM = mile marker numbers):
+Chatham County (TRS) MM 
+Richmond Hill City MM
+Liberty County MM 67-
+McIntosh County MM
+Glynn County (TRS) MM 
+Camden County MM 1-
+
+* = Confirmed
+(TRS) = Trunking Radio System in use by pricipality
+
+Bank 8 - [Georgia 1]
+*141 - 154.3850 Chatham/Glynn County Fire
+ 142 - 155.3400 Chatham County EMS (HEAR)
+ 143 - 
+ 144 - 155.1300 Chatham County PD Dispath
+ 145 - 154.3250 Richmond Hill FD
+ 146 - 155.5200 Richmond Hill PD
+ 147 - 154.2050 Liberty County Fire
+ 148 - 153.9800 Liberty County LG
+ 149 - 155.9250 Liberty County LG
+ 150 - 155.9700 Liberty County Sheriff
+ 151 - 
+ 152 - 154.4150 McIntosh County Fire
+*153 - 159.1050 McIntosh County Police
+*154 - 159.1950 McIntosh County Police
+ 155 - 155.7750 McIntosh County Police
+ 156 - 154.1750 Glynn County Fire
+*157 - 158.8350 Glynn County LG
+ 158 - 453.8000 Glynn County LG
+*159 - 159.2100 Glynn County LG
+*160 - 155.1150 Camden County LG
+
+Bank 9 [Georgia 2]
+ 161 - 155.0100 Camden County LG
+ 162 - 155.8800 Camden County LG
+ 163 - 153.7550 Camden County LG
+ 164 - 159.1650 Camden County PD
+*165 - 154.9050 Statewide Police Intersystem
+ 166 - 154.9350 Statewide Police Intersystem
+ 167 - 154.8450 Camden County PD
+ 168 - 155.1600 Camden County Emergency
+       155.1600 Chatham County EMS
+ 169 - 153.8150 Camden County LG
+ 170 - 453.2250 Camden County LG
+ 171 -  42.0200 State Police Intersystem
+ 172 - 154.6800 GSP Ch. 2 car-to-car
+ 173 - 
+ 174 - 
+ 175 - 155.3700 Intercity Coordination)
+ 176 - 155.4750 GSP
+ 177 -  47.3000 DOT Ch. 1
+ 178 -  47.3200 DOT Ch. 2
+ 179 -  47.3400 DOT Ch. 3
+ 180 -  47.4000 DOT Ch. 4
+
+
