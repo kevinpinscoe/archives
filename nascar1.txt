@@ -1,0 +1,218 @@
+Subject: Re: NASCAR FREQ.
+From: martyrip@ptdprolog.net
+Date: 1998/02/22
+Newsgroups: alt.radio.scanner
+
+This is a multi-part message in MIME format.
+
+--------------3C7249B642FE
+Content-Type: text/plain; charset=us-ascii
+Content-Transfer-Encoding: 7bit
+
+--
+Vist the Schuylkill Amateur Repeater Ass.
+At  http://home.ptd.net/~cakunk/
+
+Two good scanner radio page.
+At http://www.li.net/~j4dice/stateidx.html
+      http://www.erols.com/jcardani/sepascan1.htm
+
+@   @  N3PTU
+  ^    73's from Marty (Smiley)
+\___/  Email   martyrip@ptdprolog.net
+
+--------------3C7249B642FE
+Content-Type: text/plain; charset=us-ascii; name="WINSTON.TXT"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline; filename="WINSTON.TXT"
+
+1998 NASCAR Winston Cup Frequencies
+
+ # DRIVER               PRIMARY            2ND            3RD      PL Tone
+
+ 1 Steve Park           466.2250
+ 2 Rusty Wallace        461.5875        461.3375
+ 3 Dale Earnhardt       462.0250        469.0125                     162.2
+ 4 Bobby Hamilton       461.7500        464.3000                     173.8
+ 5 Terry Labonte        468.2125        469.4875
+ 6 Mark Martin          460.9500        468.5625                      85.4
+ 7 Geoff Bodine         457.3750        463.1750
+ 8 Hut Stricklin        465.8875        465.8850                     127.3
+ 9 Lake Speed           464.1750        463.9750        464.1750
+10 Ricky Rudd           465.7375        469.7375        463.9375     203.5
+11 Brett Bodine         855.5125        855.5625
+12 Rich Bickle          459.5625
+14 Morgan Shepherd      458.1125        458.1625
+15 Tim Steele           457.5250        457.5500        469.4750
+16 Ted Musgrave         468.4500        466.2750
+17 Darrell Waltrip      469.1125        468.1125        468.1250
+18 Bobby Labonte        467.7625        467.1875
+21 Michael Waltrip      855.0375        855.2875        854.7875
+22 Ward Burton          468.9375        462.8375
+23 Jimmy Spencer        469.8375
+24 Jeff Gordon          467.0625        469.4875
+26 Johnny Benson        468.5625
+28 Kenny Irwin          466.9500        466.4500
+29 Jeff Green           467.9625        466.4625
+30 Derrike Cope         466.3000        469.1250
+31 Mike Skinner         468.2500        462.1250        466.9250
+33 Ken Schrader         466.7375
+35 Todd Bodine          465.2875
+36 Ernie Irvan          463.2875        467.0375
+37 Jeremy Mayfield      462.7125        469.6625        462.5250
+40 Sterling Marlin      460.9750        463.9625
+41 Steve Grissom        459.3625        461.5625
+42 Joe Nemechek         460.9750
+43 John Andretti        468.3000
+44 Kyle Petty           469.2000        469.3000
+46 Wally Dallenbach     468.8000
+47 Billy Standridge     457.5125
+50 Ricky Craven         466.7875
+71 Dave Marcis          467.5625
+75 Rick Mast            468.9750        461.9375
+77 Robert Pressley      463.8875        468.8875
+78 Gary Bradberry       451.7875        463.9000        454.3500
+81 Kenny Wallace        459.3875        459.2875
+88 Dale Jarrett         468.5250        466.3750                     110.9
+90 Dick Trickle         467.1625        461.5375                     179.9
+91 Kevin LePage         460.6875
+94 Bill Elliott         469.8750        468.6750
+96 David Green          464.8875        461.4750
+97 Chad Little          460.6625
+98 Greg Sacks           468.7250        469.1500
+99 Jeff Burton          466.2750
+
+                              Nascar Officials
+
+    NASCAR Channal #1 469.5000         NASCAR Channal #2 464.5000
+    NASCAR Channal #3 464.9000         NASCAR Channal #4 464.7750
+    NASCAR Channal #5 465.0250         NASCAR Channal #6 463.8500
+    NASCAR Channal #7 461.2000         NASCAR Channal #8 464.9750
+    NASCAR Channal #9 468.6250         NASCAR Channal #10 463.6250
+    NASCAR Channal #11 466.4500        NASCAR Channal #12 468.8500
+    Scoring                            Inspactors
+
+Goodyear Blimp          151.6250        161.6400        161.7000
+                        161.7600        132.0000
+
+
+
+ESPN  450.3500  450.3875  454.5000        MRN Radio       454.0000
+* = Scrambled
+
+
+Search Banks Broadcast Scan
+
+450.050-450.925    25kHz steps
+455.050-455.925    25kHz steps
+
+Race Track Scan
+
+150.995-151.955    15kHz steps
+152.870-153.725    15kHz steps
+154.490-154.625    15kHz steps
+463.200-465.000    25kHz steps
+
+Broadcast Pickups
+
+161.640-161.760    15kHz steps
+
+--------------3C7249B642FE
+Content-Type: text/plain; charset=us-ascii; name="NASCARTV.TXT"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline; filename="NASCARTV.TXT"
+
+                                  [Image]
+
+                          http://www.northtex.com
+
+                       1996 Media Scanner Frequencies
+---------------------------------------------------------------------------
+
+ESPN                                    450.3500        450.2500
+TNN - The Nashville Network             467.9000        467.7500
+CBS                                     153.2900
+MRN - Motor Racing Network              454.0000
+PRN - Performance Racing Network        161.6400
+Winston Cup Scene                       465.9625
+Sports  Channel                         455.5500
+
+[Freq Index] | [Main Page]
+
+---------------------------------------------------------------------------
+Northtex Motorsports, All Rights Reserved, jcollins@northtex.com.
+Copyright(c) 1997. Created: 2/10/97 Updated: 2/24/97
+
+--------------3C7249B642FE
+Content-Type: text/plain; charset=us-ascii; name="TRACKSF.TXT"
+Content-Transfer-Encoding: 7bit
+Content-Disposition: inline; filename="TRACKSF.TXT"
+
+                                  [Image]
+
+                          http://www.northtex.com
+
+                           1997 Track Frequencies
+---------------------------------------------------------------------------
+
+Berlin Raceway                  151.6250
+Birmingham Speedway             469.5000
+Charlotte Motor Speedway        462.5500  463.9000  466.1750  463.3500
+Concord Speedway                464.0125  463.4125
+Daytona Security                154.5150
+Daytona Traffic Copter          154.9500
+Dover Downs Int'l Speedway      463.4250
+Dover Security                  463.9000
+Eldora Motor Speedway           154.6000
+Evergreen Speedway              151.7150  151.7450
+Five Flags Speedway             151.6250
+Flemington Speedway             151.6250
+Hickory Speedway                154.5400
+Hoosier Dome                    151.6250
+Jennerstown Speedway            467.7875
+Kalamazoo Speedway              151.6250
+Lancaster Speedway              151.6250  154.6000  151.9550
+Las Vegas Speedway              463.3000  468.7750
+Louisville Speedway             154.6000  154.5700
+Mesa Merin Speedway             462.0625
+Michigan Int'l Speedway         154.5700
+Michigan Int'l Spdwy Security   155.8650
+Michigan Int'l Spdwy Parking    151.8050
+Michigan Int'l Spdwy Hospital   155.2800
+Milwaukee Mile                  460.0750
+Nashville Motor Speedway        469.8125
+New Hampshire Int'l Speedway    154.6000  151.6250  154.5700
+Orange County Speedway          151.6250
+Oswego Speedway                 151.6250
+Pennsylvania Motor Speedway     154.5700  466.7875
+Phoenix Int'l Raceway           461.8125
+Portland Speedway               467.5375  461.5375
+Richmond Int'l Raceway          464.5500
+Road America                    464.3250  464.0250  469.3250
+Salem Speedway                  467.7500
+South Boston Speedway           464.5000  157.5600
+Talladega Superspeedway         464.7625  464.7750
+Talladega Short Track           154.5400
+Ventura Speedway                153.5125
+Volusia County Speedway         466.8125  154.9200  154.5150
+Watkins Glen Int'l Speedway     464.7750  469.7750  464.1250
+Winchester Speedway             154.6000
+
+[Freq Index] | [Main Page]
+
+---------------------------------------------------------------------------
+Northtex Motorsports, All Rights Reserved, jcollins@northtex.com.
+Copyright(c) 1997. Created: 2/10/97 Updated: 2/24/97
+
+--------------3C7249B642FE--
+
+(end of original message)
+
+------------------------------------------------------------------------------
+
+You can view this message and the related discussion by following this link:
+
+http://www.deja.com/%5bST_rn%3dmd%5d/dnquery.xp?search=thread&svcclass=dnserver&recnum=%3c34F0A193.72C@ptdprolog.net%3e%231/2
+We hope to see you soon at Deja.com.
+Share what you know.  Learn what you don't.
+http://www.deja.com/%5bST_rn%3dmd%5d/

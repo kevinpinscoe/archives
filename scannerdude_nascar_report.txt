@@ -1,0 +1,120 @@
+-------- Original Message --------
+Subject: [SEFLORIDA] Daytona Speedweek Report
+Date: Fri, 16 Feb 2001 13:35:51 -0500
+From: brian j cathcart <scannerdude@juno.com>
+Reply-To: SEFLORIDA@yahoogroups.com
+To: SEFLORIDA@yahoogroups.com, cflg@egroups.com,
+SCAN-L@UAFSYSB.UARK.EDU,trunkcom@qth.net
+
+This posting will cover several areas, so I'm cross-posting it to 4
+lists.  It is somewhat long and covers racing, Volusia County, and
+Daytona.
+
+As part of my yearly tradition I went to the 2001 Twin 125 qualifying
+races on Thursday (GREAT racing, by the way!).  I brought both my 245xlt
+and 780xlt, and they served me very well.
+
+
+RACING
+I bought one of the trackside frequency lists for $5.00.  Not a bad deal
+since they confirm most of them before Thursday from races and practice
+earlier in the week.  Last year I bought the list from "Race-Scan
+Communicaitons", this year from "Track Scan".  In both cases the lists
+were right on.  The attenuator function on the 245xlt (and any other
+model that has it) is a MUST for use in the stands - you have RF all
+around you from the race teams, media, NASCAR officials, and team
+"spotters".  The antenna was not needed where I was (Winston Tower
+seats), but it's possible that lower seats might need it.  I used banks
+1
+through 4 for driver freqs, while the rest were for NASCAR and Public
+Safety.
+
+Interesting sidenote, no team is using 800-MHz simplex anymore.  My
+understanding is that the FCC does not allow simplex use in the 800-MHz
+band - if that's correct, could it be that the FCC cracked down on them
+and said "no more 800 simplex use"?
+
+
+MEDIA
+I found the usual 454.000 used by MRN, but the audio was low.  I also
+found several IFB's in use by FOX Network covering the race:
+
+450.300
+450.425
+450.5875
+450.650
+450.7125
+455.300
+
+This is nice because they have a large TV screen at pit road showing the
+FOX broadcast, so you can listen to the FOX audio and see what's they're
+talking about on the screen.  MRN is broadcast over the track
+loudspeakers.
+
+
+PUBLIC SAFETY
+Daytona Beach uses the Volusia County EDACS system #2 (SysID 0002) for
+normal operations.  However, they use system #3 (SysID 0014) for ALL
+Speedway event operations.  This system is licensed to Daytona Beach
+under WPLZ211.  ALL 14-xxx talkgroups were heard ONLY on this system,
+and
+NOT on System 1 or 2.  I had two scanners going to confirm this - one on
+system #3 tracking the Daytona events, the other listening to system #1
+and #2 one at a time.  The 14-xxx NEVER came active on either system #1
+or #2.
+
+So, to listen to traffic control and security for racing events, USE
+SYSTEM 3!  The frequencies are:
+
+FREQ        LCN
+856.7125        1
+857.2125        2
+858.2125        3
+859.2125        4
+860.2125        5
+
+Main talkgroups for use at the track:
+14-005 = Speedway Security
+14-010 = Event Traffic
+14-011 = Car-to-Car of 14-010
+
+Daytona Beach is licensed to other frequencies as well but I did NOT
+hear
+them active:
+
+under WPLZ211:
+856.9375
+857.7125
+857.9375
+858.9375
+859.9375
+860.9375
+
+under KNNQ365
+866.1000
+866.3500
+866.6000
+866.8375
+867.0875
+867.3375
+867.5875
+868.0750
+868.3250
+868.5750
+868.8250
+
+
+MISC.
+I have a WinScan 1.0 file for the 245xlt that covers the teams, NASCAR
+officials, and the local trunked systems if anyone wants it.  It does
+not
+have talkgroups in it, only the system frequencies.  But it will allow
+you to follow what's happening in the area.  E-mail me if you want it.
+
+--
+
+The Scanner Dude
+Brian J. Cathcart - KE4PMJ
+South Florida Trunking Guide - NEW 5th Edition (On CD-ROM too!)
+Palm Beach County Frequency Directory - 4th Edition (On CD-ROM too!)
+
