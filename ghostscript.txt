@@ -1,0 +1,167 @@
+HOWTO: Solaris & Ghostscript printer interfacing
+
+D. J. Hagberg (dhagberg@gds.com)
+Mon, 31 Oct 1994 12:32:28 -0700 
+
+    Messages sorted by: [ date ][ thread ][ subject ][ author ] 
+    Next message: Sun Managers: "Subscribe" 
+    Previous message: David Mostardi: "SUMMARY: HPLJ-4MP & Postscript errors" 
+
+Here's a short howto about how I was able to add a
+HP Laserjet 4 (non-postscript) with a JetDirect interface
+to our Solaris print spooling. 
+
+It should be useful for any out there who are using 
+ghostscript as a rasterizer for their non-ps printers, 
+or who have a custom interface to their printer. We
+needed it in our move from SunOS to solaris where we
+had previously used ghostscript as an input filter.
+
+Disclaimers: 
+. I am no expert at Solaris print spooling. All I know 
+is that this setup hasn't broken yet and is used in a 
+production environment. 
+. It's only been tested it on Solaris 2.4 but it's 
+simple enough that it should work on any Sol system.
+. It blindly assumes that you're sending it valid 
+postscript. Error messages are sent right to the 
+printer.
+. It doesn't do any of the fancy solaris options like
+2-up or auto ascii-to-ps conversion.
+
+(1) I used the sample slow filter in /usr/lib/lp/bin/
+slow.filter and made a few modifications to support 
+ghostscript and the HP Jet Direct software:
+
+----------------- /usr/lib/lp/bin/sales_ps_hp4 --------------------
+# sales_ps_hp4 -- interface file for laserjet 4
+#
+# Modified 10/20/94 (djh) - used as an interface to our JetDirect-
+# connected Laserjet4, using ghostscript as a postscript 
+# rasterizer.
+#
+# It looks like interface scripts are passed several parameters,
+# the fifth of which is a file containing the data to be 
+# printed. This appears to be the case whether lp is called
+# with a list of filenames or whether data is piped directly 
+# to lp.
+#
+# Anything that appears on the standard error is sent to 
+# the lp error handler (usu gets emailed to user). However 
+# Ghostscript error messages go to stdout and unfort. end up
+# on the printer.
+#
+# 99 percent of the rest of this script is verbatim from 
+# smcc's slow.filter script.
+#
+
+#####
+# Save the error channel under another number, so we can use
+# it when it should be captured.
+#####
+exec 5>&2 2>/dev/null
+
+#####
+# Error message formatter:
+# Invoke as
+# errmsg severity message-number problem help
+# where severity is "ERROR" or "WARNING", message-number is
+# a unique identifier, problem is a short description of the
+# problem, and help is a short suggestion for fixing the problem.
+#####
+
+LP_ERR_LABEL="UX:lp"
+
+E_IP_ARGS=1
+E_IP_OPTS=2
+E_IP_FILTER=3
+E_IP_STTY=4
+E_IP_UNKNOWN=5
+E_IP_BADFILE=6
+E_IP_BADCHARSET=7
+E_IP_BADCPI=8
+E_IP_BADLPI=9
+E_IP_BADWIDTH=10
+E_IP_BADLENGTH=11
+E_IP_ERRORS=12
+
+errmsg () {
+case $1 in
+ERROR )
+sev=" ERROR";
+;;
+WARNING )
+sev="WARNING";
+;;
+esac
+echo "${LP_ERR_LABEL}: ${sev}: $3
+TO FIX: $4" >&5
+}
+
+#
+# I'm not sure why, but we needed to add an LD_LIBRARY_PATH and PATH
+# to this script. Otherwise it refused to work on tuesdays when the
+# moon wasn't full...
+#
+LD_LIBRARY_PATH=/usr/openwin/lib:/usr/lib/hpnp/lib:/usr/lib:/usr/local/lib
+PATH=/usr/local/bin:/usr/lib/hpnp/bin:${PATH}
+export LD_LIBRARY_PATH
+export PATH
+
+#
+# Get rid of the first 5 parameters passed to the interface script.
+# We are only concerned with the list of files to be spooled to 
+# the printer.
+#
+shift 5
+
+k=1
+for file in "$@"
+do
+if [ ! -r "${file}" ]
+then
+errmsg ERROR ${E_IP_BADFILE} \
+"Cannot read param ${k}, file \"${file}\"." \
+"See if it still exists and is readable, or
+consult your system administrator."
+else
+# ${file} is piped into ghostscript which rasterizes the 
+# postscript file and outputs HP PLC5 commands. hpnpf is
+# the program used to send data to the JetDirect interface.
+# sales_hp4 is the network name of the printer.
+gs -q -sDEVICE=ljet4 -sOutputFile=- - < ${file} | hpnpf -x sales_hp4 || {
+exit_code=$?
+while [ 127 -lt "${exit_code}" ]
+do
+exit_code=`expr "${exit_code}" - 128`
+done
+exit ${exit_code}
+}
+fi
+k=`expr "${k}" + 1`
+done
+-------------------------------------------------------------
+
+(2) Added a new printer with this script as the interface:
+
+lpadmin -p sales_ps -I any -i /usr/lib/lp/bin/sales_ps_hp4 \
+-D "Sales/Mkt HP4 w/GS Rast" -A write -o nobanner \
+-u allow:all -v /dev/null
+enable sales_ps
+accept sales_ps
+
+Note that the "-I any" allows any type of file to be
+sent to the print spooler -- can be good or bad. We needed
+to do this because of Ctrl-D's at beginnings and ends
+of our postscript files that Sun's filters don't handle well.
+
+Hope this simplifies someone else's life. If you have
+any corrections or suggestions, email me and I will 
+summarize.
+
+Also if anyone has a good source for comprehensive 
+docs on creating interfaces and filters for Solaris, I'd
+really like to find some.
+
+-=- D. J.
+
