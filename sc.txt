@@ -1,0 +1,110 @@
+South Carolina  (last updated 1/7/99 - send updates to kevin@inscoe.org)
+http://www.inscoe.org/scan-i95
+
+Counties from north to south (MM = mile marker numbers):
+Dillon County MM 175-			http://www.dillonsc.com/
+Dillon MM 
+South of the Border MM 			http://www.dillonsc.com/border.html
+Florence County (TRS) MM 168-174	http://members.aol.com/wenev3/index6.html
+Florence MM 
+Darlington County MM 167-168		http://www.fire-ems.net/firedept/view/DarlingtonSC
+Sumpter County MM 134-   		http://www.sumter.net/~sumtercounty/fire.html
+Clarendon County MM 			http://www.clarendoncounty.com/
+Orangeburg County MM 
+Dorchester County MM 69-
+Walterborro MM 
+Colleton County MM 41-
+Hampton County MM 34-41
+Jasper County MM 1-34
+
+* = Confirmed
+(TRS) = Trunking Radio System in use by pricipality
+
+Bank 7 [South Carolina 1]
+ 121 - 154.4150 Jasper County Fire
+*122 - 460.1500 Jasper County Police
+ 123 -  45.4400 Jasper County LG
+ 124 - 154.2200 Hampton County FD
+ 125 - 460.0750 Hampton County PD
+ 126 - 453.4500 Hampton County LG
+*127 - 154.1450 Colleton County Fire
+ 128 - 155.1750 Colleton County EMS
+       155.1750 Jasper County Hospital
+ 129 - 155.3400 Colleton County Hospital
+       155.3400 Jasper County Hospital
+       155.3400 Clarendon County Hospital
+       155.3400 Darlington County EMS
+ 130 - 154.1450 Colleton County Fire 
+ 131 - 154.0250 Colleton County LG
+ 132 - 155.1750 Colleton County Medical Emergency
+ 133 - 155.3400 Colleton County Medical Emergency
+       155.3400 Dorchester County Medical Emergency
+ 134 - 155.0700 Colleton County PD
+ 135 - 460.2750 Colleton County PD
+*136 - 460.3500 Colleton County PD
+ 137 - 460.4500 Colleton County PD
+ 138 - 155.2350 Colleton County React
+ 139 - 156.2250 Colleton Rural FD
+ 140 - 158.7600 Walterboro LG
+
+Bank 8 [South Carolina 2]
+ 141 - 153.7550 Dorchester County FD
+ 142 - 154.2050 Dorchester County FD
+ 143 - 156.1800 Dorchester County LG
+ 144 - 155.7300 Dorchester County PD
+ 145 - 155.2200 Dorchester County EMS
+       155.2200 Florence County EMS
+       155.2200 Dillon County EMS
+ 146 -  45.6400 Dorchester County LG
+ 147 - 155.0700 Dorchester County PD
+ 148 - 154.8900 Dorchester County PD
+ 149 - 154.3850 Orangeburg County FD (Dispatch)
+ 150 - 154.1750 Orangeburg County FD (Fireground)
+*151 - 158.8500 Orangeburg County PD
+ 152 - 453.0500 Orangeburg County PD Ch. 3 (East)
+ 153 - 154.3700 Clarendon County Fire
+*154 - 155.4000 Clarendon County EMS
+*155 - 155.1900 Clarendon County PD
+ 156 - 155.2650 Clarendon County Resuce Squad
+ 157 - 153.7400 Clarendon County LG
+*158 - 154.8000 Sumter County PD
+ 159 - 154.8450 Sumter County PD
+ 160 - 154.8750 Sumter County PD
+
+Bank 9 [South Carolina 3]
+ 161 - 154.0400 Sumter County LG
+ 162 -  33.9000 Sumter County LG
+ 163 - 155.5500 Sumter County PD 
+ 164 - 159.0300 Sumter County PD
+ 165 - 155.8650 Sumter City LG
+*166 - 154.3400 Sumter City FD
+*167 - 154.4450 Darlington County FD
+*168 - 460.1000 Darlington County PD
+ 169 - 460.2000 Darlington County PD
+ 170 - 460.2500 Darlington County PD
+       460.2500 Dillon County PD
+       460.2500 Dillon City PD
+*171 - 154.0550 Darlington County LG
+*172 - 159.1050 Darlington County Roads
+ 173 - 155.2200 Darlington County EMS
+       155.2200 Dillon EMS
+*174 -  46.3800 Florence County FD
+ 175 - 155.2050 Florence County EMS
+ 176 - 453.1750 Florence County EMS
+ 177 - 461.0500 Medical Transport System (Florence)
+ 178 - 460.2250 Dillon County PD
+       460.2250 Dillon City PD
+*179 - 460.4750 Dillon City PD
+ 180 -  39.1000 Dillon County LG
+
+Bank 9 [South Carolina 3]
+ 181 -  39.1800 Dillon County LG
+*182 - 155.9550 SC State Police Intersystem
+ 183 -  42.0600 SCHP F-8 (District 7 - Orangeburg)
+*184 -  42.0800 SCHP F-4 (District 5 - Florence)
+*185 -  42.1000 SCHP F-1/2 (District 6 - Beaufort)
+*186 -  42.1200 SCHP F-3 (District 4 - Chester)
+ 187 -  42.1400 SCHP F-7 District 3 - Greenville)
+ 188 -  42.2600 SCHP F-5 (TAC) 
+ 189 -  42.3400 SCHP F-6 (District 1 - Columbia)
+ 190 -  47.2200 SC DOT 
