@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+<!-- SS~~0001 -->
+<TITLE>How to setup anonymous ftp on AIX 4.3.3</TITLE>
+</HEAD>
+<! - {AIXANONFTP.HTM} - !>
+<! - You just had to view my source code didn't you!! That's ok. Wanna see how I did it !>
+<! ----------------------------------------- written by Kevin P. Inscoe - kevin@inscoe.org ---------!>
+<BODY bgcolor="#000000" TEXT="#bbffff" LINK="#FFFF00" VLINK="#22AA22" >
+<CENTER>
+<H2>How to setup anonymous ftp on AIX 4.3.3</H2>
+</CENTER>
+1) Make sure ftpd is setup correctly in /etc/services<br>
+<tt><br>
+	# grep ftp /etc/services<br>
+		ftp-data        20/tcp<br>
+		ftp             21/tcp<br>
+</tt><br>
+2) Make sure /etc/inetd.conf is setup to activate the ftp daemon.<br>
+<tt><br>
+	# grep ftpd /etc/inetd.conf<br>
+		ftp     stream  tcp6    nowait  root    /usr/sbin/ftpd  ftpd<br>
+		#tftp    dgram  udp6    SRC     nobody  /usr/sbin/tftpd tftpd -n<br>
+</tt><br>
+	tftpd should normally be disabled (commented out) unless you really really need it and you probably do not.<br>
+<br>
+3) Setup anonymous ftp using IBM's supplied script.<br>
+<tt><br>
+	# sh /usr/samples/tcpip/anon.ftp<br>
+</tt><br>
+4) ksh is in the wrong path in /etc/shells. Change /bin/ksh to /usr/bin/ksh.<br>
+<br>
+5) Build the /etc/ftpusers with the users you DO NOT want logging into ftp.<br>
+<br>
+	# cat /etc/passwd | cut -f1 -d: > /etc/ftpusers<br>
+<br>
+Now remove the logins that you DO want to be able to ftp. I am assuming here the majority you do not!<br>
+<br>
+From the ftpd man page:<br><tt>
+<br>
+The user's login shell must appear in the shells attribute of the /etc/security/login.cfg file.<br>
+<br>
+	If the user name is anonymous or ftp, an anonymous FTP account must be defined in the password file. 
+	In this case, the client process is allowed to log in using any password. By convention, the password 
+	is the name of the client host. The ftpd daemon takes special measures to restrict access by
+    	the client process to the anonymous account.<br>
+<br></tt>
+6) Set correct file permissions on /home/ftp (or where the ftp account's home directory is):<br>
+<br>
+	# chmod 755 /home/ftp (prevents writes here)<br>
+	# chmod 777 /home/ftp/pub (where uploads can go)<br>
+<br>
+7) Since anon.ftp creates an anonymous account (anonymou) but /home/ftp is owned by ftp we need to disable the ftp account from ftp or login. Put the following script in /usr/bin/notelnet<br>
+	(or nosh or whatever you like):<br>
+<br>
+	Review /usr/bin/notelnet for taste and wording.<br>
+<br>
+	#!/usr/bin/csh<br>
+<br>
+	clear<br>
+	echo ""<br>
+	echo "Sorry, you are not allowed to login from this source."<br>
+	sleep 3<br>
+	exit 1<br>
+<br><tt>
+	# chmod +x /usr/bin/notelnet.<br>
+<br>
+	Add this shell to /etc/security/login.cfg file:<br>
+<br>
+		usw:<br>
+<br>
+          		shells = "... ,/usr/bin/notelnet"<br>
+<br>
+	save and exit.<br>
+<br>
+	Change "ftp" and "anonymou" accounts to be this shell:<br>
+<br>
+	# chuser shell=/usr/bin/notelnet ftp<br>
+	# chuser shell=/usr/bin/notelnet anonymou<br>
+	# echo "/usr/bin/notelnet" >> /etc/shells<br>
+<br></tt>
+Some security notes from CERT:<br>
+<br>
+<a href="http://www.cert.org/tech_tips/anonymous_ftp_config.txt">http://www.cert.org/tech_tips/anonymous_ftp_config.txt</a><br>
+<a href="http://www.cert.org/tech_tips/anonymous_ftp_abuses.txt">http://www.cert.org/tech_tips/anonymous_ftp_abuses.txt</a><br>
+<br>
+<br>
+An older Anonymous FTP FAQ (however it contains some useful tips):<br>
+<br>
+<a href="http://www.landfield.com/wu-ftpd/docs/anonymous-ftp-faq.html">http://www.landfield.com/wu-ftpd/docs/anonymous-ftp-faq.html</a><br>
+<br>
+Please send comments, corrections and updates, etc.. to
+<a href="mailto:kevin@inscoe.org">kevin@inscoe.org</a><br>
