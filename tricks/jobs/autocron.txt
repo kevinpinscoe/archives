@@ -1,0 +1,5 @@
+Adding a job to cron from a script
+<tt>$ echo "0 3 * * 1-5 /home/kinscoe/updates.sh" >> /var/spool/cron/crontabs/root<br>
+$ /etc/init.d/cron stop<br>
+$ sleep 5<br>
+$ /etc/init.d/cron start<br></tt>
