@@ -1,0 +1,1604 @@
+Notes on installing GCC 2.95.3 on "virgin" freshly-installed AIX 4.3.3
+
+These notes were tested on a virgin AIX 4.3.3 machine with the following Application
+Development filesets installed:
+
+# lslpp -l | grep bos.adt
+  bos.adt.base              4.3.3.25  COMMITTED  Base Application Development
+  bos.adt.debug             4.3.3.50  COMMITTED  Base Application Development
+  bos.adt.graphics          4.3.3.50  COMMITTED  Base Application Development
+  bos.adt.include           4.3.3.51  COMMITTED  Base Application Development
+  bos.adt.lib               4.3.3.10  COMMITTED  Base Application Development
+  bos.adt.libm              4.3.3.50  COMMITTED  Base Application Development
+  bos.adt.prof              4.3.3.54  COMMITTED  Base Profiling Support
+  bos.adt.prt_tools          4.3.3.0  COMMITTED  Printer Support Development
+  bos.adt.samples           4.3.3.25  COMMITTED  Base Operating System Samples
+  bos.adt.sccs               4.3.3.0  COMMITTED  SCCS Application Development
+  bos.adt.syscalls          4.3.3.50  COMMITTED  System Calls Application
+  bos.adt.utils             4.3.3.50  COMMITTED  Base Application Development
+  bos.adt.data               4.3.0.0  COMMITTED  Base Application Development
+
+Kevin P. Inscoe (kevin@inscoe.org) - Last updated 9/7/2001
+
+First download pre-built from
+
+http://www.bull.de/pub/aix432_frame.html
+
+I used:
+
+http://www.bull.de/pub/aix432/gnu.gcc-2.95.3.0.exe
+
+this needs to be chmod +x to make it executable. It is self-extracting like a ZIP file.
+
+# chmod +x gnu.gcc-2.95.3.0.exe
+
+But first bos.adt.include needs to be installed (C headers) so check this first.
+It is on the First BOS cd.
+
+# ./gnu.gcc-2.95.3.0.exe
+UnZipSFX 5.41 of 16 April 2000, by Info-ZIP (Zip-Bugs@lists.wku.edu).
+  inflating: gnu.gcc-2.95.3.0.bff
+  inflating: gnu.gcc-2.95.3.0.bff.asc
+# rm .toc
+# smitty installp
+
+The fileset to install is freeware.gnu.gcc
+
+Finally make sone links
+
+# ln -s /usr/local/lib/gcc-lib/powerpc-ibm-aix4.3.2.0/2.95.3/cc1 /usr/local/bin/cc1
+# ln -s /usr/local/lib/gcc-lib/powerpc-ibm-aix4.3.2.0/2.95.3/cc1obj /usr/local/bin/cc1obj
+# ln -s /usr/local/lib/gcc-lib/powerpc-ibm-aix4.3.2.0/2.95.3/collect2 /usr/local/bin/collect2
+# ln -s /usr/local/lib/gcc-lib/powerpc-ibm-aix4.3.2.0/2.95.3/cpp0 /usr/local/bin/cpp0
+# ln -s /usr/local/lib/gcc-lib/powerpc-ibm-aix4.3.2.0/2.95.3/libobjc.a /usr/local/lib/libobjc.a
+
+Download & install "pre-built" GNU Make
+
+ftp://aixpdslib.seas.ucla.edu/pub/gnumake/RISC/3.2/exec/make.3.74.tar.Z
+
+I compile GNU stuff in /inst/gnu. Now untar the "pre-built" make into root:
+
+# cd /inst/gnu; uncompress make.3.74.tar.Z
+# cd /; tar xvf /inst/gnu/make.3.74.tar
+
+To test the correct path settings and to make sure make went ok test it
+BTW PATH should include these:
+
+# export PATH=/usr/local/bin:$PATH
+# export MANPATH=/usr/local/man:$MANPATH
+
+# make -v
+GNU Make version 3.74, by Richard Stallman and Roland McGrath.
+Copyright (C) 1988, 89, 90, 91, 92, 93, 94, 95 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.
+There is NO warranty; not even for MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+
+Download and install "gzip" for unpacking.
+
+ftp://aixpdslib.seas.ucla.edu/pub/gzip/RISC/5.1/exec/gzip.1.2.4a.tar.Z
+
+Uncompress the bundle and untar into root:
+
+# uncompress gzip.1.2.4a.tar.Z
+# cd /; tar xvf /inst/gnu/gzip.1.2.4a.tar
+
+Test it is working
+
+# gzip -h
+gzip 1.2.4 (18 Aug 93)
+usage: gzip [-cdfhlLnNrtvV19] [-S suffix] [file ...]
+ -c --stdout      write on standard output, keep original files unchanged
+ -d --decompress  decompress
+ -f --force       force overwrite of output file and compress links
+ -h --help        give this help
+ -l --list        list compressed file contents
+ -L --license     display software license
+ -n --no-name     do not save or restore the original name and time stamp
+ -N --name        save or restore the original name and time stamp
+ -q --quiet       suppress all warnings
+ -r --recursive   operate recursively on directories
+ -S .suf  --suffix .suf     use suffix .suf on compressed files
+ -t --test        test compressed file integrity
+ -v --verbose     verbose mode
+ -V --version     display version number
+ -1 --fast        compress faster
+ -9 --best        compress better
+ file...          files to (de)compress. If none given, use standard input.
+
+Now we need to build GNU c "gcc pure" not the IBM C Compiler that the "pre-built" was made with so download
+
+ftp://prep.ai.mit.edu/gnu/gcc/gcc-2.95.3/gcc-everything-2.95.3.tar.gz
+
+# cd /inst/gnu; gzip -d gcc-everything-2.95.3.tar.gz
+# tar xvf gcc-everything-2.95.3.tar
+# cd cd gcc-2.95.3
+# ./configure
+# make bootstrap
+# make install
+
+Now build a new GNU Make 
+
+Download ftp://prep.ai.mit.edu/gnu/make/make-3.79.1.tar.gz
+
+# gzip -d make-3.79.1.tar.gz
+# tar xvf make-3.79.1.tar
+# cd make-3.79.1
+# ./configure
+# make
+# make install
+
+Build GNU binutils
+
+Download ftp://prep.ai.mit.edu/gnu/binutils/binutils-2.11.2.tar.gz
+
+# gzip -d binutils-2.11.2.tar.gz
+# tar xvf binutils-2.11.2.tar
+# cd binutils-2.11.2
+# ./configure
+# make
+# make install
+
+Build GNU fileutils (I really only want GNU "install" out of this)
+
+Download from ftp://prep.ai.mit.edu/gnu/fileutils/fileutils-4.1.tar.gz
+
+# gzip -d fileutils-4.1.tar.gz
+# tar xvf fileutils-4.1.tar
+# cd fileutils-4.1
+# ./configure
+
+To avoid errors on make under AIX 4.3.3 I made the following changes:
+
+mountlist.c: In function `read_filesystem_list':
+mountlist.c:329: `MOUNTED' undeclared (first use in this function)
+mountlist.c:329: (Each undeclared identifier is reported only once
+mountlist.c:329: for each function it appears in.)
+
+# cd lib
+# cp mountlist.c mountlist.c.orig
+
+Edit mountlist.c and add the lines (underneath the GNU banner):
+
+/* a very bad hack but when you must... */
+
+#define MOUNTED "/etc/mtab"
+
+Thanks to http://www.tux.org/hypermail/mtools/2001-Jun/0003.html
+for clueing me into this one!
+
+# cd ..; make
+# make install
+
+Make sure we are using the correct "install" or else you will have trouble down the road:
+
+# which install
+/usr/local/bin/install
+
+If that is not what you get back fix your PATH to have /usr/local/bin first.
+
+One last thing we need to copy the GNU version of regex.h because later
+on Netsaint does not like the AIX version in /usr/include
+
+# cp /inst/gnu/fileutils-4.1/lib/regex.h /usr/local/include
+
+Build Perl
+
+Download http://www.perl.com/CPAN/src/stable.tar.gz
+
+# gzip -d stable.tar.gz
+# tar xvf stable.tar
+# cd perl-5.6.1
+# rm -f config.sh Policy.sh
+sh Configure
+** take defaults except when asked 
+1) "Use which C compiler? [cc]": Answer "gcc" (although it will figure it out anyway when it can't find 
+cc - unless you actually installed the IBM xLC compiler.)
+2) "Shall I use /usr/local/bin/nm to extract C symbols from the libraries? [y]": Answer "y" (as long as you are 
+using the binutils version of nm. WHICH I RECOMMEND! AIX's does not produce the expected output that Configure 
+is looking for. Note the default answer will depend on your PATH position. If /usr/local/bin is first the GNU 
+version of "nm" will be found first. Use "which nm" to test for sure.)
+3) "Installation prefix to use? (~name ok) [/usr/local]": Answer "/usr/local" (make sure it matches what you actually
+use but "/usr/local" is recommended.)
+4) "Do you wish to use dynamic loading? [y]": Answer "n". (VERY IMPORTANT - AIX DOES NOT DO DYNAMIC LOADING - AIX 
+libraries do not support dynamic loading.)
+5) "What is your e-mail address? [kpinsco@host.blah.com]": Answer "eis-mr@westvaco.com".
+
+Ignore the following and take the default. I don't understand why it says that but it works ok:
+
+*** WHOA THERE!!! ***
+    The recommended value for $d_setregid on this machine was "undef"!
+    Keep the recommended value? [y]
+
+*** WHOA THERE!!! ***
+    The recommended value for $d_setreuid on this machine was "undef"!
+    Keep the recommended value? [y]
+
+*** WHOA THERE!!! ***
+    The recommended value for $d_setrgid on this machine was "undef"!
+    Keep the recommended value? [y]
+
+*** WHOA THERE!!! ***
+    The recommended value for $d_setruid on this machine was "undef"!
+    Keep the recommended value? [y]
+
+# make
+# make test
+# make install
+
+Verify:
+
+# perl -v
+
+This is perl, v5.6.1 built for aix
+
+Build Berkeley DB
+
+Refer to http://www.sleepycat.com/docs/ref/build_unix/intro.html
+
+Download http://www.sleepycat.com/update/3.2.9/db-3.2.9.tar.gz
+
+# gzip -d db-3.2.9.tar.gz
+# tar xvf db-3.2.9.tar
+# cd db-3.2.9/dist
+
+If you are using sh or ksh:
+
+# export CC=gcc
+
+csh:
+
+# setenv CC gcc
+
+# ./configure
+# make
+# make install
+
+# need to do this so the BerkeleyDB-0.15 Makefile.PL can find these files
+ln -s /usr/local/BerkeleyDB.3.2/include/db.h /usr/local/include
+ln -s /usr/local/BerkeleyDB.3.2/lib/libdb.a /usr/local/lib
+
+Build BerkeleyDB-0.16 module
+
+Download BerkeleyDB-0.16 module from CPAN
+
+http://www.perl.com/CPAN-local/modules/by-module/BerkeleyDB/BerkeleyDB-0.16.tar.gz
+
+Refer to http://www.perl.com/CPAN-local/modules/INSTALL.html
+
+also the README
+
+http://www.perl.com/CPAN-local/modules/by-module/BerkeleyDB/BerkeleyDB-0.16.readme
+
+# gzip -d BerkeleyDB-0.16.tar.gz
+# tar xvf BerkeleyDB-0.16.tar
+# cd BerkeleyDB-0.16
+Copy the original Makefile.PL over so we can add a line
+# cp Makefile.PL Makefile.PL.orig
+Now make the following changes to Makefile.PL
+
+Find where it says
+
+# OS2 is a special case, so check for it now.
+my $OS2 = "" ;
+$OS2 = "-DOS2" if $^O eq 'os2' ;
+
+Now add these lines directly below it:
+
+# AIX is a special case too for threads
+$LIBS .= " -lpthread" if $^O eq 'aix' ;
+
+Now build the Makefile
+
+# perl Makefile.PL
+Parsing config.in...
+Looks Good.
+Checking if your kit is complete...
+Looks good
+Writing Makefile for BerkeleyDB
+
+# make
+# make test
+All tests successful
+
+# make install
+
+Build Perl module IO::Stringy
+
+Download from http://www.perl.com/CPAN-local/modules/by-module/IO/IO-stringy-2.108.tar.gz
+
+# gzip -d IO-stringy-2.108.tar.gz
+# tar xvf IO-stringy-2.108.tar
+# IO-stringy-2.108
+# perl Makefile.PL
+Checking if your kit is complete...
+Looks good
+Writing Makefile for IO-stringy
+
+# make
+cp lib/IO/Wrap.pm blib/lib/IO/Wrap.pm
+cp lib/IO/Lines.pm blib/lib/IO/Lines.pm
+cp lib/IO/ScalarArray.pm blib/lib/IO/ScalarArray.pm
+cp lib/IO/WrapTie.pm blib/lib/IO/WrapTie.pm
+cp lib/IO/Scalar.pm.html blib/lib/IO/Scalar.pm.html
+cp lib/IO/AtomicFile.pm blib/lib/IO/AtomicFile.pm
+cp lib/IO/Stringy.pm blib/lib/IO/Stringy.pm
+cp lib/IO/Scalar.pm blib/lib/IO/Scalar.pm
+cp lib/IO/InnerFile.pm blib/lib/IO/InnerFile.pm
+Manifying blib/man3/IO::Lines.3
+Manifying blib/man3/IO::WrapTie.3
+Manifying blib/man3/IO::ScalarArray.3
+Manifying blib/man3/IO::Wrap.3
+Manifying blib/man3/IO::AtomicFile.3
+Manifying blib/man3/IO::Stringy.3
+Manifying blib/man3/IO::Scalar.3
+Manifying blib/man3/IO::InnerFile.3
+
+# make test
+PERL_DL_NONLAZY=1 /usr/local/bin/perl -Iblib/arch -Iblib/lib -I/usr/local/lib/perl5/5
+.6.1/aix -I/usr/local/lib/perl5/5.6.1 -e 'use Test::Harness qw(&runtests $verbose); $
+verbose=0; runtests @ARGV;' t/*.t
+t/IO_Lines..........ok
+t/IO_Scalar.........ok
+t/IO_ScalarArray....ok
+t/IO_WrapTie........ok
+t/simple............ok
+t/two...............ok
+All tests successful.
+Files=6, Tests=116,  2 wallclock secs ( 2.03 cusr +  0.34 csys =  2.37 CPU)
+
+# make install
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/Wrap.pm
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/Lines.pm
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/ScalarArray.pm
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/WrapTie.pm
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/Scalar.pm.html
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/AtomicFile.pm
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/Stringy.pm
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/Scalar.pm
+Installing /usr/local/lib/perl5/site_perl/5.6.1/IO/InnerFile.pm
+Installing /usr/local/man/man3/IO::Lines.3
+Installing /usr/local/man/man3/IO::WrapTie.3
+Installing /usr/local/man/man3/IO::ScalarArray.3
+Installing /usr/local/man/man3/IO::Wrap.3
+Installing /usr/local/man/man3/IO::AtomicFile.3
+Installing /usr/local/man/man3/IO::Stringy.3
+Installing /usr/local/man/man3/IO::Scalar.3
+Installing /usr/local/man/man3/IO::InnerFile.3
+Writing /usr/local/lib/perl5/site_perl/5.6.1/aix/auto/IO-stringy/.packlist
+Appending installation info to /usr/local/lib/perl5/5.6.1/aix/perllocal.pod
+
+Build Perl module MIME::QuotedPrint
+
+Download from http://www.perl.com/CPAN-local/authors/id/E/ER/ERYQ/MIME-tools-5.411.tar.gz
+
+# gzip -d MIME-tools-5.411.tar.gz
+# tar xvf MIME-tools-5.411.tar
+# cd MIME-tools-5.411
+# perl Makefile.PL
+# make
+# make test
+# make install
+cp lib/MIME/Field/ContDisp.pm blib/lib/MIME/Field/ContDisp.pm
+cp lib/MIME/Decoder/Base64.pm blib/lib/MIME/Decoder/Base64.pm
+cp lib/MIME/Parser/Filer.pm blib/lib/MIME/Parser/Filer.pm
+cp lib/MIME/WordDecoder.pm blib/lib/MIME/WordDecoder.pm
+cp lib/MIME/Parser/Results.pm blib/lib/MIME/Parser/Results.pm
+cp lib/MIME/Decoder/NBit.pm blib/lib/MIME/Decoder/NBit.pm
+cp lib/MIME/Decoder/Binary.pm blib/lib/MIME/Decoder/Binary.pm
+cp lib/MIME/Body.pm blib/lib/MIME/Body.pm
+cp lib/MIME/Parser/Reader.pm blib/lib/MIME/Parser/Reader.pm
+cp lib/MIME/Decoder/UU.pm blib/lib/MIME/Decoder/UU.pm
+cp lib/MIME/Decoder/Gzip64.pm blib/lib/MIME/Decoder/Gzip64.pm
+cp lib/MIME/Field/ParamVal.pm blib/lib/MIME/Field/ParamVal.pm
+cp lib/MIME/Entity.pm blib/lib/MIME/Entity.pm
+cp lib/MIME/Decoder/QuotedPrint.pm blib/lib/MIME/Decoder/QuotedPrint.pm
+cp lib/MIME/Head.pm blib/lib/MIME/Head.pm
+cp lib/MIME/Parser.pm blib/lib/MIME/Parser.pm
+cp lib/MIME/Tools.pm blib/lib/MIME/Tools.pm
+cp lib/MIME/Field/ContType.pm blib/lib/MIME/Field/ContType.pm
+cp lib/MIME/Words.pm blib/lib/MIME/Words.pm
+cp lib/MIME/Decoder.pm blib/lib/MIME/Decoder.pm
+cp lib/MIME/Field/ConTraEnc.pm blib/lib/MIME/Field/ConTraEnc.pm
+Manifying blib/man3/MIME::Field::ContDisp.3
+Manifying blib/man3/MIME::Decoder::Base64.3
+Manifying blib/man3/MIME::Parser::Filer.3
+Manifying blib/man3/MIME::WordDecoder.3
+Manifying blib/man3/MIME::Parser::Results.3
+Manifying blib/man3/MIME::Decoder::NBit.3
+Manifying blib/man3/MIME::Decoder::Binary.3
+Manifying blib/man3/MIME::Body.3
+Manifying blib/man3/MIME::Parser::Reader.3
+Manifying blib/man3/MIME::Decoder::UU.3
+Manifying blib/man3/MIME::Decoder::Gzip64.3
+Manifying blib/man3/MIME::Field::ParamVal.3
+Manifying blib/man3/MIME::Entity.3
+Manifying blib/man3/MIME::Decoder::QuotedPrint.3
+Manifying blib/man3/MIME::Head.3
+Manifying blib/man3/MIME::Parser.3
+Manifying blib/man3/MIME::Tools.3
+Manifying blib/man3/MIME::Field::ContType.3
+Manifying blib/man3/MIME::Words.3
+Manifying blib/man3/MIME::Decoder.3
+Manifying blib/man3/MIME::Field::ConTraEnc.3
+
+Build Perl module MAIL::Sendmail
+
+Download from http://www.perl.com/CPAN-local/modules/by-module/Mail/Mail-Sendmail-0.78.tar.gz
+
+# gzip -d Mail-Sendmail-0.78.tar.gz
+# tar xvf Mail-Sendmail-0.78.tar
+# cd Mail-Sendmail-0.78
+# perl Makefile.PL
+Checking if your kit is complete...
+Looks good
+Writing Makefile for Mail::Sendmail
+# make
+Manifying blib/man3/Mail::Sendmail.3
+# make test
+Don't worry if you get this message:
+"Sending 8bit characters, hoping it will come across OK.
+connect to 194.38.89.3 failed (A remote host did not respond within the timeout perio
+d.)
+connect to 194.38.89.3 failed
+
+ok 2"
+
+Since this host is not directly connect to the Internet.
+
+# make install
+Installing /usr/local/lib/perl5/site_perl/5.6.1/Mail/Sendmail.pm
+Installing /usr/local/man/man3/Mail::Sendmail.3
+Writing /usr/local/lib/perl5/site_perl/5.6.1/aix/auto/Mail/Sendmail/.packlist
+Appending installation info to /usr/local/lib/perl5/5.6.1/aix/perllocal.pod
+
+Build NET::Netrc
+
+Download from http://www.cpan.org/authors/id/GBARR/libnet-1.0704.tar.gz
+
+# gzip -d libnet-1.0704.tar.gz
+# tar xvf libnet-1.0704.tar
+# cd libnet-1.0704
+
+# ./Configure
+
+Ah, I see you already have installed libnet before.
+
+Do you want to modify/update your configuration (y|n) ? [no] yes
+
+This script will prompt you to enter hostnames that can be used as
+defaults for some of the modules in the libnet distribution.
+
+To ensure that you do not enter an invalid hostname, I can perform a
+lookup on each hostname you enter. If your internet connection is via
+a dialup line then you may not want me to perform these lookups, as
+it will require you to be on-line.
+
+Do you want me to perform hostname lookups (y|n) ? [yes]
+
+The following questions all require a list of host names, separated
+with spaces. If you do not have a host available for any of the
+services, then enter a single space, followed by <CR>. To accept the
+default, hit <CR>
+
+Enter a list of available NNTP hosts : []
+Enter a list of available SMTP hosts : [] mail.westvaco.com
+Enter a list of available POP3 hosts : []
+Enter a list of available SNPP hosts : []
+Enter a list of available PH Hosts   : []
+Enter a list of available TIME Hosts   : []
+Enter a list of available DAYTIME Hosts   : []
+
+Do you have a firewall/ftp proxy  between your machine and the internet
+
+If you use a SOCKS firewall answer no
+
+(y|n) ? [no] yes
+What series of FTP commands do you need to send to your
+firewall to connect to an external host.
+
+user/pass     => external user & password
+fwuser/fwpass => firewall user & password
+
+0) None
+1) -----------------------
+     USER user@remote.host
+     PASS pass
+2) -----------------------
+     USER fwuser
+     PASS fwpass
+     USER user@remote.host
+     PASS pass
+3) -----------------------
+     USER fwuser
+     PASS fwpass
+     SITE remote.site
+     USER user
+     PASS pass
+4) -----------------------
+     USER fwuser
+     PASS fwpass
+     OPEN remote.site
+     USER user
+     PASS pass
+5) -----------------------
+     USER user@fwuser@remote.site
+     PASS pass@fwpass
+6) -----------------------
+     USER fwuser@remote.site
+     PASS fwpass
+     USER user
+     PASS pass
+7) -----------------------
+     USER user@remote.host
+     PASS pass
+     AUTH fwuser
+     RESP fwpass
+
+Choice: [1] 0
+FTP proxy hostname : [] 32.77.167.230
+
+By default Net::FTP assumes that it only needs to use a firewall if it
+cannot resolve the name of the host given. This only works if your DNS
+system is setup to only resolve internal hostnames. If this is not the
+case and your DNS will resolve external hostnames, then another method
+is needed. Net::Config can do this if you provide the netmasks that
+describe your internal network. Each netmask should be entered in the
+form x.x.x.x/y, for example 127.0.0.0/8 or 214.8.16.32/24
+
+
+Enter one netmask at each prompt, prefix with a - to remove a netmask
+from the list, enter a '*' to clear the whole list, an '=' to show the
+current list and an empty line to continue with Configure.
+
+netmask : [] 255.255.255.128
+Bad netmask '255.255.255.128'
+netmask : [] 170.85.11.128/25
+netmask : []
+
+Normally when FTP needs a data connection the client tells the server
+a port to connect to, and the server initiates a connection to the client.
+
+Some setups, in particular firewall setups, can/do not work using this
+protocol. In these situations the client must make the connection to the
+server, this is called a passive transfer.
+
+Should all FTP connections via a firewall/proxy be passive (y|n) ? [no] yes
+
+Should all other FTP connections be passive (y|n) ? [no] yes
+
+What is your local internet domain name : [] westvaco.com
+
+If you specified some default hosts above, it is possible for me to
+do some basic tests when you run `make test'
+
+This will cause `make test' to be quite a bit slower and, if your
+internet connection is via dialup, will require you to be on-line
+unless the hosts are local.
+
+Do you want me to run these tests (y|n) ? [yes]
+
+To allow Net::FTP to be tested I will need a hostname. This host
+should allow anonymous access and have a /pub directory
+
+What host can I use : [] prep.ai.mit.edu
+
+Writing libnet.cfg
+root@wvlutil1:/inst/gnu/libnet-1.0704#
+
+
+# perl Makefile.PL
+# make
+# make install
+
+Build NET::Rexec
+
+Download from http://www.perl.com/CPAN-local/authors/id/F/FK/FKOLODNY/Net-Rexec-0.12.tar.gz
+
+# gzip -d Net-Rexec-0.12.tar.gz
+# tar xvf Net-Rexec-0.12.tar
+# cd Net-Rexec-0.12
+# perl Makefile.PL
+# make
+# make install
+
+
+Install IBM's 1.3.6.4 HTTPServer
+
+Download from http://www-4.ibm.com/software/webservers/httpservers/download.html
+
+Need file sets for
+
+Server   HTTPServer.aix.server.tar.Z (17.4MB) 
+Admin   HTTPServer.aix.admin.tar.Z (8.1MB) 
+Modules   HTTPServer.aix.modules128.tar.Z (215KB) 
+128-bit SSL   HTTPServer.aix.ssl128.tar.Z (12.6MB) 
+LDAP   ldap.client128.tar (13.2MB) 
+
+# uncompress HTTPServer.aix.server.tar.Z
+# uncompress HTTPServer.aix.admin.tar.Z
+# uncompress HTTPServer.aix.modules128.tar.Z
+# uncompress HTTPServer.aix.ssl128.tar.Z
+
+Now untar everything for installp
+
+# csh
+# foreach f (*.tar)
+? tar xvf $f
+? end
+x .
+x ./http_server.admin, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.Ja_JP.admin, 1894400 bytes, 3700 media blocks.
+x ./http_server.msg.Zh_CN.admin, 1792000 bytes, 3500 media blocks.
+x ./http_server.msg.Zh_TW.admin, 1792000 bytes, 3500 media blocks.
+x ./http_server.msg.de_DE.admin, 1894400 bytes, 3700 media blocks.
+x ./http_server.msg.en_US.admin, 1894400 bytes, 3700 media blocks.
+x ./http_server.msg.es_ES.admin, 1894400 bytes, 3700 media blocks.
+x ./http_server.msg.fr_FR.admin, 1894400 bytes, 3700 media blocks.
+x ./http_server.msg.it_IT.admin, 1894400 bytes, 3700 media blocks.
+x ./http_server.msg.ko_KR.admin, 1843200 bytes, 3600 media blocks.
+x ./http_server.msg.pt_BR.admin, 1894400 bytes, 3700 media blocks.
+x .
+x ./http_server.frca, 102400 bytes, 200 media blocks.
+x ./http_server.modules, 256000 bytes, 500 media blocks.
+x ./http_server.modules.ldap.128, 102400 bytes, 200 media blocks.
+x .
+x ./http_server.base, 4044800 bytes, 7900 media blocks.
+x ./http_server.html.Ja_JP, 2560000 bytes, 5000 media blocks.
+x ./http_server.html.Zh_CN, 2406400 bytes, 4700 media blocks.
+x ./http_server.html.Zh_TW, 2406400 bytes, 4700 media blocks.
+x ./http_server.html.de_DE, 2508800 bytes, 4900 media blocks.
+x ./http_server.html.en_US, 2457600 bytes, 4800 media blocks.
+x ./http_server.html.es_ES, 2508800 bytes, 4900 media blocks.
+x ./http_server.html.fr_FR, 2508800 bytes, 4900 media blocks.
+x ./http_server.html.it_IT, 2508800 bytes, 4900 media blocks.
+x ./http_server.html.ko_KR, 2457600 bytes, 4800 media blocks.
+x ./http_server.html.pt_BR, 2508800 bytes, 4900 media blocks.
+x ./http_server.man.en_US, 102400 bytes, 200 media blocks.
+x .
+x ./http_server.msg.Ja_JP.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.Zh_CN.ssl.core, 614400 bytes, 1200 media blocks.
+x ./http_server.msg.Zh_TW.ssl.core, 614400 bytes, 1200 media blocks.
+x ./http_server.msg.de_DE.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.en_US.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.es_ES.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.fr_FR.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.it_IT.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.ko_KR.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.msg.pt_BR.ssl.core, 665600 bytes, 1300 media blocks.
+x ./http_server.ssl.128, 153600 bytes, 300 media blocks.
+x ./http_server.ssl.core, 665600 bytes, 1300 media blocks.
+x ./gskrf301, 8348672 bytes, 16306 media blocks.
+x ./gskru301, 63488 bytes, 124 media blocks.
+x ldap.client, 12725248 bytes, 24854 media blocks.
+x ldap.max_crypto_client, 530432 bytes, 1036 media blocks.
+# exit
+# rm .toc
+
+Now clean up unneeded files:
+# rm http_server.html.Ja_JP
+# rm http_server.html.Zh_CN
+# rm http_server.html.Zh_TW
+# rm http_server.html.de_DE
+# rm http_server.html.es_ES
+# rm http_server.html.fr_FR
+# rm http_server.html.it_IT
+# rm http_server.html.ko_KR
+# rm http_server.html.pt_BR
+# rm http_server.msg.Ja_JP.admin
+# rm http_server.msg.Ja_JP.ssl.core
+# rm http_server.msg.Zh_CN.admin
+# rm http_server.msg.Zh_CN.ssl.core
+# rm http_server.msg.Zh_TW.admin
+# rm http_server.msg.Zh_TW.ssl.core
+# rm http_server.msg.de_DE.admin
+# rm http_server.msg.de_DE.ssl.core
+# rm http_server.msg.es_ES.admin
+# rm http_server.msg.es_ES.ssl.core
+# rm http_server.msg.fr_FR.admin
+# rm http_server.msg.fr_FR.ssl.core
+# rm http_server.msg.it_IT.admin
+# rm http_server.msg.it_IT.ssl.core
+# rm http_server.msg.ko_KR.admin
+# rm http_server.msg.ko_KR.ssl.core
+# rm http_server.msg.pt_BR.admin
+# rm http_server.msg.pt_BR.ssl.core
+
+Now install the remaining modules:
+# /usr/lib/instl/sm_inst installp_cmd -a -Q -d '/inst/lpp' -f '_all_latest'  '-c' '-N' '-g' '-X'   '-G' '-V2' '-S'
+.
+.
+.
+Installation Summary
+--------------------
+Name                        Level           Part        Event       Result
+-------------------------------------------------------------------------------
+ldap.client.rte             3.1.1.1         USR         APPLY       SUCCESS
+ldap.client.adt             3.1.1.1         USR         APPLY       SUCCESS
+ldap.client.rte             3.1.1.1         ROOT        APPLY       SUCCESS
+http_server.ssl.128         1.3.6.4         USR         APPLY       SUCCESS
+http_server.man.en_US       1.3.6.4         USR         APPLY       SUCCESS
+gskrf301.base               3.0.1.138       USR         APPLY       SUCCESS
+http_server.html.en_US      1.3.6.4         USR         APPLY       SUCCESS
+http_server.base.source     1.3.6.4         USR         APPLY       SUCCESS
+http_server.base.rte        1.3.6.4         USR         APPLY       SUCCESS
+http_server.base.rte        1.3.6.4         ROOT        APPLY       SUCCESS
+http_server.modules.ldap.12 1.3.6.4         USR         APPLY       SUCCESS
+http_server.modules.snmp    1.3.6.4         USR         APPLY       SUCCESS
+http_server.modules.mt      1.3.6.4         USR         APPLY       SUCCESS
+http_server.modules.ldap    1.3.6.4         USR         APPLY       SUCCESS
+http_server.frca            1.3.6.4         USR         APPLY       SUCCESS
+http_server.admin           1.3.6.4         USR         APPLY       SUCCESS
+ldap.max_crypto_client.rte  3.1.1.1         USR         APPLY       SUCCESS
+ldap.max_crypto_client.adt  3.1.1.1         USR         APPLY       SUCCESS
+http_server.ssl.core        1.3.6.4         USR         APPLY       SUCCESS
+gskru301.base               3.0.1.138       USR         APPLY       SUCCESS
+http_server.msg.en_US.ssl.c 1.3.6.4         USR         APPLY       SUCCESS
+http_server.msg.en_US.admin 1.3.6.4         USR         APPLY       SUCCESS
+
+Build Apache
+
+Download from http://httpd.apache.org/dist/httpd/apache_1.3.20.tar.gz
+
+# gzip -d apache_1.3.20.tar.gz
+# tar xvf apache_1.3.20.tar
+# cd apache_1.3.20
+# ./configure --prefix=/usr/local/apache
+# make
+
+Install Apache
+
+Now for some reason I have yet to figure out I have had problems with the 
+helpers/install.sh script that comes with Apache so I wrote my own install
+script using the GNU install tool run this instead:
+
+# install -m 755 ./src/httpd /usr/local/apache/bin/httpd
+# install -m 644 ./src/support/httpd.8 /usr/local/apache/man/man8/httpd.8
+# install -m 755 ./src/support/ab /usr/local/apache/bin/ab
+# install -m 644 ./src/support/ab.8 /usr/local/apache/man/man8/ab.8
+# install -m 755 ./src/support/apachectl /usr/local/apache/bin/apachectl
+# install -m 644 ./src/support/apachectl.8 /usr/local/apache/man/man8/apachectl.8
+# install -m 755 ./src/support/htpasswd /usr/local/apache/bin/htpasswd
+# install -m 644 ./src/support/htpasswd.1 /usr/local/apache/man/man1/htpasswd.1
+# install -m 755 ./src/support/htdigest /usr/local/apache/bin/htdigest
+# install -m 644 ./src/support/htdigest.1 /usr/local/apache/man/man1/htdigest.1
+# install -m 755 ./src/support/dbmmanage /usr/local/apache/bin/dbmmanage
+# install -m 644 ./src/support/dbmmanage.1 /usr/local/apache/man/man1/dbmmanage.1
+# install -m 755 ./src/support/logresolve /usr/local/apache/bin/logresolve
+# install -m 644 ./src/support/logresolve.8 /usr/local/apache/man/man8/logresolve.8
+# install -m 755 ./src/support/rotatelogs /usr/local/apache/bin/rotatelogs
+# install -m 644 ./src/support/rotatelogs.8 /usr/local/apache/man/man8/rotatelogs.8
+# install -m 755 ./src/support/apxs /usr/local/apache/bin/apxs
+# install -m 755 ./src/support/apxs.pl /usr/local/apache/bin/apxs.pl
+# install -m 644 ./src/support/apxs.8 /usr/local/apache/man/man8/apxs.8
+# install -m 644 ./conf/httpd.conf-dist /usr/local/apache/conf/httpd.conf.default
+# install -m 644 ./conf/access.conf-dist /usr/local/apache/conf/access.conf.default
+# install -m 644 ./conf/srm.conf-dist /usr/local/apache/conf/srm.conf.default
+# install -m 644 ./conf/mime.types /usr/local/apache/conf/mime.types.default
+# install -m 644 ./conf/magic /usr/local/apache/conf/magic.default
+
+Edit configuration on apachectl script
+
+Edit /usr/local/apache/bin/apachectl
+
+Change line 
+
+HTTPD='/usr/local/apache/src/httpd'
+
+to
+
+HTTPD='/usr/local/apache/bin/httpd'
+
+Update the Apache config. file
+
+# cd /usr/local/apache/conf
+# cp httpd.conf httpd.conf.orig
+
+Make the following changes to httpd.conf ("<" indicates changes):
+
+< MinSpareServers 3
+< MaxSpareServers 5
+---
+> MinSpareServers 5
+> MaxSpareServers 10
+< StartServers 2
+---
+> StartServers 5
+< MaxClients 15
+---
+> MaxClients 150
+< Port 911
+---
+> Port 80
+< ServerAdmin eis-mr@westvaco.com
+---
+> ServerAdmin you@your.address
+< ServerName <hostname>.westvaco.com
+---
+> #ServerName new.host.name
+< CustomLog /usr/local/apache/logs/access_log common
+---
+> CustomLog logs/access_log common
+< CustomLog /usr/local/apache/logs/access_log combined
+---
+> #CustomLog logs/access_log combined
+
+
+Restart Apache
+
+# apachectl stop
+# apachectl start
+
+
+Build Monitor
+
+Download http://joshua.mesa.nl/pub/monitor/monitor-2.1.9.tar.gz
+
+# gzip -d monitor-2.1.9.tar.gz
+# tar xvf monitor-2.1.9.tar
+# cd monitor-2.1.9
+
+You must make sure bos.net.nfs.adt is installed. This has the header files for nfs stuff
+
+# lslpp -l | grep bos.net.nfs.adt
+  bos.net.nfs.adt           4.3.3.25  COMMITTED  Network File System
+
+
+Modify Makefile and change "CC=cc" to "CC=gcc" and "LD=cc" to "LD=gcc"
+# cp Makefile Makefile.orig
+
+Make changes...
+
+# make
+# make install
+# make install
+/bin/rm -f /usr/local/bin/uptime
+/bin/rm -f /usr/local/etc/loadavgd
+/bin/rm -f /usr/local/bin/loadavgLED
+/bin/rm -f /usr/local/bin/monitor
+/bin/rm -f /usr/local/bin/fps
+mkdir -p /usr/local/bin
+mkdir -p /usr/local/etc
+/usr/ucb/install -c -o root -g system uptime /usr/local/bin
+/usr/ucb/install -c -o root -g system -m 2711 monitor /usr/local/bin
+/usr/ucb/install -c -o root -g system -m 2711 loadavgd /usr/local/etc
+/usr/ucb/install -c -o root -g system -m 4711 loadavgLED /usr/local/bin
+/usr/ucb/install -c -o root -g system -m 711 fps /usr/local/bin
+mkdir -p /usr/local/man/man1
+mkdir -p /usr/local/man/man3
+/usr/ucb/install -c monitor.1 /usr/local/man/man1
+/usr/ucb/install -c fps.1 /usr/local/man/man1
+/usr/ucb/install -c monitor.3 /usr/local/man/man3
+/usr/ucb/install -c getloadavg.3 /usr/local/man/man3
+/usr/ucb/install -c getproc.3 /usr/local/man/man3
+
+*** Netsaint installation for the monitoring hosts only ***
+
+Install zlib
+
+Download from ftp://ftp.uu.net/graphics/png/src/zlib-1.1.3.tar.gz
+
+# gzip -d zlib-1.1.3.tar.gz
+# tar xvf zlib-1.1.3.tar
+# cd zlib-1.1.3
+# ./configure
+# make
+#  make test
+hello world
+uncompress(): hello, hello!
+gzread(): hello, hello!
+gzgets() after gzseek: hello!
+inflate(): hello, hello!
+large_inflate(): OK
+after inflateSync(): hello, hello!
+inflate with dictionary: hello, hello!
+                *** zlib test OK ***
+
+# make install
+cp zlib.h zconf.h /usr/local/include
+chmod 644 /usr/local/include/zlib.h /usr/local/include/zconf.h
+cp libz.a /usr/local/lib
+cd /usr/local/lib; chmod 755 libz.a
+cd /usr/local/lib; if test -f libz.so.1.1.3; then \
+  rm -f libz.so libz.so.1; \
+  ln -s libz.so.1.1.3 libz.so; \
+  ln -s libz.so.1.1.3 libz.so.1; \
+  (ldconfig || true)  >/dev/null 2>&1; \
+fi
+
+Install libpng
+
+Download from http://www.libpng.org/pub/png/src/libpng-1.2.0.tar.gz
+
+# gzip -d libpng-1.2.0.tar.gz
+# tar xvf libpng-1.2.0.tar
+# cd libpng-1.2.0
+# cp scripts/makefile.aix Makefile
+# make
+# make install
+# make install
+cp png.h pngconf.h /usr/local/include
+chmod 644 /usr/local/include/png.h /usr/local/include/pngconf.h
+cp libpng.a /usr/local/lib
+
+Install jpeg-6b or later, if desired (see the Independent JPEG Group home page)
+
+Download from ftp://ftp.uu.net/graphics/jpeg/jpegsrc.v6b.tar.gz
+
+# gzip -d jpegsrc.v6b.tar.gz
+# tar xvf jpegsrc.v6b.tar
+# cd jpeg-6b
+# ./configure
+# make
+
+# make test
+rm -f testout*
+./djpeg -dct int -ppm -outfile testout.ppm  ./testorig.jpg
+./djpeg -dct int -bmp -colors 256 -outfile testout.bmp  ./testorig.jpg
+./cjpeg -dct int -outfile testout.jpg  ./testimg.ppm
+./djpeg -dct int -ppm -outfile testoutp.ppm ./testprog.jpg
+./cjpeg -dct int -progressive -opt -outfile testoutp.jpg ./testimg.ppm
+./jpegtran -outfile testoutt.jpg ./testprog.jpg
+cmp ./testimg.ppm testout.ppm
+cmp ./testimg.bmp testout.bmp
+cmp ./testimg.jpg testout.jpg
+cmp ./testimg.ppm testoutp.ppm
+cmp ./testimgp.jpg testoutp.jpg
+cmp ./testorig.jpg testoutt.jpg
+
+# make install
+/usr/bin/installbsd -c cjpeg /usr/local/bin/cjpeg
+/usr/bin/installbsd -c djpeg /usr/local/bin/djpeg
+/usr/bin/installbsd -c jpegtran /usr/local/bin/jpegtran
+/usr/bin/installbsd -c rdjpgcom /usr/local/bin/rdjpgcom
+/usr/bin/installbsd -c wrjpgcom /usr/local/bin/wrjpgcom
+/usr/bin/installbsd -c -m 644 ./cjpeg.1 /usr/local/man/man1/cjpeg.1
+/usr/bin/installbsd -c -m 644 ./djpeg.1 /usr/local/man/man1/djpeg.1
+/usr/bin/installbsd -c -m 644 ./jpegtran.1 /usr/local/man/man1/jpegtran.1
+/usr/bin/installbsd -c -m 644 ./rdjpgcom.1 /usr/local/man/man1/rdjpgcom.1
+/usr/bin/installbsd -c -m 644 ./wrjpgcom.1 /usr/local/man/man1/wrjpgcom.1
+
+Install GD
+
+Download from http://www.boutell.com/gd/http/gd-1.8.4.tar.gz
+
+# gzip -d gd-1.8.4.tar.gz
+# tar xvf gd-1.8.4.tar
+# cd gd-1.8.4
+
+Assuming we installed the JPEG code in an adjacent directory...
+# ln -s ../jpeg-6b/jpeglib.h jpeglib.h
+# ln -s ../jpeg-6b/jerror.h jerror.h
+# ln -s ../jpeg-6b/jconfig.h jconfig.h
+# ln -s ../jpeg-6b/jconfig.h jconfig.h
+
+# make
+
+# make install
+sh ./install-item 644 libgd.a /usr/local/lib/libgd.a
+sh ./install-item 755 pngtogd /usr/local/bin/pngtogd
+sh ./install-item 755 pngtogd2 /usr/local/bin/pngtogd2
+sh ./install-item 755 gdtopng /usr/local/bin/gdtopng
+sh ./install-item 755 gd2topng /usr/local/bin/gd2topng
+sh ./install-item 755 gd2copypal /usr/local/bin/gd2copypal
+sh ./install-item 755 gdparttopng /usr/local/bin/gdparttopng
+sh ./install-item 755 webpng /usr/local/bin/webpng
+sh ./install-item 755 bdftogd /usr/local/bin/bdftogd
+sh ./install-item 644 gd.h /usr/local/include/gd.h
+sh ./install-item 644 gdcache.h /usr/local/include/gdcache.h
+sh ./install-item 644 gd_io.h /usr/local/include/gd_io.h
+sh ./install-item 644 gdfontg.h /usr/local/include/gdfontg.h
+sh ./install-item 644 gdfontl.h /usr/local/include/gdfontl.h
+sh ./install-item 644 gdfontmb.h /usr/local/include/gdfontmb.h
+sh ./install-item 644 gdfonts.h /usr/local/include/gdfonts.h
+sh ./install-item 644 gdfontt.h /usr/local/include/gdfontt.h
+
+There is problem here with libgd.so and shr.o not being built that Netsaint 
+will require later. For now I took the libgd.so and extracted it from wvlps1 
+(which I downloaded the pre-built gd-1.8.4 from Bull AIX Freeware site):
+
+# ar -x /usr/local/lib/libgd.a libgd.so
+# ar -x /usr/local/lib/libgd.a shr.o
+
+Transfer libgd.so to wvlutil1...
+
+# ar -r /usr/local/lib/libgd.a libgd.so
+# ar -r /usr/local/lib/libgd.a shr.o
+
+
+Install MRTG
+
+Download from http://people.ee.ethz.ch/~oetiker/webtools/mrtg/pub/mrtg-2.9.17.tar.gz
+
+# gzip -d mrtg-2.9.17.tar.gz
+# tar xvf mrtg-2.9.17.tar
+# cd mrtg-2.9.17
+# ./configure
+# make
+
+# make install
+# make install
+/bin/sh ./mkinstalldirs /usr/local/mrtg-2/bin
+mkdir /usr/local/mrtg-2
+mkdir /usr/local/mrtg-2/bin
+for x in bin/mrtg bin/cfgmaker bin/indexmaker bin/rateup; do \
+  ./install-sh -c -m 755 $x /usr/local/mrtg-2/bin; done
+/bin/sh ./mkinstalldirs /usr/local/mrtg-2/lib/mrtg2/Pod
+mkdir /usr/local/mrtg-2/lib
+mkdir /usr/local/mrtg-2/lib/mrtg2
+mkdir /usr/local/mrtg-2/lib/mrtg2/Pod
+for x in lib/mrtg2/*.pm; do \
+  ./install-sh -c -m 644 $x /usr/local/mrtg-2/lib/mrtg2; done
+for x in lib/mrtg2/Pod/*.pm; do \
+  ./install-sh -c -m 644 $x /usr/local/mrtg-2/lib/mrtg2/Pod; done
+for x in images/*.gif images/*.png; do \
+  ./install-sh -c -m 644 $x /usr/local/mrtg-2/lib/mrtg2; done
+/bin/sh ./mkinstalldirs /usr/local/mrtg-2/doc/mrtg2
+mkdir /usr/local/mrtg-2/doc
+mkdir /usr/local/mrtg-2/doc/mrtg2
+for x in COPYING COPYRIGHT README CHANGES THANKS doc/*.pod doc/*.html doc/*.wml doc/*
+.txt doc/*.png; do \
+  ./install-sh -c -m 644 $x /usr/local/mrtg-2/doc/mrtg2; done
+/bin/sh ./mkinstalldirs /usr/local/mrtg-2/man/man1
+mkdir /usr/local/mrtg-2/man
+mkdir /usr/local/mrtg-2/man/man1
+for x in doc/*.1; do \
+  ./install-sh -c -m 644 $x /usr/local/mrtg-2/man/man1; done
+
+Install xpm
+
+Download from ftp://ftp.x.org/contrib/libraries/xpm-3.4k.tar.gz
+
+# gzip -d xpm-3.4k.tar.gz
+# tar xvf xpm-3.4k.tar
+# cd xpm-3.4k
+
+We will need to make some changes to the individual makefiles.
+This package is really meant for imake but that would take a while
+to install and is not needed for anything else so we will fudge.
+
+# find . -name Makefile.noX
+./Makefile.noX
+./lib/Makefile.noX
+./sxpm/Makefile.noX
+./cxpm/Makefile.noX
+
+Modify each of these files to change the following lines:
+
+"CC = cc" to "CC = gcc"
+
+"XLIBDIRS= -L/usr/X11/lib" to "XLIBDIRS= -L/usr/lib/X11"
+
+"DESTBINDIR=/usr/local/bin/X11" to "DESTBINDIR=/usr/local/bin"
+
+"DESTINCLUDEDIR=/usr/local/include/X11" to "DESTINCLUDEDIR=/usr/local/include"
+
+# cp Makefile.noX Makefile.noX.orig
+
+in each directory
+
+cd back to the main directory (xpm-3.4k)
+
+Run make
+
+# make -f Makefile.noX
+
+# make -f Makefile.noX install
+
+
+Install UCD SNMP tools
+
+Download from ftp://ucd-snmp.ucdavis.edu/ucd-snmp-4.2.tar.gz
+
+# gzip -d ucd-snmp-4.2.tar.gz
+# tar xvf ucd-snmp-4.2.tar
+# cd ucd-snmp-4.2
+# ./configure
+
+You will be prompted for three questions, here are the answers:
+
+System Contact Information (root@westvaco.com): eis-mr@westvaco.com
+System Location (Unknown): LDC
+Location to write logfile (/usr/adm/snmpd.log): /var/adm/snmpd.log
+
+# make
+
+# make test
+Summary: 17 / 31 succeeded.
+
+Make sure some of the tests passed.
+
+# make install
+
+
+Install Netsaint 0.60
+
+Download from http://www.netsaint.org/download/netsaint-0.0.6.tar.gz
+
+# gzip -d netsaint-0.0.6.tar.gz
+# tar xvf netsaint-0.0.6.tar
+# cd netsaint-0.0.6
+# ./configure
+# make all
+
+Now we need to create a user called "netsaint".
+
+# mkgroup -'A' netsaint
+# mkuser pgrp='netsaint' groups='netsaint' su='false' home='/home/netsaint' shell='/bin/ksh' gecos='Netsaint Monitor' rlogin='false' netsaint
+
+Verify netsaint account added:
+
+# lsuser netsaint
+netsaint id=210 pgrp=netsaint groups=netsaint home=/home/netsaint shell=/bin/ksh 
+gecos=Netsaint Monitor login=true su=false rlogin=false daemon=true admin=false 
+sugroups=ALL admgroups= tpath=nosak ttys=ALL expires=0 auth1=SYSTEM auth2=NONE 
+umask=22 registry=files SYSTEM=compat logintimes= loginretries=0 pwdwarntime=0 
+account_locked=false minage=0 maxage=0 maxexpired=-1 minalpha=0 minother=0 mindiff=0 
+maxrepeats=8 minlen=0 histexpire=0 histsize=0 pwdchecks= dictionlist= fsize=2097151 
+cpu=-1 data=262144 stack=65536 core=2097151 rss=65536 nofiles=2000 roles=
+
+# make install
+
+
+Install Netsaint Plugins
+
+Download from http://prdownloads.sourceforge.net/netsaintplug/netsaint-plugins-1.2.9-4.tar.gz
+
+# gzip -d netsaint-plugins-1.2.9-4.tar.gz
+# tar xvf netsaint-plugins-1.2.9-4.tar
+# cd netsaint-plugins-1.2.9-4
+# ./configure
+# make
+# make test
+
+Prompts:
+
+Enter HP Jet-Direct card address - anwser "170.85.47.1"
+Enter SNMP community name - anwser "LDC"
+Enter UDP host name - answer "wvlsap1"
+Enter host for FTP/HTTP/UDP tests - anwser "wvlweb1"
+Enter host for SMTP/IMAP/POP tests - answer "fw1"
+Enter host that rejects above services - answer "wvlps1"
+Enter nonexistent IP address (e.g., 10.0.0.0) - answer "10.0.0.1"
+
+# make install
+
+
+Configure the web interface
+
+Refer to http://www.netsaint.org/docs/0_0_6/installweb.html
+
+Make changes to the Apache httpd.conf file:
+
+Add these to httpd.conf file as follows under the section "Controls who can 
+get stuff from this server":
+
+#
+# Controls who can get stuff from this server.
+#
+    Order allow,deny
+    Allow from all
+</Directory>
+
+# NetSaint Alias
+<Directory /usr/local/netsaint/share>
+AllowOverride None
+order allow,deny
+allow from all
+</Directory>
+
+Alias /netsaint/ /usr/local/netsaint/share/
+
+<Directory /usr/local/netsaint/sbin>
+AllowOverride AuthConfig
+order allow,deny
+allow from all
+Options ExecCGI
+</Directory>
+
+ScriptAlias /cgi-bin/netsaint/ /usr/local/netsaint/sbin/
+
+<Directory /usr/local/netsaint/share/neat>
+AllowOverride AuthConfig
+order allow,deny
+allow from all
+Options ExecCGI
+</Directory>
+
+
+Once you've editing the Apache configuration file, you'll need to restart the web server with a 
+command like this... 
+
+# apachectl stop
+# apachectl start
+
+
+Set the correct file ownership and permissions:
+
+# cd /usr/local/netsaint
+# find . -exec chown netsaint.netsaint {} \;
+# find . -exec chmod 755 {} \;
+# cd /var
+# chown netsaint.netsaint netsaint
+# chmod 755 netsaint
+# cd netsaint
+# chmod 777 netsaint.tmp
+# chown nobody.nobody rw
+# chmod 777 rw
+# cd /usr/local/netsaint/libexec
+# chmod 4755 check_hpjd
+# chown root check_hpjd
+
+Setup the cgi passwords for Netsaint:
+
+The second step is to create a file named .htaccess in the root your CGI directory 
+/usr/local/netsaint/sbin. The file should contain:
+
+AuthName "NetSaint Access"
+AuthType Basic
+AuthUserFile /usr/local/netsaint/etc/htpasswd.users
+require valid-user
+
+# chmod 755 .htaccess
+
+Afterwards so that Apache running as "nobody" can see it.
+
+Now create the htpasswd.users file and add the basic users:
+
+# htpasswd -c /usr/local/netsaint/etc/htpasswd.users midrange
+# htpasswd /usr/local/netsaint/etc/htpasswd.users operator
+# htpasswd -c /usr/local/netsaint/etc/htpasswd.users guest
+
+
+Netsaint startup
+
+copy the /etc/rc.netsaint script from backups or wvlutil1
+
+Add it to the inittab for a restart each boot:
+
+# mkitab -i uprintfd "netsaint:2:wait:/etc/rc.netsaint start >/dev/console 2>&1"
+
+And add a shutdown as well:
+
+# echo "/etc/rc.netsaint stop" >> /etc/rc.shutdown
+# chmod 700 /etc/rc.shutdown
+
+
+Need rsh access from wvlutil1 & wvlutil2 for each and every machine
+
+First create /.netrc and put an entry for each machine to be monitored:
+
+e.g.:
+
+machine wvlaix1 login root password password
+
+Make it so no one else can read this file - VERY IMPORTANT!
+
+# chmod 700 /.netrc
+
+Now run the script
+# /usr/local/admin/setup-rsh
+
+
+Now manually start Netsaint for the first time
+
+# /etc/rc.netsaint start
+
+
+
+Build lsof
+
+Download from ftp://vic.cc.purdue.edu/pub/tools/unix/lsof/lsof_4.58_W.tar.gz
+
+# gzip -d lsof_4.58_W.tar.gz
+# mkdir lsof; cd lsof
+# tar xvf ../lsof_4.58_W.tar
+# tar xvf lsof_4.58.tar
+# cd lsof_4.58
+# ./Configure aixgcc
+Prompts:
+Do you want to take inventory (y|n) [y]? - Answer "y".
+Do you want to customize (y|n) [y]? - Answer "y".
+Enable HASSECURITY (y|n) [n]? - Answer "y".
+Disable WARNINGSTATE? (y|n) [n]? - Answer "n".
+Disable WARNDEVACCESS (y|n) [n]? - Answer "n".
+Disable HASDCACHE (y|n) [n]? - Answer "n".
+
+The current path options are:
+
+#define HASENVDC        "LSOFDEVCACHE"
+#define HASPERSDC       "%h/%p.lsof_%L"
+#define HASPERSDCPATH   "LSOFPERSDCPATH"
+
+Do you want to change path options (y|n) [n]? - Answer "y"
+Do you want to define a name for HASENVDC (y|n) [n]? - Answer "n"
+Do you want to define a format for HASPERSDC (y|n) [n]? - Answer "n"
+Do you want to change HASPERSDCPATH (y|n) [n]? - Answer "n"
+Do you want to define a system-device path (y|n) [n]? - Answer "y"
+Please enter the system-wide path (no quotes): - Answer "/.lsof_cache"
+Do you want to define HASXOPT_ROOT (y|n) [n]? - Answer "n"
+Disable HASKERNIDCK (y|n) [n]? - Answer "n"
+(now this requires that you cannot run the version you are building now
+with other AIX kernel versions V4.2.n vs. V4.3.n)
+Do you want to rename machine.h to machine.h.old and replace it with
+new_machine.h (y|n) [y]? - Answer "y"
+
+# make
+
+Install:
+
+# install -m 755 lsof /usr/local/bin/lsof
+# install -m 644 lsof.8 /usr/local/man/man8/lsof.8
+
+Create cache file script:
+
+Put this script in /etc/rc.lsof_cache and make sure it runs on each system boot
+
+#!/bin/sh
+#
+# Simple script to build a system-wide device cache file
+# for lsof.
+
+HASSYSDC=/.lsof_cache
+/bin/rm -f $HASSYSDC
+/usr/local/bin/lsof -Du$HASSYSDC > /dev/null 2>&1
+if /bin/test $? -ne 0
+then
+	/bin/echo "WARNING: failed to create $HASSYSDC"
+        exit 1
+fi
+/bin/chmod 0644 $HASSYSDC
+exit 0
+
+And run it the first time:
+
+# chmod 700 /etc/rc.lsof_cache
+# /etc/rc.lsof_cache
+# ls -l /.lsof_cache
+-rw-r--r--    1 root     system       8743 Sep 13 14:38 /.lsof_cache
+
+Now add it to the inittab so it will start each time:
+
+# mkitab -i rcnfs "rclsof:2:wait:/etc/rc.lsof_cache >/dev/console 2>&1"
+
+
+Build md5
+
+Download from ftp://ftp.cerias.purdue.edu/pub/tools/unix/crypto/md5/MD5.tar.Z
+
+# uncompress MD5.tar.Z
+# mkdir MD5; cd MD5
+# tar xvf ../MD5.tar
+# make
+
+# make test
+*** MD5 Test Passed
+
+Install md5
+
+# install -m 755 md5 /usr/local/bin/md5
+# install -m 644 md5.1 /usr/local/man/man1/md5.1
+
+Install Tcl
+
+Download from ftp://tcl.activestate.com/pub/tcl/tcl8_4/tcl8.4a3.tar.gz
+
+Compile notes for Tcl at http://www.scriptics.com/doc/howto/compile.html
+
+and
+
+http://www.purl.org/tcl/home/doc/howto/compile.html
+
+# gzip -d tcl8.4a3.tar.gz
+# tar xvf tcl8.4a3.tar
+# cd tcl8.4a3/unix
+# ./configure --enable-gcc  --disable-load --disable-share
+# make
+# make install
+
+HOWEVER - I had errors on make 
+
+make: *** No rule to make target `lib.exp', needed by `binaries'.  Stop.
+
+so being short of time I opted to download the pre-built version.
+
+Download from http://www.bull.de/pub/aix432/tcl-8.2.3.0.exe
+
+# chmod +x tcl-8.2.3.0.exe
+# ./tcl-8.2.3.0.exe
+
+
+Install Expect
+
+Download from http://expect.nist.gov/expect.tar.gz
+
+# cd /inst/gnu
+# gzip -d expect.tar.gz
+# tar xvf expect.tar
+# cd expect-5.32
+# ./configure --disable-load --disable-shared --with-tcl=/usr/local/lib --with-tclinclude=/usr/local/include
+
+But this caused me errors as well (sigh!):
+
+configuring Expect 5.32.1
+checking for autoconf... no
+checking configure up to date... yes
+checking host system type... powerpc-ibm-aix4.3.3.0
+checking target system type... powerpc-ibm-aix4.3.3.0
+checking build system type... powerpc-ibm-aix4.3.3.0
+checking shell to use within Make...
+checking for gcc... gcc
+checking whether the C compiler (gcc  ) works... yes
+checking whether the C compiler (gcc  ) is a cross-compiler... no
+checking whether we are using GNU C... yes
+checking whether gcc accepts -g... yes
+checking for building with threads... no (default)
+checking for Tcl configuration... found /usr/local/lib/tclConfig.sh
+checking Tcl build library... -bI:/usr/src/local/Working_on/tcl8.4a2/unix/lib.exp -ldl  -lm -lbsd
+checking for Tcl_CreateCommand... no
+checking if Tcl library build specification is valid... no
+checking for Tk configuration... configure: warning: Can't find Tk configuration definitions
+checking for Tk_Init... no
+checking if Tk library build specification is valid... no
+checking whether the compiler (cc) actually works... configure: error: the native compiler is broken and won't compile.
+
+So once again I will grab the pre-built:
+
+Download from http://www.bull.de/pub/aix432/expect-5.31.5.0.exe
+
+# chmod +x expect-5.31.5.0.exe
+# ./expect-5.31.5.0.exe
+# rm .toc
+# installp -a -d '/inst/gnu' -c -N -g -v -V2 -S freeware.tcl.rte
+# installp -a -d '/inst/gnu' -c -N -g -v -V2 -S freeware.expect.rte
+
+# lslpp -l | grep freeware
+  freeware.expect.rte       5.31.5.0  COMMITTED  Expect - scripting tool
+  freeware.tcl.rte           8.2.3.0  COMMITTED  TCL Scripting language tools
+
+Test it:
+
+# expect
+expect1.1> exit
+
+
+Install Nmap
+
+Download from http://download.insecure.org/nmap/dist/nmap-2.53.tgz
+
+# gzip -d nmap-2.53.tgz
+# tar xvf nmap-2.53.tar
+# cd nmap-2.53
+# ./configure --with-pcap=dlpi
+(we need to switch to using the AIX DLPI driver /dev/dlpi)
+# make
+# make install
+
+Now check that the AIX DLPI (Data Link Provider Interface) is loaded:
+
+# strload -q
+stddev: yes
+stddev: yes
+spx: yes
+sc: yes
+stdmod: yes
+dlpi: no
+xtiso: yes
+xtiso: yes
+xtiso: yes
+xtiso: yes
+xtiso: yes
+xtiso: yes
+timod: yes
+tirdwr: yes
+
+"DLPI" is required by libpcap which Nmap uses as a transport.
+
+If "dlpi:" indicates "no" make these changes and reboot:
+
+Need to activate the DLPI "DataLinkProviderInterface" on Ethernet: 
+
+Edit /etc/pse.conf and uncomment or add the following line:
+
+d+      dlpi    en      /dev/dlpi/en    # streams dlpi ethernet driver
+
+Edit /etc/dlpi.conf and uncomment or add the following line:
+
+d+      dlpi    en      /dev/dlpi/en    # streams dlpi ethernet driver
+
+
+If you get this error
+
+"pcap_open_live: recv_ack: bind error 0x1"
+
+"QUITTING!"
+
+
+while running Nmap make this change (thanks to Google groups search):
+
+
+From: naray@my-deja.com (naray@my-deja.com)
+Subject: fix for libpcap on AIX 4.3>>> Re: /dev/en0 on AIX? 
+Newsgroups: comp.unix.aix
+View: Complete Thread (3 articles) | Original Format 
+Date: 2000/09/19 
+ 
+
+I did some more research and got assistance from AIX support.
+
+Once I started using DLPI, the "/dev/en0" not found errors went away but
+I started getting "pcap_open_live: recv_ack: bind error 0x1".
+
+To fix this, I modified "pcap-dlpi.c".
+
+Look for:
+#if !defined(HAVE_HPUX9) && !defined(HAVE_HPUX10_20) && !defined(sinix)
+        if (dlbindreq(p->fd, 0, ebuf) < 0 ||
+            dlbindack(p->fd, (char *)buf, ebuf) < 0)
+                goto bad;
+#endif
+
+
+and change the dlbindreq() call to use 1537 as its 2nd param. The 2nd
+param to dlbindreq() is dl_sap. This param needs to be greater than the
+MTU of the device you are going to use. MTU for my en0 was 1536.
+
+Once I made the change and recompiled libpcap, I can now use nmap !!!
+
+
+Install mklpp from the Groupe Bull site
+
+Download from http://www.bull.de/pub/aix432/bull.mklpp-1.2.9.0.exe
+
+# chmod +x bull.mklpp-1.2.9.0.exe
+# ./bull.mklpp-1.2.9.0.exe
+# rm bull.mklpp-1.2.9.0.exe
+# rm .toc
+# installp -a -d '/inst/gnu' -cNgvV2S freeware.bull.mklpp
+
+
+Misc.
+
+Update the root account .profile PATH:
+
+Edit /.profile (as root) and add the following line:
+
+export PATH=$PATH:/usr/local/apache/bin
+export MANPATH=$MANPATH:/usr/local/apache/man
+
+Now either logoff or enter
+
+# . /.profile
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
