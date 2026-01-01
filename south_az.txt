@@ -1,0 +1,210 @@
+Tucson Area
+453.2000 Tucson Fire Department - Channel 2 Dispatch 
+453.1000 Tucson Fire Department - Channel 1 Medical Rescue 
+453.6000 Tucson Fire Department - Channel 3 Hazmat Team 
+453.4000 Tucson Fire Department - Channel 4 UNIT/UNIT / Admin/Fire Prevention
+453.8000 Tucson Fire Department - Channel 5 FUTURE USE
+453.3750 Tucson Fire Department - Channel 6 BLS Private transports
+453.2500 Tucson Fire Department - Channel 7 TAC (simplex)
+453.3250 Tucson Fire Department - Channel 8 TAC (simplex)
+453.3000 Tucson Fire Department - Channel 9 TAC (simplex)
+453.7500 Tucson Fire Department - Channel ? 
+460.5750 Tucson Fire Department - Channel ? Voice & MDT 
+154.1300 Tucson Fire Department - Local 
+154.1900 Tucson Fire Department - Local 
+154.3850 Tucson Fire Department 
+154.2800 Tucson Fire Department - Channel VHF 3
+154.4000 Tucson Fire Department - Channel VHF 4 
+453.5500 Pima County Fire Department 
+453.6500 Pima County Fire Department - Fire Net 
+453.1500 Drexel Heights Fire Department, Dispatch (SouthWest Tucson)
+154.2200 South Tucson FD - Main
+154.3700 Rural Metro FD (handles Green Valley)
+154.4000 Rural Metro FD (handles Green Valley)
+154.3250 Sahuarita/Green Valley area fire
+155.3100 TRI-BAND SYSTEM (vhf) ???
+453.3500 TRI-BAND SYSTEM (uhf) ???
+865.2500 TRI-BAND SYSTEM (800) ???
+155.1600 Southern Arizona Rescue Association
+118.9500 "air attack" (lead aircraft and slurry bombers) ("wildfire at rattlesnake")
+168.1500 Rattlesnake ops. ("wildfire at rattlesnake")
+168.6250 "guard" ("wildfire at rattlesnake")
+169.1500 air to ground helos for water drops ("wildfire at rattlesnake")
+169.6000 Coronado Nat Forest "dispatch" ("wildfire at rattlesnake")
+411.5250 Coronado Nat Forest "dispatch" ("wildfire at rattlesnake")
+155.0100 TPD ch. 1 (old)
+155.7300 TPD ch. 2 (old)
+154.7250 TPD ch. 3 (old)
+155.4900 TPD ch. 4 (old)
+155.8500 TPD ch. 5 (old)
+154.7550 TPD ch. 6 (old)
+156.2100 South Tucson Police Department 
+155.4750 South Tucson Police Department - INTERAGENCY 
+460.4500 Sahuarita PD
+
+Pima County SO (EDACS)
+856.1000
+856.1250
+856.2000
+857.1000
+857.1250
+857.2000
+858.1000
+858.1250
+858.2000
+859.1000
+859.1250
+859.2000
+860.1000
+860.1250
+860.2000
+861.1000
+862.1000
+863.1000
+864.1000
+865.1000
+
+Davis-Monthan
+38.6500 US Air Force - Flight Training Operations 
+40.1500 US Air Force - Flight Training Operations 
+40.1700 United States Air Force - Special Investigations
+118.5000 Davis-Monthan Air Force Base - Clearance/Delivery 
+118.8500 Davis-Monthan Air Force Base - CONTROL TOWER
+121.8000 Davis-Monthan Air Force Base - CLEARANCE/DEPARTURE/GROUND
+125.1000 Davis-Monthan Air Force Base - Approach/Departure 
+126.2000 Davis-Monthan Air Force Base - Tower 
+138.0750 United States Air Force - O.S.I. 
+138.1750 United States Air Force - O.S.I. 
+142.2000 Davis-Monthan Air Force Base - A-10 Training 
+148.1750 Davis-Monthan Air Force Base - A-10 Maintainance 
+148.2750 US Air Force - Flight Training Operations 
+148.4500 Davis-Monthan Air Force Base - Aircraft Maintainanc 
+148.4750 Davis-Monthan Air Force Base - Aircraft Maintainance / US Air Force - Flight Training Operations 
+148.5300 US Air Force - Flight Training Operations 
+148.5450 Davis-Monthan Air Force Base - Police 
+148.5750 US Air Force - Flight Training Operations 
+148.9500 US Air Force - Flight Training Operations 
+149.0500 US Air Force - Flight Training Operations 
+149.1750 US Air Force - Fire Crash 
+149.2250 Davis-Monthan Air Force Base - Refueling Pool 
+149.3750 US Air Force - Flight Training Operations 
+149.4500 US Air Force - Flight Training Operations 
+149.5500 Davis-Monthan Air Force Base - Commanders Net 
+149.8750 US Air Force - Flight Training Operations 
+150.2250 US Air Force - Flight Training Operations  
+150.3250 Davis-Monthan Air Force Base - Air Ground Equipment 
+150.7250 US Air Force - Flight Training Operations 
+163.0000 Davis-Monthan Air Force Base - Security Flight Line 
+163.1250 Davis-Monthan Air Force Base - Security 
+163.1750 Davis-Monthan Air Force Base - Security 
+163.4750 Davis-Monthan Air Force Base - Security 
+163.5125 United States Air Force - Security 
+163.5875 Davis-Monthan Air Force Base - Civil Engineers 
+164.2000 Davis-Monthan Air Force Base - Security 
+164.9875 Davis-Monthan Air Force Base - Security Police 
+165.1625 Davis-Monthan Air Force Base - A/C Maintainance Resource Admin/Yard Ops. 
+171.3850 US Air Force - Flight Training Operations 
+173.4250 Davis-Monthan Air Force Base - Security 
+173.4375 Davis-Monthan Air Force Base - Motor Pool 
+173.5875 Davis-Monthan Air Force Base - Fire/Crash Crews 
+407.3250 US Air Force - Flight Training Operations 
+407.3500 Davis-Monthan Air Force Base - Voice Pagers
+407.5250 Davis-Monthan Air Force Base - POLICE (alt)
+413.2000 Davis-Monthan Air Force Base - FIRE DEPT 1
+413.2750 Davis-Monthan Air Force Base - POLICE (primary) / US Air Force - Flight Training Operations / USAF - TAC Command Post 
+413.8250 Davis-Monthan Air Force Base - POLICE (alt)
+852.8875 Davis-Monthan Air Force Base - Aircraft Maintainanc 
+
+Nogales/Mexico
+154.4OO0 Nogales Fire Depertment DISPATCH F-1 / Santa Cruz County SO TAC 3
+154.43O0 Nogales Fire Depertment DISPATCH F-2 SOUTH NOGALES
+154.1300 Nogales Fire Depertment
+155.7150 Santa Cruz County E.M.S. 
+154.2050 Rio Rico FD
+154.1600 Tubac FD / TUMACOCURRI FIRE
+154.4150 PATAGONIA Fire
+154.1750 SONOITA EMS - SONOITA/ELGIN EMERGENCY
+155.7900 Nogales Police Department F-1 Dispatch
+154.74O0 Nogales Police Department F-2 DISPATCH
+158.8350 Nogales Police Department F-3
+154.9500 Nogales Police Department 
+155.4750 Nogales Police Department 
+171.3500 Nogales Police Department
+159.15O0 Santa Cruz County SO DISPATCH F-1
+155.5950 Santa Cruz County SO DISPATCH F-2 (Red Mtn.)
+155.8350 Santa Cruz County SO DISPATCH F-3
+158.9250 Santa Cruz County SO DISPATCH F-5
+169.45O0 Santa Cruz County SO SURVELANCE #1 / US Customs `Alliance'
+154.5625 Santa Cruz County SO TAC 1
+155.9375 Santa Cruz County SO TAC 2
+153.8150 Santa Cruz County SO BUG 1
+158.73O0 Santa Cruz County SO BUG 2
+158.8950 Santa Cruz County SO
+158.76O0 PATAGONIA MARSHALL DISPATCH F-1
+155.6250 PATAGONIA MARSHALL DISPATCH F-2
+155.0250 Santa Cruz County ROADS (RED MTN)  
+155.2350 Santa Cruz VALLEY SCHOOLS DISTRICT WIDE
+164.3500 Kitt Peak
+169.9250 Mt. Hopkins (just south of sahuarita/green valley are)
+169.9500 Mt. Hopkins (just south of sahuarita/green valley are)
+163.6250 US Border Patrol 
+165.9750 US Border Patrol 
+163.7750 US Border Patrol / I.N.S.
+163.7250 US Border Patrol
+165.8750 US Border Patrol - Survelence
+163.2000 US Marshalls Office 
+170.8000 US Marshalls Office 
+167.6350 US Marshalls Office
+163.8100 US Marshalls Office
+166.4375 US Customs Service Ch-3 (Car to Car)
+165.5875 US Customs Service Ch-4
+165.7375 US Customs Service Ch-A7
+164.5500 US Customs Service Ch-A2
+165.2375 US Customs Service Ch-A1 & A4
+166.4625 US Customs Service Ch-A3
+164.6000 US Customs Service Ch-A5/US Marshals
+165.6875 US Customs Service Ch-A6
+165.6375 US Customs Service Ch-A7
+132.9500 US Customs Air to Air Ops
+413.4500 US Customs
+164.2875 US Customs Service
+418.6250 DEA Ch-1 (UHF Opperations)
+418.9000 DEA Ch-2 (UHF Surv.)
+165.2875 ATF Ch-F3
+165.9125 ATF
+414.4500 FBI
+163.9400 FBI
+
+Aero
+453.9750 Tucson Airport Security 
+121.5000 Aero Emergency
+125.8000 TUCSON AIRPORT AUTHORITY
+118.2000 TUCSON AIRPORT AUTHORITY
+125.1000 Tucson International - Approach/Departure RWY 11  (090-285) / RWY 29  (275-065)
+119.0000 Tucson International - Approach/Departure Tower Secondary
+128.5000 Tucson International - Approach/Departure RWY 11  (286-089) - RWY 29  (066-274)
+118.3000 Tucson International - Approach/Departure Tower Primary
+118.5000 Tucson International - Approach/Departure 
+125.9000 Tucson International - Approach (practice areas)
+126.6500 Tucson International - Clearance/Delivery 
+124.4000 Tucson International - Ground Control 
+124.0000 Tucson International - Radar Control 
+123.8000 Tucson International ATIS Tucson Pinal AZ 
+122.9500 Tucson International Airport - UNICOM 
+453.4500 Tucson International Airport Fire Department 
+126.7000 Any Civil Aircraft to FAA Nationwide Nationwide AZ
+165.7625 Federal Aviation Administration
+172.9500 Federal Aviation Administration Ch. 2 
+172.1500 Federal Aviation Administration Ch. 9 
+172.1750 Federal Aviation Administration Ch. 10 Phoenix/Tempe Maricopa AZ 
+172.9750 Federal Aviation Administration Ch. 3 Phoenix/Tempe Maricopa AZ 
+172.9250 Federal Aviation Administration Ch. 1 Tucson Pima AZ 
+172.1250 Federal Aviation Administration Ch. 8 Tucson Pima Az  
+139.9000 Federal Aviation Administration Tucson Pima AZ
+460.8750 Delta Airlines Ground Security 
+460.8250 Delta Airlines Ground Security 
+460.8000 Delta Airlines Ground Security 
+460.7000 Delta Airlines Ground Security 
+123.1000 Search & Rescue
+
+
