@@ -1,0 +1,112 @@
+Installing ssh on Solaris 8
+
+IMPORTANT!
+
+You must first install Sun patch 112438-01 which will
+create /dev/random which is required by ssh entropy.
+Remember to reboot after applying the patch.
+
+
+Build (on kinscoe):
+
+Compile zlib (zlib.org)
+
+Compile OpenSSL (openssl.org)
+
+Compile OpenSSH (openssh.org)
+
+From the OpenSSH directory:
+
+# ./configure --prefix=/usr/local --with-ssl-dir=/usr/local/ssl --with-privsep-user=sshd --with-privsep-path=/var/chroot/sshd
+
+The results should look very similiar:
+
+OpenSSH has been configured with the following options:
+                     User binaries: /usr/local/bin
+                   System binaries: /usr/local/sbin
+               Configuration files: /usr/local/etc
+                   Askpass program: /usr/local/libexec/ssh-askpass
+                      Manual pages: /usr/local/man/manX
+                          PID file: /var/run
+  Privilege separation chroot path: /var/chroot/sshd
+            sshd default user PATH: /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+                    Manpage format: man
+                       PAM support: no
+                KerberosIV support: no
+                 KerberosV support: no
+                 Smartcard support: no
+                       AFS support: no
+                     S/KEY support: no
+              TCP Wrappers support: no
+              MD5 password support: no
+       IP address in $DISPLAY hack: no
+          Use IPv4 by default hack: no
+           Translate v4 in v6 hack: no
+                  BSD Auth support: no
+              Random number source: OpenSSL internal ONLY
+
+              Host: sparc-sun-solaris2.8
+          Compiler: gcc
+    Compiler flags: -g -O2 -Wall -Wpointer-arith -Wno-uninitialized
+Preprocessor flags: -I/usr/local/ssl/include  -I/usr/local/include
+      Linker flags: -L/usr/local/ssl/lib -R/usr/local/ssl/lib  -L/usr/local/lib -R/usr/local/lib
+         Libraries:   -lz -lsocket -lnsl  -lcrypto  
+
+
+Note that as of OpenSSH 3.3 PrivilegeSeparation in user space is required:
+
+http://openssh.org/txt/preauth.adv
+
+First time build add the sshd user to the build system:
+
+# /bin/mkdir /var/chroot
+# /bin/mkdir /var/chroot/sshd
+# /bin/chown root:sys /var/chroot
+# /bin/chown root:sys /var/chroot/sshd
+# /bin/chmod 755 /var/chroot/sshd
+# /usr/sbin/groupadd -g 5101 sshd
+# /usr/sbin/useradd -d /var/chroot/sshd -g sshd -u 5101 -m sshd
+(ignore the error "UX: /usr/sbin/useradd: WARNING: sshd has no permissions to use /var/chroot/sshd.")
+# /bin/chown sshd /var/chroot/sshd
+# /bin/chgrp sshd /var/chroot/sshd
+
+Verify
+
+# id sshd
+uid=5101(sshd) gid=5101(sshd)
+
+Run /pub/soft/build/build-ssh-install.sh on build server
+
+This will create a tar file /pub/soft/install/install-ssh-sol-8.tar
+
+Take this tar file and copy it over to the host in /tmp
+
+ftp://buildserver/pub/soft/install/install-ssh-sol-8.tar
+
+or
+
+# scp guest@buildserver:/pub/soft/install/install-ssh-sol-8.tar /tmp/install-ssh-sol-8.tar
+
+(guest is the password)
+
+Since buildserver is an internal network and not on the DMZ you will need to push the files to the DMZ machine from buildserver. In that case ssh to buildserver as login "guest" password "guest".
+
+
+guest@kinscoe:/export/home/guest> scp /pub/soft/install/install-ssh-sol-8.tar mylogin@machine.xyz.com:/tmp/install-ssh-sol-8.tar 
+
+as root you MUST first cd to root (cd /) (the tar file is 
+relative pathing) and execute
+
+# tar xvf /tmp/install-ssh-sol-8.tar
+
+One of the files extracted will be /tmp/install-ssh.sh
+
+Run this script from root. It will setup your permissions
+and generates your new SSH keys if needed.
+
+# /tmp/install-ssh.sh
+
+Now that you are all done you are ready to start the server:
+
+# /etc/rc2.d/S77sshd start
+
