@@ -1,0 +1,28 @@
+Using Pine to read Netscape email archives
+I archive all of my Netscape and Mozilla email to compact disc. I needed a quick way
+to read my archives without having to restore the files back into Mozilla.
+<br><br>
+This method I have come up with at least partially provides a solution:
+<br><br>
+Copy the archived mail to the local directory:
+<br><br>
+<tt>
+$ mkdir nsmail<br>
+$ cp "/mnt/cdrom/mail2002_4/Mail/Archived Mail.sbd/Kevin Personal.sbd/cfgeeks" nsmail/
+Inbox<br>
+</tt>
+<br>
+Because the file comes from a read-only file system (cdrom) we will have to make it wr
+itable.
+<br><br>
+<tt>$ chmod +w nsmail/Inbox</tt><br>
+<br>
+Update <tt>$HOME/.pinerc</tt>
+<br><br>
+<tt>incoming-folders=NS-inbox nsmail/Inbox</tt>
+<br><br>
+Unfortunately you have to copy the message file to local storage because the cdrom is
+read-only.
+<br><br>
+If anyone knows a way to get around this please let me <a href="mailto:kevin@inscoe.or
+g">know</a>!
