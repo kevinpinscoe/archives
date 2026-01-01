@@ -1,0 +1,168 @@
+Installing Xvfb on headless Sun server
+
+Notes:
+
+http://www.sunhelp.org/pipermail/sunhelp/2000-November/007058.html
+
+http://www.itworld.com/AppDev/1461/UIR000330xvfb/
+
+http://ferret.wrc.noaa.gov/Ferret/FAQ/graphics/Solaris_Xvfb.html
+
+http://www.bolthole.com/solaris/imake.html
+
+ftp://ftp.x.org/pub/R6.6/tars/INSTALL.TXT
+
+ftp://ferret.wrc.noaa.gov/special_request/xvfb/solaris/README.XVFB
+
+
+Download the X11R6.6 source:
+
+
+ftp://ftp.x.org/pub/R6.6/tars/xorg-1.tar.gz
+ftp://ftp.x.org/pub/R6.6/tars/xorg-2.tar.gz
+ftp://ftp.x.org/pub/R6.6/tars/xorg-3.tar.gz
+ftp://ftp.x.org/pub/R6.6/tars/xorg-4.tar.gz
+
+untar all four into /tmp/build/xc
+
+cd /tmp/build/xc
+
+First we must make some changes to /tmp/build/xc/config/cf/site.def
+
+Replace whatever is in site.def with these lines:
+
+------- begin -----------
+
+#define HasVarDirectory    NO
+#define BuildServer  YES
+#define XVirtualFramebufferServer YES
+#define BuildPexExt YES
+#define XprtServer YES
+#define BuildFonts YES
+#define ProjectRoot /usr/local/X11R6 
+#define HasGcc2 YES
+#define HasGcc2ForCplusplus YES
+
+/* On systems where cpp doesn't expand correctly macros in include
+directives
+ * the two following macros need to be defined directly (where "X11" is
+ * really whatever the TopLevelProject macro is defined to be).
+ */
+# if defined(AIXArchitecture) || defined(SVR4Architecture) || \
+     defined(SCOArchitecture) || defined(Win32Architecture) || \
+     defined(UXPArchitecture) || defined(SunArchitecture)
+#  ifndef ProjectRulesFile
+#   define ProjectRulesFile     <X11.rules>
+#  endif
+#  ifndef ProjectTmplFile
+#   define ProjectTmplFile      <X11.tmpl>
+#  endif
+# endif
+
+------------- end ---------------
+
+
+# make World
+
+# make install
+# make install.man
+
+Now tar everything up and put in on kinscoe.harcourt.com:/pub/soft/install/X11R6.tar
+
+# cd /usr/local/X11R6
+# tar cvf /pub/soft/install/X11R6.tar .
+# gzip -9 /pub/soft/install/X11R6.tar
+# scp /pub/soft/install/X11R6.tar.gz root@cdms01:/tmp/X11R6.tar.gz
+
+Now on the remote host to install it...
+
+# gzip -d /tmp/X11R6.tar.gz
+# mkdir /usr/local/X11R6
+# cd /usr/local/X11R6
+# tar xvf /tmp/X11R6.tar
+
+Adding to automatic system startup...
+
+Adding the Virtual Framebuffer to the Automatic Startup
+-------------------------------------------------------
+
+Create the file /etc/init.d/local with the following contents:
+
+
+# start the X Virtual Framebuffer (Xvfb) *kob* 3/22/96
+if [ -f /usr/local/X11R6/bin/Xvfb ]; then
+        echo "***Starting up the Virtual Frame Buffer on Screen 1***"
+        /usr/local/X11R6/bin/Xvfb :1 -screen 0 1152x900x8 2>> /var/log/Xvfb.log
+fi
+
+In order to have Xvfb start up automatically when a workstation boots
+(after an unexpected crash, for example), the startup line mentioned
+above needs to be inserted into the /etc/init.d/local file.  If this
+file does not already exist, it will have to be created, and the
+following link made:
+
+	# cd /etc/rc2.d
+	# ln -s /etc/init.d/local S96local
+	# chmod +x /etc/init.d/local
+
+This will ensure that the local file containing the Xvfb startup
+string is executed when the workstation boots.  An example of what
+should be added to the /etc/init.d/local file is:
+
+This sequence will check for the existence of Xvfb and start it up if
+it is present.  Also, any errors reported will be sent to the
+/var/log/Xvfb.log file.  
+
+
+Starting up the Virtual Frame buffer manually
+---------------------------------------------
+
+To start up the virtual frame buffer, type:
+
+# /usr/local/X11R6/bin/Xvfb :1 -screen 0 1152x900x8 &
+
+or
+
+# /etc/rc2.d/S96local
+
+This will send any graphics output going to display 1 to shared
+memory. To set the current display to use the frame buffer for
+graphics display, type:
+
+% setenv DISPLAY :1.0 (in CSH)
+
+or
+
+$ set DISPLAY=:1.0;export DISPLAY (in KSH)
+
+The virtual framebuffer is now ready to be used by those on the local
+machine.  See note below concerning remote usage.  Xvfb does not need
+to be started by root.  It appears from our testing that any user may
+start it up.
+
+
+For More information
+--------------------
+
+The man pages for the X11R6 utilities (including Xvfb) are included
+with this distribution.  To access the man page for Xvfb, for example,
+type:
+
+% man -M /usr/local/X11R6/man Xvfb
+
+It should also be possible to set up the environment variable MANPATH to
+include the /usr/local/X11R6/man area.
+
+
+Note on remote display using Xvfb
+---------------------------------
+
+Displaying to the virtual framebuffer from a remote node adds
+complexity to the usage of Xvfb.  It appears to be a matter of
+authenticating the remote host to the framebuffer, thereby identifying
+that host as a trusted host.  The way to accomplish this seems to be
+to create an authentication file which would include all remote
+displays expected to access the virtual framebuffer.  Xvfb can then be
+started with an option to access this authentication file.  For more
+information on this see the man pages for Xserver and Xvfb.
+
