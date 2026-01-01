@@ -1,0 +1,47 @@
+RETRANSMISSIONS OF SHUTTLE AUDIO ON AMATEUR RADIO FREQUENCIES
+
+
+
+This document contains two sections.  The first is a statement from the ARRL
+
+concerning some HF retransmissions of Shuttle Audio.  The second is a
+
+collection of reports left by our callers of frequencies (most VHF) where they
+
+have observed retransmissions.
+
+
+
+During a shuttle mission carrying the SAREX payload, news and Astronaut re-
+
+transmissions are carried on these Amateur Radio stations:
+
+
+
+Goddard Amateur Radio Club, WA3NAN, (Greenbelt, MD) news and re-transmissions
+
+on Amateur Radio high frequency (HF) bands at 3.86, 7.185, 14.295, 21.395, and
+
+28.65 MHz and on VHF at 147.45 MHz.
+
+
+
+Johnson Space Center Amateur Radio Club, W5RRR, (Houston, TX) news bulletins
+
+on HF bands at 3.850, 7.227, 14.280, 21.350, and 28.400 MHz and VHF at
+
+146.64 MHz.
+
+
+
+Lewis Research Center Amateur Radio Club, AK8Y, (Cleveland, OH) Shuttle audio
+
+on 145.670 MHZ and 147.195 MHZ.  Alternate is 147.195 MHZ.
+
+
+
+ARRL (Newington, CT) Amateur Radio station, W1AW, news bulletins (9:45 PM,
+
+12:45 AM EST) on HF bands at 1.818, 3.5815, 7.0475, 14.0475, 18.0975, 21.0675,
+
+28.0675 and VHF at 147.555 MHz.
