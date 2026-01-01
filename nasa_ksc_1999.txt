@@ -1,0 +1,37 @@
+From 1999 NASA Kennedy Space Center Florida
+
+Shuttle launches
+
+7461 usb        Cape Radio with USS THORN or HORN
+                (hard to understand the name)
+
+Found radio maint. testing these freqs/nets:
+141.300am       Cape Canaveral AFS, Variety 1
+150.195 Cape Canaveral AFS, Cape Support, Net-C
+163.4375        Cape Canaveral AFS, Launch Support, Net-L
+163.5625        Cape Canaveral AFS, Fire/Crash, Net-F
+163.5875        Cape Canaveral AFS, Radio Maint., Net-H
+164.200 Cape Canaveral AFS, Security Special OPs, Net-D2
+164.500 Cape Canaveral AFS, Environmental Health, Net-Y
+165.0125        Cape Canaveral AFS, Pagers/Security Secondary, Net-S
+165.0875        Cape Canaveral AFS, Security, Net-3
+259.700 Shuttle Air-Ground, comm checks with Houston
+264.800 Thinker 1 Charlie
+407.325 KSC, Convoy Command
+408.150 KSC, Convoy Purge
+409.175 KSC, Convoy Cooling
+
+Other active frequencies with Shuttle support:
+
+(not complete by any means)
+128.550 KSC, NASA Tower
+154.515 KSC, Spaceport USA
+157.075 Range Control w/ Cutter Pea Island ops normal call
+162.6125        KSC, Support Ops, Net-104
+171.2625        KSC, NASA TV Ops, Net-408
+173.175 KSC, Security Secondary, Net-203
+173.5625        KSC, Fire/Crash, Net-116
+173.6625        KSC, Safety, Net-105
+173.6875        KSC, Security, Net-103
+173.7875        KSC, Fire Secondary, Net-216
+284.000 KSC, NASA Tower
