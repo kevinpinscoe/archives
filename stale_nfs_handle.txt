@@ -1,0 +1,32 @@
+
+Date: Mon, 10 Feb 97 14:12:48 EST
+
+Subject: FYI: Handling Stale NFS mounts between UNIX machines
+
+
+     All,
+     
+        I came across a graceful way to get rid of the "Stale NFS File 
+     Handle" problem in SunOS 4.1.3 between UNIX machines. This may not 
+     work all of the time, but here is what I did:
+     
+        0) Try to unmount the Stale NFS partition manually. If this is 
+     sucessful, go to step #4 . If it says "mount point busy" go to step #1
+     
+        1) Check for any logins or user processes that are running for 
+     users that are on the NFS mounted partition with the "Stale NFS File 
+     Handle".
+     
+        2) Check with each user, then kill all of their processes.
+     
+        3) Unmount the partition manually. If this is not successful, 
+     double-check steps 1-2 again and if all processes are accounted for, a 
+     scheduled reboot during off hours is probably neccesary. If it 
+     unmounts successfully, go to step #4.
+        
+        4) Kill -HUP the PID of the automount daemon. This should fix the 
+     stale file handle.
+     
+        This will only work if you can kill all of the processes that are 
+     holding open the mount and haven't died.
+     
