@@ -1,0 +1,74 @@
+Subject: [FLACOM-L] STS-88 freqs and participants confirmed
+Date:    Thu, 3 Dec 1998 16:20:36 EST
+From:    Al Stern <AllanStern@AOL.COM>
+To:      FLACOM-L@LISTS.UFL.EDU
+
+I confirmed the following frequencies and participants during the STS-88
+launch attempt Wednesday, 98/12/02:
+
+259.70: Orbiter-Ground prelaunch comms.
+133.75: Patrick Tower: JOLLY 1,2,3; KINGs
+132.65: Patrick Departure South: Many participants.
+134.95: Patrick Departure North: Many participants.
+121.05: Patrick Discrete for STS support acft.
+122.85: Patrick PTD: Many participants.
+124.35: Patrick Ground: Many participants.
+118.40: Patrick Clrnc Dlvy: Many participants.
+372.20: Patrick Base Ops.
+128.65: Miami Ctr at Melbourne: Many participants.
+132.25: Miami Ctr at Vero Beach: CG 2139
+118.20: Melbourne IAP: PATROL 3 (FAA acft) takeoff/landing.
+118.625: CCAS Tower.
+125.90: RELAY 1, CLEARANCE 1, VARIETY 1, PARISH 1.
+141.30: Cape Leader, KING 3.
+126.65: NASA Wx Coord with NASA 955.
+148.4850: KSC Photo Ops.
+138.075: Patrick AFB OSI CID (at public viewing sites).
+165.0850: CCAS Security.
+163.5125: CCAS Disaster Ops.
+171.00: KSC Civil Engrg/Maint.
+173.6625: KSC Range Safety, RESCUE LEADER.
+282.80: CG 2139, JOLLYs 1, 2, 3.
+246.80: THINKER 1 CHARLIE, CCAS Sr RSO.
+294.60: CCAS STS Support, Cape Leader RSO, VARIETY.
+321.00: Rescue Ops, JOLLYs, KINGs.
+157.10: Cape Canaveral CG Sta, CG Range Control.
+
+10780: Cape Radio, KING 2, KING 3.
+3041: Cape Radio, KING 1, KING 2, Defender.
+9043
+5180
+
+NOTES:
+     SLUG 600, aka SLUG 01, an E-2 Hawkeye from Norfolk's VAW-78, 
+     was CLEARANCE 1.  He returned to Norfolk after the scrub this 
+     morning and will be back tonight for the launch attempt. 
+     According to a phone patch he made to DSN 565-1646, they will 
+     prepare him for immediate return to Patrick [where the pilot 
+     can retrieve the pager the pilot misplaced at Base Ops ;-D ].
+     As usual, FAA acft PATROL 1 and PATROL 2 returned to Patrick, 
+     while PATROL 3 returned to Melbourne IAP.  PATROL 3 seems to be 
+     the senior or commander of the FAA STS support operation. 
+     (Remember, it was PATROL 3 who pursued the acft that intruded 
+     on launch-restricted airspace seconds before the Glenn launch.)  
+     RELAY 1 also flew from and returned to Melbourne IAP.
+     CG 2139, an HU-25C from CGAS Miami, flew a range clearance 
+     pattern around N29-33, W079-09.  After the scrub, he returned 
+     to his base (Opa Locka Airport). [For tonight's launch attempt 
+     CG 6530, an HH-65 Aerospatiale Dolphin from CGAS Miami, will 
+     work.]
+     The SRB Recovery Ships Freedom Star and Liberty Star were 
+     stationed at N30-04, W78-30. NASA 955, a T-38, took off at 
+     1:00am and 2:45am, and flew around the launch area, reporting 
+     cloud and wind conditions to "WEATHER COORDINATOR" on 126.65.  
+     He also made a couple of simulated Shuttle Landings on SLF 
+     Rnwys 15 and 33, right before the launch window, to report 
+     conditions the STS would experience if forced to land right 
+     after launch. He made many of his observations using NVGs.
+     On comms from the Orbiter, the astronauts identify 
+     themselves by their position; e.g., CDR-1 for the commander, 
+     MS-1 and MS-2 for mission specialists.
+
+AL STERN  Satellite Beach FL
+* Patrick AFB  * NASA-KSC  * Cape Canaveral AS
+-----------------------------------------------------------------
