@@ -1,0 +1,149 @@
+Maricopa County
+47.5400 Maricopa County Sheriff 
+47.5800 Maricopa County Sheriff 
+460.0500 Maricopa County Sheriff - Channel 1 West 
+460.1000 Maricopa County Sheriff - Channel 2 West Emergency 
+460.1500 Maricopa County Sheriff - Channel 3 East 
+460.2000 Maricopa County Sheriff - Channel 4 Detectives 
+460.1750 Maricopa County Sheriff - Channel 5 East Emergency 
+460.0750 Maricopa County Sheriff - Channel 6 Information 
+460.1250 Maricopa County Sheriff - Channel 7 PPL 
+155.7900 Maricopa County Sheriff - Constables 
+460.3750 Maricopa County Sheriff - Interagency 
+159.3900 Maricopa County Sheriff - Lakes 
+39.2800 Maricopa County Sheriff - Lakes 
+39.1800 Maricopa County Sheriff - Scottsdale Office 
+47.4600 Maricopa County Sheriff - Search & Rescue 
+47.6200 Maricopa County Sheriff - Sheriff's Posse 
+856.0875 Maricopa County Sheriffs Office 
+857.0875 Maricopa County Sheriffs Office 
+855.9875 Maricopa County Sheriffs Office 
+859.0875 Maricopa County Sheriffs Office 
+858.0875 Maricopa County Sheriffs Office
+
+Phoenix Special Interest 
+450.6875 Skyview air to ground
+450.2375 Skyview 2-way talk
+450.5875 KOY Radio (Skyview)
+450.6375 SKYVIEW - Traffic Watch Metro Area 
+857.9125 SKYHIGH - Traffic Watch Metro Area 
+450.4875 KNIX Radio      
+455.7000 KTAR Radio F1 North rptr
+455.8000 KTAR Radio F2 South rptr
+450.1875 KTVK TV-3  Ch-1 News Remote
+450.3500 KTVK TV-3  Ch-2 Engineering Remote
+450.7500 KPHO TV-5  Ch-1 News Remote
+450.0500 KPHO TV-5  Ch-2 Station Remote
+450.0875 KSAZ TV-10 Ch-1 News Remote
+450.4500 KSAZ TV-10 Ch-2 Engeneering Remote
+161.6700 KSAZ TV-10 Ch-3 News Remote
+450.1125 KPNX TV-12 Ch-1 News Remote
+450.6125 KPNX TV-12 Ch-2 Engeneering Remote
+450.2375 KPNX TV-12 Ch-3 Mobile Talkarround
+450.9500 KFYI AM-910 News Remote
+450.4875 KNIX FM-102.5 Station Remote
+450.5500 KOY  AM-550 Traffic Reports
+455.7000 KTAR AM-620 Traffic Reports Ch 1 North Metro Area 
+450.1500 KTAR AM-620 News Remote
+455.8000 KTAR AM-620 F-2 Marti to North Mtn.
+450.2125 KVRY FM-104.7 Station Remote
+450.6500 KFYI AM-910 Station Remote
+450.8000 KFYI AM-910 News Remote
+450.3000 KTVK TV 3 - Ch 2 Engineering 
+161.7300 KTVK TV 3 - Ch 3 Station
+450.4125 TV 8 - Station Remote 
+450.9250 TV 8 
+451.0500 SRP Outage Electric Metro 
+451.4750 SRP Ch 1 Metro 
+451.4250 SRP Ch 2 Metro 
+153.4550 SRP Metro 
+171.9250 SRP Metro 
+451.0875 SRP Metro 
+153.7100 SRP Ch A Metro 
+153.6200 SRP Ch B Metro 
+451.5750 SRP Water/Metro Metro 
+451.2500 SRP TSO Metro 
+158.1600 Arizona Public Service - East Phoenix Storms 
+153.5300 Arizona Public Service - North Phoenix Storms 
+462.8500 Arizona Public Service - Paging Call Outs 
+153.4400 Arizona Public Service - Storms 
+153.4250 Arizona Public Service - West Phoenix Storms 
+153.5900 Arizona Public Service Phoenix Maricopa AZ 
+451.1500 Arizona Public Service Phoenix Maricopa AZ 
+173.2375 Arizona Public Service Phoenix Maricopa AZ
+
+Phoenix PD
+123.5000 Phoenix Police Department - Aircraft 
+154.7500 Phoenix Police Department - VHF Channel 2 - CHASE ALT. & INFO
+154.8900 Phoenix Police Department - VHF Channel 1 - CHASE NORTH
+155.0700 Phoenix Police Department - VHF Channel 5 - CENTRAL 
+155.3700 Phoenix Police Department - VHF Channel 4 - (400) SOUTH 
+155.4300 Phoenix Police Department - VHF Channel 8 - (800) SOUTHWEST 
+155.5200 Phoenix Police Department - VHF Channel 7 - (700) EAST 
+155.5650 Phoenix Police Department - 10 Watt Mobiles (Bug C1 Blue)
+155.6100 Phoenix Police Department - VHF Channel 12 - SWAT (Car to Car)
+155.6400 Phoenix Police Department - VHF Channel 6 - (600) NORTHEAST
+155.7000 Phoenix Police Department - VHF Channel 9 - (900) NORTHWEST
+155.7600 Phoenix Police Department - Airport Security Police (Special Details)
+155.7900 Phoenix Police Department - VHF Channel 3 - CHASE SOUTH
+156.0600 Phoenix Police Depertment - VHF Channel 11 (Tactical)
+158.8350 Phoenix Police Department - 10 Watt Mobiles (Detectives / Bug / C2 - Yellow)
+158.8650 Phoenix Police Department - 10 Watt Mobiles (Detectives / Bug / C4 - Green)
+158.9250 Phoenix Police Department - 10 Watt Mobiles (Detectives / Bug / C3 - Red)
+158.9700 Phoenix Police Department - Bug 2 
+453.1000 Phoenix Police Department - UHF Channel 1 (Chase North)
+453.2000 Phoenix Police Department - UHF Channel 2 (Chase Alt. & Info)
+453.4500 Phoenix Police Department - UHF Channel 3 
+453.4500 Phoenix Police Department - VARDA Alarms (VARDA Alarms / Chase South)
+453.4750 Phoenix Police Department - UHF Channel MDT-3 
+453.5250 Phoenix Police Department - UHF Channel MDT-4 
+453.6000 Phoenix Police Department - UHF Channel 4 Detective (Vice)
+453.6250 Phoenix Police Department - Radio Shop 
+453.6750 Phoenix Police Department - Detectives
+453.8000 Phoenix Police Department - UHF Channel 5 Detective 
+460.5250 Phoenix Police Department - UHF Channel MDT-1 
+460.5500 Phoenix Police Department - UHF Channel MDT-2 
+
+Phoenix FD
+154.1900 Phoenix/Tempe Fire Department - Channel 1 Dispatch 
+154.2500 Phoenix/Tempe Fire Department - Channel 2 Operations EAST (Stanging for shootings)
+154.0700 Phoenix Fire Department - Channel 3 Operations WEST (Air Ops.)
+154.2800 Phoenix/Tempe Fire Department - Channel 4 Interagency / Mutual Aid / Helicopters
+153.8300 Phoenix Fire Department - Channel 5 Central - Tactical
+154.3100 Phoenix Fire Department - Channel 6 Glendale Northwest Tactical
+154.1450 Phoenix/Tempe Fire Department - Channel 7 East area / Tempe Area Tactical
+153.7700 Phoenix/Tempe Fire Department - Channel 8 South area / Downtown Tactical
+155.6700 Phoenix Fire Department - Channel 9 West / Northwest area Tactical
+151.3700 Phoenix Fire Department - Channel 10 Phoenix North Tactical
+154.0250 Phoenix Fire Department - Channel 11 Investigation / Safety & Training / Accountability
+155.7750 Phoenix Fire Department - Channel 12 HAZMAT / Rescue Team / Talk-around
+460.5750 Phoenix/Tempe Fire Department - UHF HAZMAT/Admin 
+155.7150 Phoenix Fire Department - Channel B2 (Chandler Tac 2)
+154.3550 Phoenix Fire Department - Channel B3 (Air Ops.)
+154.3400 Mesa Fire Department - Channel 1 Dispatch 
+154.2350 Mesa Fire Department - Channel 2 
+153.9500 Mesa Fire Department - Channel 3 
+159.0900 Maricopa County Sheriff's SAR SEARCH-8
+463.0000 Medical radio/Hospital patches
+463.0250 Medical radio/Hospital patches
+463.0500 Medical radio/Hospital patches
+463.0750 Medical radio/Hospital patches
+463.1000 Phoenix EMSCOM Control
+463.1250 Medical radio/Hospital patches
+463.1500 Medical radio/Hospital patches
+463.1750 Medical radio/Hospital patches
+462.9500 Phoenix Fire Medical Patch Control
+462.9750 Southwest Ambulance East Operations
+
+Tempe PD TRS (Type II as of 10/01/1999)
+855.7375
+856.4875
+856.7375
+857.4875
+857.7375
+858.4875
+858.7375
+859.4875
+859.7875
+860.7375
+
