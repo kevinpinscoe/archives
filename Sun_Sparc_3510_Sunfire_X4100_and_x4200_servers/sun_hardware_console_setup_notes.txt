@@ -1,0 +1,54 @@
+ILOM:
+
+To get console mac powerup server after connecting console:
+
+Using default environment
+
+readonly: ethaddr=00:03:BA:F1:F1:A6
+
+get interface mac addresses from OS.
+
+To change console network address
+
+get the mac address:
+
+cd /SP/network
+show
+
+set the permanent address:
+
+cd /SP/network
+set pendingipaddress=10.137.163.41
+set pendingipnetmask=255.255.255.0
+set pendingipgateway=10.137.163.1
+set pendingipdiscovery=static
+set commitpending=true
+show
+
+
+
+cd /SP/console
+start
+
+To stop, hit ESC (
+
+SP Console commands:
+
+To restart the SP itself:
+
+
+-> reset /SP
+Are you sure you want to reset /SP (y/n)? y
+
+do this from the serial port is best.
+
+To start and stop the server from the SP CLI:
+
+stop /SYS
+start /SYS
+
+Show network config for SP:
+
+show /SP/network
+
+

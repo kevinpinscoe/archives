@@ -1,0 +1,318 @@
+dmesg:
+
+	Friday, August 15, 2008 11:46:18 PM EDT
+	Aug 15 22:04:57 harorlftpp001u  disk not responding to selection
+	Aug 15 22:04:59 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:04:59 harorlftpp001u  disk not responding to selection
+	Aug 15 22:05:01 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:05:01 harorlftpp001u  disk not responding to selection
+	Aug 15 22:05:03 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:05:03 harorlftpp001u  disk not responding to selection
+	Aug 15 22:05:05 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:05:05 harorlftpp001u  disk not responding to selection
+	Aug 15 22:05:07 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:05:07 harorlftpp001u  disk not responding to selection
+	Aug 15 22:33:28 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:33:28 harorlftpp001u  SCSI transport failed: reason 'incomplete': retrying command
+	Aug 15 22:34:40 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2 (mpt0):
+	Aug 15 22:34:40 harorlftpp001u  Disconnected command timeout for Target 2
+	Aug 15 22:34:40 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:40 harorlftpp001u  SCSI transport failed: reason 'reset': retrying command
+	Aug 15 22:34:43 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: read error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:43 harorlftpp001u last message repeated 1 time
+	Aug 15 22:34:43 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:43 harorlftpp001u last message repeated 14 times
+	Aug 15 22:34:43 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:43 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:43 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:43 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:43 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:43 harorlftpp001u  SCSI transport failed: reason 'incomplete': retrying command
+	Aug 15 22:34:45 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:45 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:45 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: read error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:45 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:45 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:47 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:47 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:47 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: read error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:47 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:49 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:49 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:49 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:49 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:51 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:51 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:51 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:51 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:53 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:53 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:53 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:53 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:55 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:55 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:55 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:55 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:57 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:57 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:57 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:34:57 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:59 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:34:59 harorlftpp001u  disk not responding to selection
+	Aug 15 22:34:59 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:34:59 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:01 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:01 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:01 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:01 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:03 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:03 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:03 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:03 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:05 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:05 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:05 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:05 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:07 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:07 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:07 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:07 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:09 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:09 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:09 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:09 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:11 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:11 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:11 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:11 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:13 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:13 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:13 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:13 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:15 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:15 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:15 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:15 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:17 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:17 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:17 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:17 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:19 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:19 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:19 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:19 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:19 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: read error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:21 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:21 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:21 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:21 harorlftpp001u md_mirror: [ID 291867 kern.info] NOTICE: md: d40: Last Erred, retry I/O without B_FAILFAST
+	Aug 15 22:35:23 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:23 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:23 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: read error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:23 harorlftpp001u md_mirror: [ID 104909 kern.warning] WARNING: md: d40: /dev/dsk/c1t2d0s0 needs maintenance
+	Aug 15 22:35:23 harorlftpp001u md_mirror: [ID 990438 kern.warning] WARNING: md: d40: /dev/dsk/c1t2d0s0 last erred
+	Aug 15 22:35:25 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:25 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:27 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:27 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:29 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:29 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:31 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:31 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:33 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:33 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:35 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:35 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:37 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:37 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:40 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:40 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:40 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:41 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:41 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:41 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:41 harorlftpp001u ufs: [ID 702911 kern.warning] WARNING: Error writing ufs log
+	Aug 15 22:35:41 harorlftpp001u ufs: [ID 127457 kern.warning] WARNING: ufs log for /ftp0 changed state to Error
+	Aug 15 22:35:41 harorlftpp001u ufs: [ID 616219 kern.warning] WARNING: Please umount(1M) /ftp0 and run fsck(1M)
+	Aug 15 22:35:43 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:43 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:43 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: read error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:45 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:45 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:45 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:47 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:47 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:47 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:35:49 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:49 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:51 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:51 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:53 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:53 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:55 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:35:55 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:57 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:35:57 harorlftpp001u  disk not responding to selection
+	Aug 15 22:35:59 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:35:59 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:01 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:36:01 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:03 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 22:36:03 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:06 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:06 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:06 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:08 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:08 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:08 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:10 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:10 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:10 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:12 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:12 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:12 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:14 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:14 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:14 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:16 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:16 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:16 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:18 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:18 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:18 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:20 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:20 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:20 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:22 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:22 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:22 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:24 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:24 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:24 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:26 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:26 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:26 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:28 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:28 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:28 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:30 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:30 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:30 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: write error on /dev/dsk/c1t2d0s0
+	Aug 15 22:36:32 harorlftpp001u scsi: [ID 107833 kern.warning] WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 22:36:32 harorlftpp001u  disk not responding to selection
+	Aug 15 22:36:32 harorlftpp001u md_stripe: [ID 641072 kern.warning] WARNING: md: d40: read error on /dev/dsk/c1t2d0s0
+
+metastat:
+	d60: Mirror
+	    Submirror 0: d40
+	      State: Needs maintenance 
+	    Submirror 1: d50
+	      State: Needs maintenance 
+	    Pass: 1
+	    Read option: roundrobin (default)
+	    Write option: parallel (default)
+	    Size: 286372992 blocks (136 GB)
+
+	d40: Submirror of d60
+	    State: Needs maintenance 
+	    Invoke: after replacing "Maintenance" components:
+	                metareplace d60 c1t2d0s0 <new device>
+	    Size: 286372992 blocks (136 GB)
+	    Stripe 0:
+	        Device     Start Block  Dbase        State Reloc Hot Spare
+	        c1t2d0s0          0     No      Last Erred   Yes 
+
+
+	d50: Submirror of d60
+	    State: Needs maintenance 
+	    Invoke: metareplace d60 c1t3d0s0 <new device>
+	    Size: 286372992 blocks (136 GB)
+	    Stripe 0:
+	        Device     Start Block  Dbase        State Reloc Hot Spare
+	        c1t3d0s0          0     No     Maintenance   Yes 
+
+
+	d31: Mirror
+	    Submirror 0: d11
+	      State: Okay         
+	    Submirror 1: d21
+	      State: Okay         
+	    Pass: 1
+	    Read option: roundrobin (default)
+	    Write option: parallel (default)
+	    Size: 2116608 blocks (1.0 GB)
+
+	d11: Submirror of d31
+	    State: Okay         
+	    Size: 2116608 blocks (1.0 GB)
+	    Stripe 0:
+	        Device     Start Block  Dbase        State Reloc Hot Spare
+	        c1t0d0s1          0     No            Okay   Yes 
+
+
+	d21: Submirror of d31
+	    State: Okay         
+	    Size: 2116608 blocks (1.0 GB)
+	    Stripe 0:
+	        Device     Start Block  Dbase        State Reloc Hot Spare
+	        c1t1d0s1          0     No            Okay   Yes 
+
+
+	d30: Mirror
+	    Submirror 0: d10
+	      State: Okay         
+	    Submirror 1: d20
+	      State: Okay         
+	    Pass: 1
+	    Read option: roundrobin (default)
+	    Write option: parallel (default)
+	    Size: 284358144 blocks (135 GB)
+
+	d10: Submirror of d30
+	    State: Okay         
+	    Size: 284358144 blocks (135 GB)
+	    Stripe 0:
+	        Device     Start Block  Dbase        State Reloc Hot Spare
+	        c1t0d0s0          0     No            Okay   Yes 
+
+
+	d20: Submirror of d30
+	    State: Okay         
+	    Size: 284358144 blocks (135 GB)
+	    Stripe 0:
+	        Device     Start Block  Dbase        State Reloc Hot Spare
+	        c1t1d0s0          0     No            Okay   Yes 
+
+
+	Device Relocation Information:
+	Device   Reloc  Device ID
+	c1t3d0   Yes    id1,sd@n50018620016d6734
+	c1t1d0   Yes    id1,sd@SFUJITSU_MAX3147NCSUN146G000731G040BU____DN20P78040BU
+	c1t2d0   Yes    id1,sd@n50018620016d6860
+	c1t0d0   Yes    id1,sd@SFUJITSU_MAX3147NCSUN146G000738G04C1Y____DN20P7904C1Y
+	
+uname -a:
+	SunOS harorlftpp001u 5.10 Generic_120011-14 sun4u sparc SUNW,Netra-440
+
+echo ""|format
+	Searching for disks...Aug 15 23:51:38 harorlftpp001u scsi: WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 23:51:38 harorlftpp001u  disk not responding to selection
+	Aug 15 23:51:40 harorlftpp001u scsi: WARNING: /pci@1f,700000/scsi@2/sd@2,0 (sd4):
+	Aug 15 23:51:40 harorlftpp001u  disk not responding to selection
+	Aug 15 23:51:40 harorlftpp001u scsi: WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 23:51:40 harorlftpp001u  disk not responding to selection
+	Aug 15 23:51:42 harorlftpp001u scsi: WARNING: /pci@1f,700000/scsi@2/sd@3,0 (sd5):
+	Aug 15 23:51:42 harorlftpp001u  disk not responding to selection
+	done
+
+
+	AVAILABLE DISK SELECTIONS:
+	       0. c1t0d0 <SUN146G cyl 14087 alt 2 hd 24 sec 848>
+	          /pci@1f,700000/scsi@2/sd@0,0
+	       1. c1t1d0 <SUN146G cyl 14087 alt 2 hd 24 sec 848>
+	          /pci@1f,700000/scsi@2/sd@1,0
+	       2. c1t2d0 <drive not available>
+	          /pci@1f,700000/scsi@2/sd@2,0
+	       3. c1t3d0 <drive not available>
+	          /pci@1f,700000/scsi@2/sd@3,0
+	Specify disk (enter its number): Specify disk (enter its number): 
