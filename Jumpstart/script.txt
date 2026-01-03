@@ -1,0 +1,18 @@
+t was pointed out there's a script to create a Jumpstart server,
+but I already had a working image (sans SUNWCprog and higher).
+
+The solution is to run add_to_install_server (its in the Tools
+directory of the second CD) and you should be away. Something like:
+
+/mnt/Solaris_8/Tools/add_to_install_server /export/solaris8_cd1
+
+Caveats:
+
+        * There is a bug in the script if you nominate a relative
+          path for the location of your cd image. It won't complain
+          or fail to run, but it will assure you with a straight face
+          that you've already copied all the packages.
+
+        * The script doesn't work under pdksh. Not a problem for most
+          but our jumpstart server is presently a laptop running
+          FreeBSD, so ugly fudge required. 
