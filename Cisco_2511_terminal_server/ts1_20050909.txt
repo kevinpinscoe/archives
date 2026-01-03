@@ -1,0 +1,135 @@
+version 11.2
+service password-encryption
+no service udp-small-servers
+no service tcp-small-servers
+!
+hostname ts1
+!
+enable secret 5 $1$LFVn$fE/XO3cO1cG6b217geBIn/
+enable password 7 0758654F4F1B4F4056
+!
+no ip domain-lookup
+ip host async15 2015 2.2.2.2
+ip host async5 2005 2.2.2.2
+ip host async14 2014 2.2.2.2
+ip host async9 2009 2.2.2.2
+ip host async13 2013 2.2.2.2
+ip host async12 2012 2.2.2.2
+ip host async6 2006 2.2.2.2
+ip host async2 2002 2.2.2.2
+ip host async3 2003 2.2.2.2
+ip host async16 2016 2.2.2.2
+ip host async1 2001 2.2.2.2
+ip host async11 2011 2.2.2.2
+ip host async10 2010 2.2.2.2
+ip host async7 2007 2.2.2.2
+ip host async4 2004 2.2.2.2
+ip host async8 2008 2.2.2.2
+!
+interface Loopback0
+ ip address 2.2.2.2 255.255.255.0
+ no logging event subif-link-status
+!
+interface Ethernet0
+ ip address 167.208.3.13 255.255.255.0
+ no logging event subif-link-status
+!
+interface Serial0
+ no ip address
+ no logging event subif-link-status
+ shutdown
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 167.208.3.250
+!
+menu trouble title ^CCCCCCCCCCCCCCCC
+
+To clear a hung session, exit to the command line and type
+'clear line <line#>'
+
+^C
+menu trouble text 1 Show lines
+menu trouble command 1 show line
+menu trouble text 2 Show users, active sessions
+menu trouble command 2 show user
+menu trouble text 3 Disconnect most recent session
+menu trouble command 3 discon
+menu trouble text 4 Reconnect to most recent session
+menu trouble command 4 resume
+menu trouble text 5 Return to previous menu
+menu trouble command 5 menu-exit
+menu trouble status-line
+!
+menu hosts title ^CCCCCCCCCCCCCCC
+
+'ctrl-shift-6' then 'x' will suspend a connection to a hosts' serial
+console.  'disconnect' will disconnect and close that session. 
+
+^C
+menu hosts text 1 wasowb01
+menu hosts command 1 telnet async1
+menu hosts text 2 async2
+menu hosts command 2 telnet async2
+menu hosts text 3 wsadmin01
+menu hosts command 3 telnet async3
+menu hosts text 4 async4
+menu hosts command 4 telnet async4
+menu hosts text 5 eapoad01
+menu hosts command 5 telnet async5
+menu hosts text 6 eapocu01
+menu hosts command 6 telnet async6
+menu hosts text 7 eapodp01
+menu hosts command 7 telnet async7
+menu hosts text 8 async8
+menu hosts command 8 telnet async8
+menu hosts text 9 wseln02
+menu hosts command 9 telnet async9
+menu hosts text 10 async10
+menu hosts command 10 telnet async10
+menu hosts text 11 async11
+menu hosts command 11 telnet async11
+menu hosts text 12 async12
+menu hosts command 12 telnet async12
+menu hosts text 13 async13
+menu hosts command 13 telnet async13
+menu hosts text 14 wasobd01
+menu hosts command 14 telnet async14
+menu hosts text 15 wsdb05
+menu hosts command 15 telnet async15
+menu hosts text 16 wseln06
+menu hosts command 16 telnet async16
+menu hosts text 17 Basic troubleshooting
+menu hosts command 17 menu trouble
+menu hosts text 18 Exit to command line
+menu hosts command 18 menu-exit
+menu hosts status-line
+snmp-server community hol-pub-21 RO
+snmp-server community netpriv RW
+privilege exec level 0 clear line
+privilege exec level 0 clear
+!
+line con 0
+ exec-timeout 0 0
+line 1 2
+ no exec
+ transport input all
+ stopbits 1
+ flowcontrol hardware
+line 3
+ no exec  
+ transport input all
+ stopbits 1
+line 4 16
+ no exec
+ transport input all
+ stopbits 1
+ flowcontrol hardware
+line aux 0
+ login
+line vty 0 4
+ exec-timeout 15 0
+ password 7 12485713131C0B42737B
+ login
+ autocommand menu hosts
+!
+end

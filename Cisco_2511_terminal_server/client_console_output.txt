@@ -1,0 +1,22 @@
+
+
+
+T5140, No Keyboard
+Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+OpenBoot 4.30.4, 65312 MB memory available, Serial #86434354.
+Ethernet address 0:21:28:26:e2:32, Host ID: 8526e232.
+
+
+
+{0} ok boot net install
+Boot device: /pci@500/pci@0/pci@8/network@0  File and args: install
+/pci@500/pci@0/pci@8/network@0: 1000 Mbps full duplex link up
+Requesting Internet Address for 0:21:28:26:e2:32
+Requesting Internet Address for 0:21:28:26:e2:32
+Requesting Internet Address for 0:21:28:26:e2:32
+Requesting Internet Address for 0:21:28:26:e2:32
+/pci@500/pci@0/pci@8/network@0: 1000 Mbps full duplex link up
+
+Requesting Internet address for 0:21:28:26:e2:32
+-
+

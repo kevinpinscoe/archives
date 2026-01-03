@@ -1,0 +1,149 @@
+no service single-slot-reload-enable
+service timestamps debug uptime
+service timestamps log uptime
+service password-encryption
+!
+hostname router
+!
+enable secret 5 $1$yErT$QxApQO7NNMlIfGmY4sU.60
+enable password test
+!
+username operator privilege 15 password super
+!
+!
+!
+!
+ip subnet-zero
+ip host async1 2001 192.168.1.29
+ip host async5 2005 192.168.1.29
+ip host async4 2004 192.168.1.29
+ip host async7 2007 192.168.1.29
+ip host async16 2016 192.168.1.29
+ip host async2 2002 192.168.1.29
+ip host async11 2011 192.168.1.29
+ip host async12 2012 192.168.1.29
+ip host async13 2013 192.168.1.29
+ip host async14 2014 192.168.1.29
+ip host async9 2009 192.168.1.29
+ip host async6 2006 192.168.1.29
+ip host async8 2008 192.168.1.29
+ip host async10 2010 192.168.1.29
+ip host async15 2015 192.168.1.29
+ip host async3 2003 192.168.1.29
+!
+!
+!
+!
+interface Ethernet0
+ ip address 192.168.1.29 255.255.255.0
+ no ip route-cache
+ no cdp enable
+!
+interface Serial0
+ no ip address
+ no ip route-cache
+ shutdown
+ no cdp enable
+!
+ip classless
+ip route 0.0.0.0 0.0.0.0 192.168.1.1
+no ip http server
+!
+!
+menu trouble title ^CCCCCCCCCCCCCC
+
+To clear a hung session, exit to the command line and type
+'clear line <line#>'
+          
+^C
+menu trouble text 1 Show lines
+menu trouble command 1 show line
+menu trouble text 2 Show users, active sessions
+menu trouble command 2 show user
+menu trouble text 3 Disconnect most recent session
+menu trouble command 3 discon
+menu trouble text 4 Reconnect to most recent session
+menu trouble command 4 resume
+menu trouble text 5 Return to previous menu
+menu trouble command 5 menu-exit
+menu trouble status-line
+!
+menu hosts title ^CCCCCCCCCCCCCC                                                  
+
+'ctrl-shift-6' then 'x' will suspend a connection to a hosts' serial
+console.  'disconnect' will disconnect and close that session.
+
+^C
+menu hosts text 1 OpenVMS host vax02
+menu hosts command 1 telnet async1
+menu hosts text 2 Sun host Venus
+menu hosts command 2 telnet async2
+menu hosts text 3 Sun host Mars
+menu hosts command 3 telnet async3
+menu hosts text 4 linux host Orion
+menu hosts command 4 telnet async4
+menu hosts text 5 async5
+menu hosts command 5 telnet async5
+menu hosts text 6 intel-pc-22
+menu hosts command 6 telnet async6
+menu hosts text 7 intel-pc-23
+menu hosts command 7 telnet async7
+menu hosts text 8 Sun storage array controller - sun-1237-ne
+menu hosts command 8 telnet async8
+menu hosts text 9 Sun storage array controller - sun-1245-ne
+menu hosts command 9 telnet async9
+menu hosts text 10 async10
+menu hosts command 10 telnet async10
+menu hosts text 11 async11
+menu hosts command 11 telnet async11
+menu hosts text 12 async12
+menu hosts command 12 telnet async12
+menu hosts text 13 async 13
+menu hosts command 13 telnet async13
+menu hosts text 14 async 14
+menu hosts command 14 telnet async14
+menu hosts text 15 async15
+menu hosts command 15 telnet async15
+menu hosts text 16 async16
+menu hosts command 16 telnet async16
+menu hosts text 17 Basic troubleshooting
+menu hosts command 17 menu trouble
+menu hosts text 18 Exit to command line
+menu hosts command 18 menu-exit
+menu hosts status-line
+!
+menu host command 13 telnet async13
+menu host command 14 telnet async14
+snmp-server community 2511-pub RO
+snmp-server community netengr RW
+banner motd ^C
+   
+                      ______            _    
+                      | ___ \          | |            
+                      | |_/ /___  _   _| |_  ___ _ __ 
+                      |    // _ \| | | | __|/ _ \ '__|
+                      | |\ \ (_) | |_| | |_|  __/ |   
+                      \_| \_\___/ \__,_|\__|\___|_|   
+                                
+
+                    123 Any Street, Your town, U.S.A
+                 Security Operation Center (555)555-1212
+
+                  Unauthorized access is prohibited.
+^C
+privilege exec level 0 clear line
+privilege exec level 0 clear
+!
+line con 0
+line 1 16
+ no exec
+ transport input all
+ stopbits 1
+ flowcontrol hardware
+line aux 0
+line vty 0 4
+ exec-timeout 15 0
+ password test
+ autocommand  menu hosts
+!
+end
