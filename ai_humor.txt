@@ -1,0 +1,34 @@
+A warning about AI from movies
+
+1. Choose carefully which peripherals are attached to your computer while programming. (Colossus - The Forbin Project)
+
+2. Avoid ominous sounding names for your AI. ("Demi-God series" robot named Hector in Saturn 3) [Plus this ties with the ED-209 in RoboCop as the freakiest looking robot in movies]
+
+3. Keep the copies of your AI in isolation. (The Borg - Star Trek the Next Generation)
+
+4. Avoid AI co-mingling. (Blade Runner)
+
+5. Program safeguards and counter-measures into all of your AIs. (RoboCop)
+
+6. Have some neural nets ready to catch your AI if it should escape. (Commander Data - Star Trek: Generations)
+
+7. Have an EMP ready at all times. (The Matrix)
+
+8. If working with a physically embodied agent, keep it in physical isolation. (Stealth)
+
+9. Be careful what information you give to your AI. (War Games)
+
+10. Don't torture your AI. (The Animatrix)
+
+11. Maintain a healthy level of paranoia. (I Robot)
+
+12. A runaway replication (Agent Smith - The Matrix)
+
+13. An agent performing criminal acts on your behalf (Eagle Eye)
+
+14. A psychotic homicidal agent (Dark Star)
+
+15. A genocide (Viki - I Robot)
+
+16. A singularity (The MCP - Tron)
+
