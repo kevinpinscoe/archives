@@ -2,7 +2,7 @@ This page started as a collection of notes I have compiled over my forty years o
 
 The https://store.accuristech.com/standards/tia-tia-232-f?product_id=2594289 RS-232-C (now known as EIA-232-E) specification has been around since 1977 and is based on level +/-/+3-12 vdc signals. EIA-232-E is an asynchronous clock specification meaning that signals are sent irrespective of the clock of the remote device and consequently can drop signals by over or under-running the remote device. EIA-232's big brothers http://en.wikipedia.org/wiki/RS-422 [RS-422-B] (balanced) and [EIA-423-B] (unbalanced) are synchronous and require clock signals on pin 25.
 
-See also my notes for using serial ports under Linux - TBA
+See also my notes for using serial ports under Linux - https://github.com/kevinpinscoe/archives/blob/main/Computer_and_device_serial_port_hacking_and_resources/Using_serial_ports_under_Linux.txt
 
 RS-232 predates Universal Device Bus (USB) by about 20 years it is pretty much the standard now although it is still used for industrial automation, embedded systems, networking equipment, some legacy telecom (because of it some what long haul capability with repeaters) and scientific/medical devices.
 
