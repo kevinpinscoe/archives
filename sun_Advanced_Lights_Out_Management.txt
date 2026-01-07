@@ -1,0 +1,54 @@
+Lost ALOM password:
+
+if the machine is not up and running, thus the reason you need to get into the alom to start the console, the easiest thing to do is remove the alom card. By removing the card and doing a reboot, it will activate regular console properties within the OBP. By default the alom ask for a passwd, even when one has never been set. you said it has at one time though.
+
+If you are able to get into the server, then you just have to download the RSC pkg and install and configure to get the ALOM working. reboot is required to activate it.
+
+get it from: http://www.sun.com/download/index.jsp?tab=2 I think it is called 'remote system control'
+
+I think I have the exact procedure at work, just going from memory now.
+
+you asked about resetting the passwd, here is the commands to add another user with full privs.
+
+        /usr/platform/`uname -i`/rsc/rscadm useradd
+        /usr/platform/`uname -i`/rsc/rscadm userperm  cuar
+        /usr/platform/`uname -i`/rsc/rscadm userpassword
+
+these commands will do it,
+
+1. power down remove power cords for several seconds
+
+2. press esc key during alom boot when this is on screen: Boot Sector FLASH CRC Test Boot Sector FLASH CRC Test, PASSED. Return to Boot Monitor for Handshake
+
+After esc key is pressed you get the ALOM Menu
+
+3. Enter e to erase the ALOM NVRAM 4. Enter r to return to ALOM boot process
+
+How to bypass ALOM password on a Sun Fire V210/V240/V250/V440
+
+To overide the ALOM password on the system you will need to:
+
+1) Attach console to Serial Management Port
+
+2) Power on the server via the front power button. Once POST has completed, you will need to wait 1 to 2 minutes for a timeout to occur and the system to drop to the "ok>" prompt. If you do not get the "Please login:" prompt (you will likely see the SC prompt) then you must power the system off remove the battery from the LOM board, wait a minute, and re-install everything).
+
+    * Below is an example of what you might see on the console:
+
+    Please login:
+    SC Alert: Host System has Reset
+
+    [wait one two minutes]
+    Serial line login timeout, returns to console stream.
+
+    ok>
+
+3) Boot the system to the OS level. If Solaris is not currently installed on the server, you will need to install it at this point.
+
+4) Use the scadm command to reset the admin password:
+
+   1. cd /usr/platform/`uname -i`/sbin
+   2. ./scadm userpassword admin
+
+5) Use the escape sequence "#." to get system back to the alom login prompt.
+
+   1. You can now log into the admin account using the password from step 4 b). 
