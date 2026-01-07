@@ -1,0 +1,137 @@
+I wrote this article back in 2000 but the information is still relevant and I have updated some of the dead links.
+
+You can also use Putty for Linux and the screen command to access serial ports as well.
+
+UUCP, cu and tip
+
+I often connect the servers I manage to terminal concentrators and often these concentrators are managed by a host system usually Sun and lately on Linux. On those host systems I typically use a command called tip https://en.wikipedia.org/wiki/Tip_(Unix_utility) or C-Kermit http://www.columbia.edu/kermit/ckermit.html.
+
+See also https://www.sunhelp.org/stokely/4xmodem.html
+
+But on Solaris I much prefer tip since it is simple and easy to maintain by setting up the "/etc/remote" file.
+
+In fact my latest problem was finding a copy of tip for Linux Redhat. I was not able to find a quick solution to that problem. I did find the https://github.com/freebsd/freebsd-src/tree/5d73fca1f4b2bac8833e2b9233fa496059dab745/usr.bin/tip for tip source but is meant for BSD.
+
+First lets start with a little history for tip and the package of utilities which is found in the Unix to Unix Copy Program tool-set better known as UUCP.
+
+UUCP was created around 1976 http://en.wikipedia.org/wiki/UUCP#History by Mike Lesk at AT&T Bell Laboratories in order to allow a simple yet configurable modem communications network between unix hosts. 
+
+Elaborate UCP maps were created and eventually commercial services like UUNET http://en.wikipedia.org/wiki/UUNET provided UUCP connections for fifty cents a minute. This of course was all in the days before high-speed bandwidth was available or commercially viable.
+
+"Unix-to-Unix Copy Program," said PDP-1.  "You will never find a more wretched hive of bugs and flamers. We must be cautious."  -- DECwars http://www.bsd.org/decwars.html
+
+There are two different UUCP packages out there: Taylor ftp://ftp.gnu.org/pub/gnu/uucp/ named after it's creator Ian Taylor http://www.airs.com/ian/ which is derived from the BSD variants of unix and is the adopted GNU version.
+
+The original UUCP by Mike Lesk was rewritten by AT&T researchers Peter Honeyman, David A. Nowitz, and Brian E. Redman. The AT&T rewrite is referred to as HDB or HoneyDanBer uucp, which was later enhanced, bug fixed, and repackaged as BNU UUCP ("Basic Network Utilities"). This HDB is the package you find on commercial unix derived from AT&T System V http://en.wikipedia.org/wiki/UNIX_System_V such as Solaris 2-11 and SGI Irix, HP HP-UX and IBM AIX version 4 and below.
+
+Each of the AT&T versions were distributed as proprietary software, which inspired Ian Lance Taylor to write a new free software version from scratch in 1991. Taylor UUCP was released under the GNU General Public License. In particular, Taylor UUCP addressed security holes which allowed some of the original internet worms to remotely execute unexpected shell commands. Taylor UUCP also incorporates features of all previous versions of UUCP, allowing it to communicate with any other version with the greatest level of compatibility and even use similar config file formats from other versions.
+
+I point this out because they way UUCP tools such as the tip and cu commands behave are different or are completely removed between Solaris and Linux hosts. The configurations are different as well.
+
+Now tip is included in the BNU distribution but was dropped by the time Taylor was developed. The cu command http://www.cirr.com/support/uucp/taylor-docs/uucp_20.html#SEC20 is a replacement for tip and contains basically the same tilde (~) escape commands that tip does.
+
+However Taylor UUCP is configured differently then HDB (although it is reported to support HDB file configuration - it didn't recognize /etc/remote for me). Instead of configuring /etc/remote I had to setup the file /etc/uucp/port. 
+
+Configuration and usage:
+
+Here is my sample configuration:
+
+ [@
+# This is an example of a port file. This file have the syntax compatible
+# with Taylor UUCP (not HDB, not anything else). Please check uucp
+# documentation if you are not sure how Taylor config files are supposed to 
+# look like. Edit it as appropriate for your system.
+
+# Everything after a '#' character is a comment.
+
+# (ttyS0 means COM1)
+
+port serial
+type direct
+device /dev/ttyS0
+speed 9600
+@]
+
+An example session:
+
+ $ cu -p serial
+ Connected.
+ ~.
+ Disconnected.
+
+If you see this error:
+
+ cu: Access to port denied
+
+Use chmod to change the permissions on /dev/ttyS0 as root:
+
+ # chmod 666 /dev/ttyS0
+
+Installing cu:
+
+In CentOS/Redhat(RHEL) 6 and Fedora 20-22
+
+Fedora - Install the EPEL - https://fedoraproject.org/wiki/EPEL
+
+CentOS 6 - Install the EPEL repo - http://pkgs.org/centos-6/epel-x86_64/uucp-1.07-25.el6.x86_64.rpm.html
+
+# yum install uucp
+
+See note http://www.kodkast.com/linux-package-installation-steps?pkg=uucp for RHEL/CentOS 5.
+
+Books that cover UUCP:
+
+Managing UUCP and Usenet, 10th Edition  (now very old abd way out of print look used market) - https://www.amazon.com/s?k=Managing+UUCP+and+Usenet&crid=39V1WADM7MJS7&sprefix=managing+uucp+and+usenet%2Caps%2C106&ref=nb_sb_noss_1
+
+Practical UNIX and Internet Security 3rd Edition (Chapter 15) - https://www.amazon.com/Practical-Unix-Internet-Security-3rd/dp/0596003234/ref=sr_1_1
+
+Linux Network Administrator's Guide, 2nd Edition (free online) - http://oreilly.com/openbook/linag2/book/index.html
+
+Using UUCP and Usenet (used market) - https://www.amazon.com/s?k=Using+UUCP+and+Usenet&crid=226KULDVGY35V&sprefix=using+uucp+and+usenet%2Caps%2C171&ref=nb_sb_noss_1
+
+Inside Linux - Chapter 14 - http://www.amazon.com/Inside-Linux-Michael-Tobler/dp/0735709408/ref=sr_1_1
+
+UUCP Notes:
+
+Ian Taylor UUCP documentation http://airs.com/ian/uucp-doc/
+
+Ian Taylor UUCP site http://airs.com/ian/uucp.html
+
+Frequently Asked Questions about Linux UUCP http://www.gnu.org/software/uucp/ 
+
+[[http://tldp.org/HOWTO/UUCP-HOWTO-6.html|]]
+
+Linux Network Administrator's Guide, 2nd Edition (free online) - http://oreilly.com/openbook/linag2/book/index.html
+
+The Linux UUCP HOWTO - http://www.linuxdoc.org/HOWTO/UUCP-HOWTO.html
+
+The Linux Serial HOWTO - http://www.tldp.org/HOWTO/Serial-HOWTO.html
+
+Taylor UUCP configuration - http://www.cirr.com/support/uucp/taylor.html
+
+Taylor UUCP mailing list - http://lists.cirr.com/cgi-bin/wilma/taylor-uucp
+
+Minicom:
+
+Other software that can work with serial ports on Linux is <a href="http://alioth.debian.org/projects/minicom/">minicom</a>.
+
+Be sure to use the minicom -o option to avoid the modem initialization being sent to the server on the serial port!
+
+setserial command:
+
+Notes:
+
+http://www.commandlinefu.com/commands/view/10218/ttys0-terminal-on-serial-connection
+
+ $ sudo setserial -q /dev/ttyS0
+ /dev/ttyS0, UART: 16550A, Port: 0x03f8, IRQ: 4
+
+Serial port capture and hacking:
+
+
+http://ubuntuforums.org/showthread.php?t=13667
+
+http://linuxgazette.net/issue48/tag/52.html
+
+http://www.google.com/search?q=linux+intercept+serial+port&btnG=Google+Search
+
