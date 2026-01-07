@@ -1,0 +1,2 @@
+See https://unixadministrator.blogspot.com/2009/01/how-to-upgrade-sun-x4100-servers.html
+
