@@ -1,0 +1,22 @@
+Sun NIC card e1000
+
+e1000g is just the driver name ( same as bge, nve are ). It does not change no matter what link speed you operate the interface(s) at.
+
+Here is the output of dladm from one of my T5220s
+
+ # dladm show-link
+ e1000g0         type: non-vlan  mtu: 1500       device: e1000g0
+ e1000g1         type: non-vlan  mtu: 1500       device: e1000g1
+ e1000g2         type: non-vlan  mtu: 1500       device: e1000g2
+ e1000g3         type: non-vlan  mtu: 1500       device: e1000g3
+
+Here is the driver's man page:
+http://docs.sun.com/app/docs/doc/816-5177/e1000g-7d?a=view
+
+But this also is very useful :-
+
+ hi,
+
+http://blogs.sun.com/clive/entry/ipge_to_e1000g e1000g is the name of the interface and the name depends on the driver, so it depends which version solaris 10 you will be installing. (06/06 or 08/07)
+
+http://docs.sun.com/app/docs/prod/server.nebs#hic find your server and find the Server Administration Guide document 
