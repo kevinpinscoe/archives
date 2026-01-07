@@ -1,0 +1,49 @@
+I received one of these 3Com Ergo Audrey today (2010-01-21).
+
+My unit is brand new (NIB) linen white that was given to me by a co-worker (who had it given to him). It was purchased back in 2001 for a project and it got shelved. I intend to use it as a kitchen kiosk unit for my wife (recipes, watch videos while cooking, etc). It was a lot cheaper then building something on my own and a netbook was too small and also prone to getting greasy or damaged by food items.
+Features:
+
+The Audrey has a 7.1" diagonal, 640- by 480-dpi VGA resolution, 12-bit color touch-screen, built-in sound, serial port, two usb ports, and a built in modem and comes with an infrared wireless keyboard.
+
+Printing is optional with compatible Canon USB printers: BJC-85, BJC-85W, and BJC-2100.
+
+Audrey's innards include a 200-MHz Geode GX1 processor, 16MB of ROM, 32MB of RAM (1MB reserved for e-mail), and an upgradable version of the QNX 2000 operating system with HotSync capability. There are two stereo speakers on the top panel, an external speaker jack, a microphone, and a 56K v.90 modem. Internet browsing, PIM synchronization with a Palm III, and two-way e-mail in typed, handwritten (sent as JPEG attachments), and audio (WAV files, up to 3 minutes in length).
+
+The browser handles frames, JavaScript (but not Java), Macromedia Flash, JPEG, GIF, and RealAudio (future versions planned would add MP3 capability (not sure if mine has it yet). There are two unique features: a button to add URLs to your Address Book for attaching to e-mail and a snapshot function for grabbing portions of Web pages for storage in your Address Book or for immediate e-mail attachment.
+
+First impressions (2010-01-23):
+
+The first thing I needed was the 3Com USB Ethernet adapter as that is the only way to network with it. It comes with a dial up internal modem but that is useless now.
+
+Update (2010-02-29): I ended up locating a USB Ethernet adapter on eBay - 3COM 3C19250?.
+
+I will put more here as I start hacking with it.
+
+Update (2010-02-17):
+
+I am still searching eBay for a supported USB (10mb only) Ethernet adapter. Since there are no Ethernet ports (let alone 10mb) near the kitchen I may jack the adapter into a wireless adapter. At best right now I will probably only use it as a web kiosk using the built in firmware. My wife wants to watch videos on it (web delivered) this is not likely since the flash player is at least 10 years old and there is no Java support. But at last it could look up and display recipes. With the Apple iPad coming that will likely replace the Audrey project for the kitchen in our home but not till much later in the year so for now I will trudge ahead and note what I find on this page.
+
+The original part number of the USN Ethernet adapter is 3COM 3C460A (-B won't work!!) and one potential source is (as of 2010-02-13): http://technicalconnectionsinc.stores.yahoo.net/usbetad10.html
+
+I like this cradle someone is selling for the Audrey. I would paint mine black to fit the kitchen.
+Resources:
+
+The Unofficial Audrey Home Page
+
+Audrey forum at http://www.linux-hacker.net
+
+http://www.audreymadness.com
+
+http://webpages.misn.com/~toybox/ (http://audreyupgrade.com)
+
+http://audrey.wikia.com (used to be http://www.audreyhacking.com).
+
+http://audrey.wikia.com/wiki/AudreyFiles
+
+http://www.sowbug.com/audrey/hack.html - Hacking the Audrey with a CF flash card
+
+Audrey images.
+
+http://www.mraudrey.net/nuke/html/index.php
+
+http://www.mraudrey.net/nuke/html/modules.php?name=Web_Links 

@@ -1,0 +1,95 @@
+Audrey FAQ:
+
+Mirrored from http://www.sowbug.com/audrey/faq.html (in case it disappears - which it did) with some links added (by me), removed where they were dead or corrected if they could be (2010-02-17).
+
+Q. What's an Audrey? How much does it cost? Where do I get one? How does it compare against Internet Appliance X?
+
+A. Try Google or eBay. This site is directed toward Audrey hackers, not users or potential buyers.
+
+Q. How do I get my modem to work with my Audrey? How do I delete a bookmark in the browser? How do I cut and paste text?
+
+A. See previous question.
+
+Q. What OS does the Audrey use?
+
+A. QNX. Specifically, it uses a version of the QNX RTP earlier than 6.1, but we're not totally sure which version (it uses libc.so.1, not libc.so.2). Contrary to some reports, there are no PalmOS components in Audrey. There is a version of Palm HotSync, but that's just another application, not an OS.
+
+Q. What hardware does the Audrey use?
+
+A. Its CPU is a National Semiconductor (AMD now) Geode GX1, which is a descendant of the Cyrix MediaGX chip. It's compatible with the Intel x86 instruction set. Some of the other components (thanks Codeman) are CS5530 controller, CS9211 TFT to DSTN converter, National PC97317 SuperI/O, Crystal Semi 4299 AC97 codec, ADS7843 touch controller, and Intel E28F128 16MB flash.
+
+Q. Why didn't 3Com put an Ethernet adapter as standard equipment on the Audrey? What were they smoking?
+
+A. At first I asked the same thing, but then I started to see the light. Short answer: the <b>Audrey wasn't intended for you or me</b>. Long answer: You and I already have PCs at home. We are power users. We already have broadband Internet access at home. We know how to use our PCs, and aren't freaked out by terms like "Windows Registry," "chap-secrets," or "megabyte." Moreover, you and I are gadget freaks and will buy any tech thing that costs $199 or less. But except for the first category (prior PC owners), the Audrey wasn't intended for anyone matching these descriptions! The Audrey was a $599 self-contained Internet appliance that specialized in offline content. It was meant to be placed on a kitchen countertop with minimal installation hassles (no more than a cordless phone). It was as much an aesthetic statement as a functional device, and people in its target market would probably choose better appearance (no cat-5 cable) over better functionality (always-on connectivity). So if adding Ethernet meant an additional $50 cost to the end Audrey user but would be used by very few people and (most important) meant that 3Com would have to provide tech support for users trying to install a LAN at home, then you can see why 3Com chose to make Ethernet an option rather than standard equipment.
+
+Q. Can I boot Linux on the Audrey?
+
+A. In theory, sure, but it hasn't been done yet outside of 3Com. The main problem is that the Audrey doesn't have a standard PC/AT BIOS, so LILO won't be able to load up the Linux kernel.
+
+Q. Those pictures on your hack page have some subtle inconsistencies with the shell I run on my Linux box. Mind if I accuse you of being a fraud?
+
+A. Hehe, you must be a Slashdot reader. There are a zillion POSIX-based kernels out there (original variants of Unix, FreeBSD, OpenBSD, NetBSD, QNX, the GNU Hurd, Linux, Mach, Windows NT/2000 -- yes, it has a POSIX API, etc.), and even more shell programs for those kernels (bash, ash, fesh, ksh, csh, zsh, etc.). I strongly urge you to branch out!
+
+Q. Can I use USB device ______ on my Audrey?
+
+A. No. The Audrey works only with certain 3Com-brand 10Mbps USB Ethernet adapters: the 3C460A, 3C19250, and 3C83510P-01. Be careful: the 3C460B is a 100Mbps adapter and doesn't work with the Audrey.
+
+Q. Where can I buy an Ethernet adapter?
+
+A. Hmmm. I guess you didn't read question #1 but I'll answer anyway. Go to PriceWatch and look under USB network adapters for 3Com products, and you'll find a few places offering 3C19250s for $25-$50. I have heard that the 3C460 networking kit includes a hub and two 3C460 adapters, but I haven't seen one myself.
+
+Q. Can I use Compact Flash device ______ on my Audrey?
+
+A. No. Presently, the only use for the CF slot is to update the flash ROM. However, some people have reported success mounting a CF card with devb-cf on hacked Audreys. Once you have the CF card mounted, it looks like another block device that you can use for storage.
+
+Q. Can I use serial port device ______ on my Audrey?
+
+A. No. Only Palm device cradles and null modem cables for debugging.
+
+Q. Can I use wireless keyboard ______ on my Audrey?
+
+A. Now you're talking :). At least some Fujitsu brand wireless keyboards do work with the Audrey. I don't have a part number, nor have I seen it myself, but several people have reported success with them.
+
+Q. What are the DNS addresses of some Audrey update servers?
+
+A. 216.102.107.227 and 160.79.101.114.
+
+Q. How do I update an Audrey's flash ROM?
+
+A. Put in the CF card with the Audrey unplugged. Hold down the power and datebook buttons, and plug the Audrey back in again. Wait until the screen says to remove the power cable.
+
+Q. What kind of CF card do I need to update the flash ROM?
+
+A. Compact Flash. 32 megabytes. Any brand. If it doesn't call itself Compact Flash, it won't work. If it is less than 32 megabytes, it won't work. If it is more than 32 megabytes, it won't work.
+
+Q. Where do I get the ROM image to put on the CF card?
+
+A. It's copyrighted so you can't get it unless you figure out how to get 3Com to give you a copy. Sorry!
+
+Q. How do I force an update of the Audrey system software?
+
+A. For firmware version 1.02.04.00 and later, turn on the Audrey and hold down the mail, action, and browser buttons. For earlier firmware versions, switch to the datebook, then press actions, go to Audrey options, then download schedule, make sure broadband is unchecked, and then set the first of the five scheduled updates to the current time plus three minutes (make sure you have a.m./p.m. set correctly!). Now press the power button and wait about five minutes.
+
+Q. How do I reset an Audrey?
+
+A. The easiest way is to enter a password, put the Audrey to sleep, wake it up, and then get the password wrong three times in a row. The Audrey will then ask if you want to reset it.
+
+Q. Who are you, and why did you get into Audrey hacking?
+
+A. My name is Mike, and I am a software engineer in Silicon Valley. I work at a company that makes the leading solution for mobilizing enterprise data for handheld computers.
+
+For a long time, I have wanted to make a digital picture frame for my mom. I thought of this years ago, before companies started making businesses out of it. It's a pretty obvious idea; I don't claim to be the original inventor or anything silly like that, but I did independently think it up. Anyway, as Internet appliances (IAs) began to be marketed, and as their failures drove down the cost of liquidated IA hardware, I started a project to build the picture frame out of an inexpensive IA.
+
+The i-opener was a good candidate, but to be honest, I felt bad for the manufacturer, which was taking a loss on the hardware and trying to make a profit from monthly service fees. I happen to think that's a poor business model for a product that provided little or no value over what's available on the Internet generally (as opposed to America Online, which really does provide a lot of useful and entertaining proprietary content in exchange for whatever they charge per month). Usually when I see a company with a poor business plan that overly favors buyers, I feel like it's my duty as a red-blooded American capitalist to take them for all they're worth. But this time, for some unknown reason, I saw the i-opener people as a bunch of hard-working fellow engineers who built a reasonable product, and were getting taken to the cleaners by a bunch of people who wanted an extra Linux machine to browse the web while watching TV. I didn't want to contribute to screwing over these guys, so I opted out of the i-opener frenzy.
+
+Other possibilities included the Gateway Connected Touchpad (too expensive, nobody on eBay was selling new ones); the Virgin Webplayer (too old and too hard to find); a Sega Dreamcast (still would need to find an LCD screen); and a homemade device built out of a trashed notebook (I love my Mom and wouldn't give her an ugly gift that she'd have to hide when guests came over).
+
+Next was the Compaq IA-1, sometimes called the MSN Companion or iPaq. I suppose that all the same factors applied to this device as the i-opener (low-cost loss leader, meant to be profitable for the seller through monthly access fees), but for some reason I just didn't feel the same twinge of guilt by declining to give more money to Microsoft :). Moreover, the IA-1 was much more expensive than the i-opener ($399 vs. $99), and for $399 you were getting a pretty horrible computer compared to what you could get for about the same price from eMachines, so the screw-over factor wasn't nearly as severe. Then I found refurbished IA-1s at Tiger Direct for $179 and the decision was clear. Unfortunately, careful readers will note the term "Tiger Direct" in the previous sentence. I won't go into detail but I didn't have a satisfactory buying experience from them. I don't know how a company like that stays in business.
+
+While waiting for the IA-1, I was perusing the Linux Hacker BBS and saw a few posts about the Audrey. People were selling them new on eBay for around $100, so I decided to give it a try. It was especially enticing because nobody had gotten into the Audrey yet, unlike the IA-1, which wouldn't have been a very interesting project from a hacking perspective -- just flash Jailbait to it, put up a web page with a meta-refresh tag, and drop it off at Mom's house. My eBay buying experience was excellent: the seller shipped immediately, and I received it quickly and in as-promised new condition. After a little trolling on the web I found someone who happened to have come across a ROM image for the Audrey, and once I realized the image looked like a fairly standard QNX embedded image, the path to enlightenment became clear. Coincidentally, my girlfriend left for a two-week trip just as the Audrey arrived, so I was able to work nearly nonstop during those two weeks (except for my day job) and get some quick results. Once I posted those early results on the web, I started getting more help from knowledgeable people who were probably current or former 3Com employees, and everything got easier after that.
+
+Other than the picture frame motivation, I don't have any particular interest in Internet appliances, real-time operating systems, or embedded devices. But I didn't know anything about QNX before this project and had a tremendous amount of fun learning it during the Audrey project, and if I didn't already have a good job, I might see about working more closely with these sorts of things.
+
+Q. So does your Mom have the picture frame now?
+
+A. Not yet. Please don't tell her about it, either -- it's supposed to be a surprise. 
