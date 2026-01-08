@@ -1,0 +1,91 @@
+I put this together around 2010 or so so it is probably dated.
+
+At the time I was running my own email infrastructure using Dovecot.
+
+Versions and assumptions:
+
+I tested this solution using Dovecot 1.1.7 on a Linux 2.6 kernel.
+
+OpenSSL is version 0.9.8h.
+
+iPod Touch firmware 2.2.
+
+Dovecot:
+
+dovecot.conf: (dovecot -n)
+
+protocols: imaps
+ssl_listen: 993
+ssl_cert_file: /etc/ssl/dovecot/server.pem
+ssl_key_file: /etc/ssl/dovecot/server.key
+imap_client_workarounds: tb-extra-mailbox-sep
+auth default:
+passdb:
+driver: pam
+args: *
+userdb:
+driver: passwd
+iPod setup:
+
+See this tutorial for guidance: http://mail.google.com/support/bin/answer.py?hl=en&answer=77702
+
+Settings->Mail, Contacts, Calendars->Accounts
+
+Create your account with Add Account... as normal (choose Other).
+
+In the advanced tab:
+
+See the images in this directory in Github.
+
+Important note it seems it is a known issue that on both OSX (10.4 and 10.5) and iPhone mail clients don't seem to handle non-standard ports for SSL or TLS very well which means using the default port of 993. Some notes on this I found:
+
+http://discussions.apple.com/thread.jspa?messageID=8483483
+
+"Just to confirm the bug also affects the iPhone (tested on firmware 2.1), at least for IMAP:
+
+(a) Standard port with SSL => Works (b) Standard port without SSL => Works (c) Non-standard port without SSL => Works (d) Non-standard port with SSL => Error
+
+In case (d), the iPhone complains about a timeout error after some time, while the IMAP server indicates a SSL/TLS handshake problem."
+
+This is the error I saw in the maillog from Dovecot:
+
+dovecot: imap-login: Disconnected (no auth attempts): rip=192.168.1.23, lip=192.168.1.2, TLS handshaking: Disconnected
+Troubleshooting notes:
+
+SSL dumper:
+
+http://www.rtfm.com/ssldump/
+
+Interesting:
+
+I also found this note in my searching however the original site has been down for several days of the publishing of this update so here is the Google cache results:
+
+http://74.125.47.132/search?q=cache:jYnbw0d5E1cJ:www.schmonz.com/2008/01/31/outsmarting-dumb-imap-clients+dovecot+%2Biphone+imap+authentication&hl=en&ct=clnk&cd=4&gl=us
+
+"Outsmarting dumb IMAP clients · 455 words · 2008-01-31 14:37
+
+I have several dozen IMAP mail folders (stored on the server as Maildir++, which Dovecot supports). When I’m on the go with my iPhone, I only want to see a few of them. IMAP provides a way for clients to “subscribe” to specific folders, so I figured that was the basic idea. As with all things IMAP, subscription information is stored on the server; by default, Dovecot keeps it in a file in the top-level Maildir. To avoid interfering with my more full-featured IMAP clients, I needed a way to get at my top-level Maildir with the usual permissions, but with a separate subscriptions file. Dovecot’s passwd-file authentication scheme made this easy. After the default passdb passwd stanza in /etc/dovecot.conf, I appended this:
+
+passdb passwd-file {
+
+  args = /etc/dovecot/%d/passwd
+
+}
+
+Likewise for userdb. Then I created /etc/dovecot/schmonz.com/passwd with the following format:
+
+iphone:crypted-password:real-uid:real-gid::home-dir::userdb_mail=maildir:path-to-mail:CONTROL=path-to-mail/iphone/control:INDEX=path-to-mail/iphone/index
+
+The iPhone has no UI for manipulating subscriptions, so I logged into my webmail app as iphone@schmonz.com and set up everything the way I wanted. Unfortunately, it turns out there’s a reason the iPhone has no subscription UI: it doesn’t care about subscriptions at all. It just always shows you every folder it can possibly show you.
+
+Needing to take a different tack, I kept the idea of a separate IMAP login for iPhone purposes and tweaked the details. Alongside the real Maildir++, I created a separate Maildir++ specifically for the iPhone, with strategic symlinks to my real inbox, Drafts, Sent, and Trash folders:
+
+$ ls -la Maildir-iphone total 1264 drwx------ 2 schmonz users 1024 Jan 31 00:37 . drwxr-xr-x 27 schmonz users 15872 Jan 30 21:59 .. lrwxr-xr-x 1 schmonz users 18 Jan 30 22:14 .Drafts -> ../Maildir/.Drafts lrwxr-xr-x 1 schmonz users 16 Jan 30 22:13 .Sent -> ../Maildir/.Sent lrwxr-xr-x 1 schmonz users 17 Jan 30 22:13 .Trash -> ../Maildir/.Trash lrwxr-xr-x 1 schmonz users 14 Jan 30 22:06 cur -> ../Maildir/cur lrwxr-xr-x 1 schmonz users 14 Jan 30 22:06 new -> ../Maildir/new lrwxr-xr-x 1 schmonz users 14 Jan 30 22:06 tmp -> ../Maildir/tmp
+
+And I changed the line in /etc/dovecot/schmonz.com/passwd to this:
+
+iphone:crypted-password:real-uid:real-gid::home-dir::userdb_mail=maildir:~/Maildir-iphone
+
+I reopened Mail on the iPhone. After a moment, it showed only Inbox, Drafts, Sent, and Trash, and they had the same contents as Mail.app on my Mac. I marked something as read in one IMAP client, and the other noticed the change shortly thereafter. Once convinced I was working safely with my real mail, I symlinked in the handful of other folders I wanted to see on the iPhone.
+
+It would be nice if iPhone Mail grokked IMAP subscriptions. If and when it does, I can roll back to my first attempt and undo this hack. In the meantime, it works." 
