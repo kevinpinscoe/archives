@@ -1,0 +1,19 @@
+In my case this happened on a 1st Generation iPod Nano I still use occasionally.
+
+Notes:
+
+http://support.apple.com/kb/TS1456
+
+http://support.apple.com/kb/TS1441
+
+Steps:
+
+First try to reset it.
+
+I also performed a restore.
+
+None of the above worked. I should note that the iPod was fine and worked fine. I did the restore and that point lost my settings and playlists. I had to go through the menu to select English language much like you would do out of the box. But when plugged back into iTunes the same message as above. iTunes is version 10.5.3.3 running on Windows XP Home Edition SP 3 patched up to date.
+
+Then I found this note which said in part "If you've restored your iPod and the message described above re-appears, the iPod drive letter may need to be reassigned. To assign a different drive letter follow the steps for changing the Drive Letter. I changed the drive letter from G to L.
+
+This ins fact worked and I found out I had network linked a drive as G: some time after I had last synced this iPod. Problem solved. 
