@@ -1,0 +1,130 @@
+
+
+http://en.wikipedia.org/wiki/Comparison_of_iPod_Managers
+
+I prefer command line tools much of the time but for the GUI tools in Linux here are some links to popular software:
+GUI tools:
+
+http://www.gtkpod.org/ (article)
+
+http://www.yamipod.com
+
+http://projects.gnome.org/rhythmbox/
+
+http://www.getsongbird.com/
+
+http://www.ephpod.com/
+
+http://www.floola.com
+
+http://mediachest.sourceforge.net/
+
+http://mypod.sourceforge.net/
+
+Command line tools:
+
+GNUpod (manual)
+
+SyncPOD
+
+Feed tools:
+
+http://liferea.sourceforge.net/
+
+Useful articles:
+
+http://www.linuxjournal.com/article/9266
+
+Podcast management:
+
+I don't listen to music as much on the go as I do speech audio and I love podcasts so my setup mainly revolves around downloading, aggregating and delivering podcasts to my iPod devices. There are several bash script clones to handle the podcast delivery part but what I wanted most was a complete management solution that was the good part of iTunes. It would detect what podcasts I had already listened to and delete them from iTunes and the iPod to save space. This of course could be configured on a podcast by podcast basis since some of them I would tend to archive. I also love grouping my podcasts in to playlists. So I am hacking a management solution for all of this starting with Chess Griffin's Mashpodder (which in turn was derived from Linc Fessenden's Bashpodder re-hacked as ashpodder. This works in conjunction with GNUpod to update playlists for the ipod and know when to cleanup podcasts that you have already listened to.
+
+Installing GNUpod:
+
+First I will assume from here on out you are installing GNUpod in your PATH variable some where but I recommend putting it in /usr/local/bin to avoid getting erased by distro updates and to make it available for all your users. Don't forget to add /usr/local/bin to your PATH environment variable before proceeding.
+
+See the GNUpod installation section of the manual for more information.
+
+Mount the iPod for use.
+
+See my article Autodetection and automounting in Linux on how to do this. In my examples I have mounted it as /media/ipod. You can specify this mount point in your profile as $IPOD_MOUNTPOINT to save keystrokes. This variable is required to be set in order to use ashpodder.
+
+Initialize the iPod using GNUpod:
+
+Documentation: http://www.gnu.org/software/gnupod/gnupod.html#SEC9
+
+ $ gnupod_INIT.pl -m /media/ipod
+
+gnupod_INIT.pl 0.97 (C) Adrian Ulrich
+
+Your iPod is mounted at /media/ipod, ok ?
+*********************************************************
+This tool creates the default directory tree on your iPod
+and creates an *empty* GNUtunesDB (..or convert your old
+iTunesDB to a new GNUtunesDB).
+
+You only have to use this command if
+    -> You never used GNUpod with this iPod
+ or -> You did an 'rm -rf' on your iPod
+
+btw: use 'gnupod_addsong -m /media/ipod --restore'
+     if you lost your songs on the iPod after using
+     gnupod_INIT.pl (..but this won't happen, because
+     this tool has no bugs ;) )
+*********************************************************
+
+Hit ENTER to continue or CTRL+C to abort
+
+
+Creating directory structure on /media/ipod
+
+> AppFolders:
++/media/ipod/iPod_Control/.gnupod
+> Music folders:
++/media/ipod/iPod_Control/Music/F03
++/media/ipod/iPod_Control/Music/F04
++/media/ipod/iPod_Control/Music/F05
++/media/ipod/iPod_Control/Music/F06
++/media/ipod/iPod_Control/Music/F07
++/media/ipod/iPod_Control/Music/F08
++/media/ipod/iPod_Control/Music/F09
++/media/ipod/iPod_Control/Music/F10
++/media/ipod/iPod_Control/Music/F11
++/media/ipod/iPod_Control/Music/F12
++/media/ipod/iPod_Control/Music/F13
++/media/ipod/iPod_Control/Music/F14
++/media/ipod/iPod_Control/Music/F15
++/media/ipod/iPod_Control/Music/F16
++/media/ipod/iPod_Control/Music/F17
++/media/ipod/iPod_Control/Music/F18
++/media/ipod/iPod_Control/Music/F19
+> No 'Limit' file created or deleted..
+> Creating dummy files
+Found *existing* iTunesDB, running tunes2pod.pl
+tunes2pod.pl Version 0.97 (C) Adrian Ulrich
+> Has 3 songs
+*** FATAL: Expected to find 3 files,
+*** but i failed to get nr. 0
+*** Your iTunesDB maybe corrupt or you found
+*** a bug in GNUpod. Please send this
+*** iTunesDB to pab@blinkenlights.ch
+
+
+ Done
+   Your iPod is now ready for GNUpod :)
+
+Importing our playlist to the iPod:
+
+Documentation: http://www.gnu.org/software/gnupod/gnupod.html#SEC10
+
+ashpodder uses the GNUpod command to add podcasts to the playlist on the iPod:
+
+gnupod_addsong.pl -m /media/ipod $HOME/podcasts/<podcast directory>.mp3
+
+Purging podcasts and audio files that have a non-zero playcount.
+
+ashpodder will automatically remove any podcasts that been listened to (via GNUpod gnupod_search.pl --genre=podcast --view=tagc piped into --delete operation) if the podcast is marked as such in kpod.conf. 
+
+I will see if I can find the source to ashpodder it may have been lost to time. Ashpodder named for Ash in the Evil Dead movies.
+
+I found the code in an old backup and made a repo for it https://github.com/kevinpinscoe/ashpodder
