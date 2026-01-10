@@ -1,0 +1,417 @@
+If you bought a Cisco 2511 from me in 2012 here are some notes
+
+Passwords:
+
+enable secret: changeme
+
+enable password: password
+
+virtual terminal password: letmein
+
+  The enable secret is a password used to protect access to
+  privileged EXEC and configuration modes. This password, after
+  entered, becomes encrypted in the configuration.
+  Enter enable secret: changeme
+
+  The enable password is used when you do not specify an
+  enable secret password, with some older software versions, and
+  some boot images.
+  Enter enable password: password
+
+  The virtual terminal password is used to protect
+  access to the router over a network interface.
+  Enter virtual terminal password: letmein
+  Configure SNMP Network Management? [yes]: no
+
+Configuration:
+
+  Enter host name [Router]: my2511
+
+Current interface summary
+
+ Any interface listed with OK? value "NO" does not have a valid configuration
+
+ Interface                  IP-Address      OK? Method Status                Protocol
+ Ethernet0                  unassigned      NO  unset  up                    up      
+ Serial0                    unassigned      NO  unset  down                  down    
+
+    IP address for this interface: 192.168.1.250
+    Subnet mask for this interface [255.255.255.0] : 
+    Class C network is 192.168.1.0, 24 subnet bits; mask is /24
+
+ The following configuration command script was created:
+
+ hostname my2511
+ enable secret 5 $1$bDoT$fMfkDcDmPdN4fdKOxAcnN/
+ enable password password
+ line vty 0 4
+ password letmein
+ no snmp-server
+ !
+ no ip routing
+
+ !
+ interface Ethernet0
+ no shutdown
+ ip address 192.168.1.250 255.255.255.0
+ !
+ interface Serial0
+ shutdown
+ no ip address
+ !
+ end
+
+Sample config file: https://github.com/kevinpinscoe/archives/blob/main/Cisco_2511_terminal_server/cisco_2511_sample_config.txt
+
+Serial pinout RJ-45 to DB-25: https://www.cisco.com/c/en/us/support/docs/dial-access/asynchronous-connections/14958-24.html
+
+Notes:
+
+http://www.cisco.com/en/US/docs/routers/access/2500/software/user/guide/prodov.html
+
+Model 2511: 1 Ethernet, 2 synchronous serial, 16 asynchronous serial 
+
+Configuring a Terminal/Comm Server - http://www.cisco.com/en/US/tech/tk801/tk36/technologies_configuration_example09186a008014f8e7.shtml
+
+The Cisco 2511 went EOL on July 1st 2009 - http://www.cisco.com/en/US/products/hw/routers/ps233/prod_eol_notice09186a00801e22a6.html
+
+http://www-rcf.usc.edu/~astram/doc/cisco2511terminalserver.txt
+
+Working with modem control on Cisco 2500
+
+If you see this message when you telnet to the port:
+
+termserv2>telnet async3
+Trying async3 (2.2.2.2, 2003)... 
+% Connection refused by remote host
+
+Try this command in privileged EXEC mode. 
+
+This clears the modem control lines.
+
+This happens particularly on Suns because various messages appear on the serial 
+console of the host computer and the receive buffer fills up because the the input
+is not being processed as you are not connected. This causes an XON/XOFF 
+effect locking the terminal port. The clear line tty clears this condition.
+
+See also 19283-comm_server.pdf in this directory.
+
+termserv2>clear line tty 3
+[confirm]
+ [OK]
+
+The try the telnet again:
+
+termserv2>telnet async3
+Trying async3 (2.2.2.2, 2003)... Open
+
+Resetting the password
+
+Notes are at http://www.cisco.com/en/US/docs/routers/access/2500/software/user/guide/maint.html#wp918
+
+First plug a serial cable (usually purple or light blue in color) to the light blue console RJ-45 plug. Now connect a terminal or PC using the serial port this this cable. Connect to the port at 9600 baud. You should see
+
+ User Access Verification
+
+Username: 
+
+Power off the 2511 and then power it back on again
+
+You will see initially...
+
+ System Bootstrap, Version 11.0(10c)XB1, PLATFORM SPECIFIC RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-1997 by cisco Systems
+2500 processor with 6144 Kbytes of main memory
+
+Now hit the break key or send a break signal (how to do this is dependent on your terminal hardware or software you are using)
+
+You should see
+
+ Abort at 0x10CFB9C (PC)
+>
+
+Now type in at the ">" prompt
+
+ >o/r 0x042
+ >i
+
+This will cause a configuration reset and the system will reboot. You will then be prompted for a --- System Configuration Dialog ---
+
+ [@
+--- System Configuration Dialog ---
+
+Would you like to enter the initial configuration dialog? [yes/no]: 
+% Please answer 'yes' or 'no'.
+Would you like to enter the initial configuration dialog? [yes/no]: yes
+
+At any point you may enter a question mark '?' for help.
+Use ctrl-c to abort configuration dialog at any prompt.
+Default settings are in square brackets '[]'.
+
+Basic management setup configures only enough connectivity
+for management of the system, extended setup will ask you
+to configure each interface on the system
+
+Would you like to enter basic management setup? [yes/no]: yes
+Configuring global parameters:
+
+  Enter host name [Router]: router 
+
+  The enable secret is a password used to protect access to
+  privileged EXEC and configuration modes. This password, after
+  entered, becomes encrypted in the configuration.
+  Enter enable secret: test
+
+  The enable password is used when you do not specify an
+  enable secret password, with some older software versions, and
+  some boot images.
+  Enter enable password: test
+% Please choose a password that is different from the enable secret
+  Enter enable password: test
+
+  The virtual terminal password is used to protect
+  access to the router over a network interface.
+  Enter virtual terminal password: test
+  Configure SNMP Network Management? [yes]: no
+
+Current interface summary
+
+Any interface listed with OK? value "NO" does not have a valid configuration
+
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0                  unassigned      NO  unset  up                    up      
+Serial0                    unassigned      NO  unset  down                  down    
+
+Enter interface name used to connect to the
+management network from the above interface summary: Ethernet0
+
+Configuring interface Ethernet0:
+  Configure IP on this interface? [yes]: 
+    IP address for this interface: 192.168.1.29
+    Subnet mask for this interface [255.255.255.0] : 
+    Class C network is 192.168.1.0, 24 subnet bits; mask is /24
+
+The following configuration command script was created:
+
+hostname router
+enable secret 5 $1$yErT$QxApQO7NNMlIfGmY4sU.60
+enable password test
+line vty 0 4
+password test
+no snmp-server
+!
+no ip routing
+
+!
+interface Ethernet0
+no shutdown
+ip address 192.168.1.29 255.255.255.0
+!
+interface Serial0
+shutdown
+no ip address
+!
+end
+
+
+[0] Go to the IOS command prompt without saving this config.
+[1] Return back to the setup without saving this config.
+[2] Save this configuration to nvram and exit.
+
+Enter your selection [2]: 2
+The enable password you have chosen is the same as your enable secret.
+This is not recommended.  Re-enter the enable password.
+
+Building configuration...
+Use the enabled mode 'configure' command to modify this configuration.
+
+
+Press RETURN to get started!
+
+
+00:00:05: %LINK-3-UPDOWN: Interface Ethernet0, changed state to up
+00:00:05: %LINK-3-UPDOWN: Interface Serial0, changed state to down
+00:00:06: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0, changed state to up
+00:00:14: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet0, changed state to up
+00:03:20: %LINK-5-CHANGED: Interface Serial0, changed state to administratively down
+00:03:21: %LINEPROTO-5-UPDOWN: Line protocol on Interface Serial0, changed state to down
+00:04:17: %SYS-5-RESTART: System restarted --
+Cisco Internetwork Operating System Software 
+IOS (tm) 2500 Software (C2500-I-L), Version 12.1(27b), RELEASE SOFTWARE (fc1)
+Copyright (c) 1986-2005 by cisco Systems, Inc.
+Compiled Tue 16-Aug-05 22:38 by pwade
+@]
+
+Now you can telnet to the IP address you sue above and login to the router.
+
+Configuration
+
+Some Cisco IOS commands can be found at http://www.pantz.org/software/ios/ioscommands.html
+
+A sample configuration:
+
+See https://github.com/kevinpinscoe/archives/blob/main/Cisco_2511_terminal_server/cisco_2511_sample_config.txt
+
+If you want to use the network then telnet to the router on it's assigned address from above. Enter the enable command to enter the User Exec Mode.
+
+ router>enable
+ Password: <enter enable password we set above>
+ router#
+
+Then enter the command "config t" to start entering IOS configuration commands. I usually do this from within a terminal emulator software and store the commands in a text document which I then copy and paste onto the terminal emulator after making the needed edits.
+
+router#config t
+Enter configuration commands, one per line.  End with CNTL/Z.
+router(config)#no service single-slot-reload-enable
+router(config)#service timestamps debug uptime
+router(config)#service timestamps log uptime
+router(config)#service password-encryption
+router(config)#!
+router(config)#hostname router
+router(config)#!
+.
+.
+.
+router(config-line)#line aux 0
+router(config-line)#line vty 0 4
+router(config-line)# exec-timeout 15 0
+router(config-line)# password test
+router(config-line)# autocommand  menu hosts
+router(config-line)#!
+router(config-line)#end
+router#write mem
+Building configuration...
+[OK]
+router#write
+Building configuration...
+[OK]
+
+Note: Some texts online say "copy running-config startup-config - copies saved config in running config (RAM) to NVRAM or "write memory" for IOS under ver.11"
+
+Now I always had under IOS 11 so I am used to "write mem" and it works on the sample units I have which are 12.1(27b) so maybe it still works. The 2511's are EOL so I imagine they can't support much newer IOS then 12. YMMV.
+
+Now test our configuration:
+
+router#disable
+router>menu hosts
+Server "router"    Line 18    Terminal-type vt100    
+CCCCCCCCCCCCCC                                                  
+
+'ctrl-shift-6' then 'x' will suspend a connection to a hosts' serial
+console.  'disconnect' will disconnect and close that session.
+
+
+    1          OpenVMS host vax02
+    2          Sun host Venus
+    3          Sun host Mars
+    4          linux host Orion
+    5          async5
+    6          intel-pc-22
+    7          intel-pc-23
+    8          Sun storage array controller - sun-1237-ne
+    9          Sun storage array controller - sun-1245-ne
+    10         async10
+    11         async11
+    12         async12
+    13         async 13
+    14         async 14
+    15         async15
+    16         async16
+    17         Basic troubleshooting
+    18         Exit to command line
+
+Selection: 
+
+Troubleshooting:
+
+ ts> telnet async1
+ Trying async1 (192.168.1.29, 2001)... 
+ % Connection refused by remote host
+
+This is often the result of a stuck line either by the remote device keeping it closed with a lack of EIA-232 pins being asserted (CTS/RTS for hardware flow control) or someone else was/is using the line. In either case you can clear the line by issuing:
+
+ ts> clear line 1
+              
+You might need to clear the line a few times before it completely clears depending on the trouble.
+
+Sending break signal from 2411 to a server like a Sun server:
+
+Be careful doing this to a VAX as it will cause the console to go to '>>>' 
+halting the OS.
+
+Notes:
+
+http://compgroups.net/comp.sys.sun.admin/sending-break-signal-to-a-Sun-V880-from-a-cisco-2511-terminal-server
+
+http://www.marchansen.com/tn105/#11
+
+http://www.cisco.com/en/US/ts/fn/misc/fn-tsbreak.html
+
+http://forums.vandyke.com/archive/index.php/t-2096.html
+
+http://www.cisco.com/en/US/docs/ios/11_0/access/connection/guide/xtrmserv.html#wp1412
+
+Configure the 2511 with something like
+
+ line 1 16
+ telnet break-on-ip
+
+And then send a 'telnet break' which the 2511 will then translate into
+a hardware break.
+
+Using Sun's telnet client you'd do that with the sequence "^] send break"
+(ie. ^] to escape back to the telnet command prompt and then the
+command send break sends a telnet break.
+
+If you are using the built in telnet command from within the IOS itself such as "telnet async 1" use control-shift-6 during the telnet session and the following sub-commands after hitting control-shift-6 are available to you (I did a ? to get this list):
+
+ [Special telnet escape help]
+  ^^B  sends telnet BREAK
+  ^^C  sends telnet IP
+  ^^H  sends telnet EC
+  ^^O  sends telnet AO
+  ^^T  sends telnet AYT
+  ^^U  sends telnet EL
+
+So for a break to halt a a Sun box enter at the keyboard "control-shift-6" and then quickly enter the "Ctrl-^ B". For example:
+
+Clock:
+
+Notes:
+
+http://www.beaglesoft.com/clwaciscontp.htm
+
+http://www.cisco.com/en/US/docs/ios_xr_sw/iosxr_r2.0/system_management/command/reference/3yr_clck.html
+
+http://www.cisco.com/en/US/docs/ios/12_1/configfun/configuration/guide/fcd303.html#wp1001075
+
+Set up NTP if you can
+
+ ts> enable
+ ts#config t 
+ Enter configuration commands, one per line.  End with CNTL/Z.
+ ts(config)#exit
+ ts#write
+ Building configuration...
+ [OK]
+ ts#show ntp associations detail
+ 192.168.1.2 configured, our_master, sane, valid, stratum 3
+ ref ID 69.93.111.178, time D28B4D5A.DE4C4E89 (14:51:06.868 UTC Thu Dec 8 2011)
+ our mode client, peer mode server, our poll intvl 64, peer poll intvl 64
+ root delay 56.12 msec, root disp 76.22, reach 377, sync dist 106.689
+ delay 4.49 msec, offset 0.1185 msec, dispersion 0.17
+ precision 2**23, version 3
+ org time D28B54BC.F1EE2083 (15:22:36.945 UTC Thu Dec 8 2011)
+ rcv time D28B54BC.F2AD73B6 (15:22:36.947 UTC Thu Dec 8 2011)
+ xmt time D28B54BC.F149D2CF (15:22:36.942 UTC Thu Dec 8 2011)
+ filtdelay =     5.37    4.68    4.49    5.36    5.36    4.68    4.70    8.16
+ filtoffset =   -0.23    0.08    0.12   -0.29   -0.32   -0.02   -0.03   -1.80
+ filterror =     0.02    0.03    0.05    0.06    0.08    0.09    0.11    0.12
+
+Then set the clock manually:
+
+ #show clock
+ *01:49:06.723 UTC Tue Mar 9 1993
+ #clock set 10:17:15 08 dec 2011
+ #show clock
+ .10:17:18.599 UTC Thu Dec 8 2011
