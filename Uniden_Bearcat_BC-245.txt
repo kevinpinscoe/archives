@@ -1,3 +1,25 @@
 Uniden Bearcat BC-245 radio scanner.
 
 The software I have that I think were lost to time are now at https://kevininscoe.com/public/radio/uniden/bc245/
+
+Senss BC-245 Computer Interface (bc245int) V.2.4.1 (Windows) - https://kevininscoe.com/public/radio/uniden/bc245/245setup.exe
+
+BC245XLT Scanner Backup Utility - https://kevininscoe.com/public/radio/uniden/bc245/BC245_Scanner_Backup_Utility.exe
+
+
+RS-232 Remote Mode command set info can be found at https://kevininscoe.com/public/radio/uniden/bc245/895info.txt
+
+remote control of the BC245 via TCP/IP - https://kevininscoe.com/public/radio/uniden/bc245/listenbeta5.exe
+
+Control for Linux and Unix systems - https://kevininscoe.com/public/radio/uniden/bc245/sctl-0.2.3.tar.gz
+
+
+Firmware:
+
+You can display the version number of your BC 245XLT's firmware by performing the following steps:
+
+#Turn the scanner off.
+#While holding down the 2, 4, and 9 keys, turn on the scanner. 
+
+You may see "1.01", "1.04", "1.17" or "1.19" and maybe some others I am not aware of. 1.17 has a bug (I guess) that delays scanning when switching from trunk-ed bank to a conventional bank. I had an original "first gen" (1.17) BC-245XLT (sold it later and bought the one I have now in 2000) and it is much improved.
+
