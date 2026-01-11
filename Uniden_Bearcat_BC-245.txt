@@ -13,6 +13,7 @@ remote control of the BC245 via TCP/IP - https://kevininscoe.com/public/radio/un
 
 Control for Linux and Unix systems - https://kevininscoe.com/public/radio/uniden/bc245/sctl-0.2.3.tar.gz
 
+COM101 - "COM101 is software for Uniden scanner clone data transfer. It has not been tested in Windows 2000 or XP. There are already two or three clone programs for Uniden scanners, but they all have limitations - slow data transfer, data errors, failure to support all models, or inability to run in DOS. COM101 solves most of these problems, supporting the BC245XLT, SC200, and BC/UBC780XLT. It runs best in DOS and works with occasional data errors in Windows. Reading from the scanner is where the problems occur since handshaking with the radio is required. The larger the amount of data to transfer, the greater the chance of an error. The BC780XLT has the largest clone data file and is more likely to see an error than the other models. If the program runs for you, great. If not, I cannot provide any support in debugging the problem." - I cannot seem to locate COM101 anywhere but it once was found http://home.hvc.rr.com/bpetrow/
 
 Firmware:
 
@@ -23,3 +24,16 @@ You can display the version number of your BC 245XLT's firmware by performing th
 
 You may see "1.01", "1.04", "1.17" or "1.19" and maybe some others I am not aware of. 1.17 has a bug (I guess) that delays scanning when switching from trunk-ed bank to a conventional bank. I had an original "first gen" (1.17) BC-245XLT (sold it later and bought the one I have now in 2000) and it is much improved.
 
+Mods:
+
+https://www.discriminator.nl/ubc245xlt/index-en.html
+
+Accessories:
+
+If you are like me and need to power your 245 both home and at work you can either order another wall wart from Uniden or do what I did and get a 12V500ma AC adapter from Radio Shack catalog no. 273-1773 (as of 2011 this seems to be replaced by RS part 273-357 http://www.radioshack.com/product/index.jsp?productId=3832491 and selected the Adaptaplug tip adapter catalog no. 273-1711 as of 2011 this part now seems to be replaced by RS part 273-346 by http://www.radioshack.com/product/index.jsp?productId=3780269 (orange - positive tip)
+
+To connect the 245 to a Palm hand-held computer first obtain the http://www.amazon.com/exec/obidos/tg/detail/-/B00000JHVP/002-9162354-4266437?v=glance HotSync cable part no. 10104U. Next you will require a male-male http://www.nullmodem.com/NullModem.htm null modem 9 pin adapter. I made one using Radio Shack parts catalog numbers 26-280B http://www.amazon.com/Wired-Up-eXpansys-Serial-Gender-Changer/dp/B00008W5C3 (Serial Gender Changer 9-pin) & 26-264 (9 pin Null Modem Adapter) but you can also use a "null-modem" male to male cable to connect the BC-245 remote cable from the BC-245 and the Palm HotSync cable together.
+
+Note I no longer sync the Palm to the BC-245. I now use a older Windows XP laptop I keep around for radio programming serial devices. See Software above.
+
+An excellent addition to the BC245 would be the high-gain Diamond RH-77CA whip antenna https://www.dxengineering.com/parts/dmn-rh77ca. 
