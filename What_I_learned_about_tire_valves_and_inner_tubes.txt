@@ -1,0 +1,29 @@
+I once owned a 1999 Sears Craftsmen riding tractor lawn mower that had a tire that went flat. Although I could not find any damage to the tire I decided to put in an inner tube from Tractor Supply. Since this tractor was 16 years old I had a hard time finding an exact match for the wheel size: 20x10-8 20 inches long, 10 inches width and 8 inch rims.
+
+I did eventually select an inner tube that was slightly larger size 21x7.00/22x10-8, 20x8x8 with TR-6 valve stem. The inner tube came with what's known as a TR-6 length valve stem. On it it had two nuts to retain the valve in the wheel which has a bigger hole since it was originally a mounted valve stem. Here is a picture:
+
+Anyway I ended up losing the nuts. I figured I would just run down to the hardware store (I tried Lowes and Ace Hardware) and found it to be 5/16" size nut. Nut and bolt sizes are here. But the thread size was neither "fine" or "coarse". I actually had a hard time locating even the thread size let alone the nut itself. I even tried tire places and they could not tell me. Then I came across this Wikipedia article: https://en.m.wikipedia.org/wiki/Schrader_valve.
+
+"Schrader valves are classified by their material, diameter of intended rim hole, length and shape."
+
+Mine is a TR-6 stem so according to Wikipedia the dimensions are:
+
+    TR-6 - straight metal stem (8 mm dia.) 
+
+External thread:
+
+Imperial: 0.305 in OD, thread root diameter 0.271 in × 32 tpi (threads per inch)
+
+So according to this I needed 5/16-32 (tpi) nut. And since this is going on a lawn tractor I want a stainless steel. They gave me brass. It turns out this is referred to as a "panel nut". Here is an example of what I needed then:
+
+http://www.grainger.com/product/GRAINGER-APPROVED-Panel-Nut-1JLW5
+
+Not available in Lowes or big box stores but available online. 
+
+First I will visit our local surplus store: http://www.skycraftsurplus.com/
+
+https://www.instockfasteners.com/TOOLS/guidetofastenersizes.ASP
+
+https://www.boltdepot.com/fastener-information/nuts-washers/Default.aspx
+
+The Patent for the Shraeder Valve - - http://www.google.com/patents/US661671?dq=schrader+tire+valve#PPP1,M1 
