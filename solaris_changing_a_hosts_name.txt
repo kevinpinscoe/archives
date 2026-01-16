@@ -1,0 +1,30 @@
+Changing a Solaris hosts name
+
+Solaris 8, 9 & 10:
+
+Edit
+
+/etc/hosts
+/etc/hostname.hme0 (or interface)
+/etc/nodename
+
+These above files don't exist in Solaris 10 instead use:
+
+/etc/net/ticlts/hosts
+/etc/net/ticots/hosts
+/etc/net/ticotsord/hosts
+
+Changing the IP (Solaris 8 and 9):
+
+Edit
+
+/etc/defaultrouter
+/etc/hosts
+/etc/inet/netmasks
+
+For Solaris 10 add:
+
+/etc/inet/ipnodes
+
+ $ getent hosts prod1-inst1
+ 10.137.157.24   prod1-inst1 loghost
