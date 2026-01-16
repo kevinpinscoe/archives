@@ -1,0 +1,11 @@
+Fixing DNS reverse resolution delays in sshd in Solaris 10
+
+It is a common problem that a two minute delay is experienced when the IP address of the ssh client cannot be reversed (DNS) in a Solaris 10 host. To fix this:
+
+Edit the file /etc/ssh/sshd_config and change the line:
+
+ LookupClientHostnames=no
+
+Then restart ssh:
+
+ # svcadm restart ssh
