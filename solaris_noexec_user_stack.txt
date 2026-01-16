@@ -1,0 +1,21 @@
+How can I check if noexec_user_stack is enabled on a Solaris 7-10?
+
+What is noexec_user_stack?
+
+oexec_user_stack is a Solaris kernel parameter that disables execution permissions on process stacks, making them readable and writable but not executable, a key defense against buffer overflow attacks that try to inject and run malicious code on the stack. Setting it to 1 (enabled) prevents attackers from exploiting stack-based vulnerabilities by stopping their code from running,
+
+sudo echo noexec_user_stack/D | mdb -k
+
+Notes:
+
+http://download.oracle.com/docs/cd/E19683-01/816-7137/chapter2-26/index.html
+
+"noexec_user_stack
+
+Description
+
+Enables the stack to be marked as non-executable. This helps in making buffer-overflow attacks more difficult.
+
+A Solaris system running a 64-bit kernel makes the stacks of all 64-bit applications non-executable by default. Setting this variable is necessary to make 32-bit applications non-executable on systems running 64-bit or 32-bit kernels.
+
+Note – This variable exists on all systems running the Solaris 2.6, 7, 8, or 9 releases, but it is only effective on sun4u and sun4m architectures." 
