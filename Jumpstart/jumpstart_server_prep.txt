@@ -1,0 +1,173 @@
+wdcpruv15 is the jumpstart server and wdcpruv16 is the client.
+Jumpstart server prep:
+
+Edit /etc/inetd.conf and add lines:
+
+ # TFTPD - tftp server (primarily used for booting)
+ tftp dgram  udp6  wait root  /usr/sbin/in.tftpd  in.tftpd -s /tftpboot
+
+Run inetconv to get the service added to Service Management Facility (SMF):
+
+ # inetconv
+
+Then run svcadm to get the service enabled, and you are ready to go:
+
+ # svcadm enable tftp/udp6 
+
+Configure Name Service
+
+We therefore have to add the jumpstart client to the /etc/inet/hosts file.
+
+ # echo "155.44.226.62 wdcpruv16" >> /etc/inet/hosts 
+
+This is a factory installed T5140 so I formatted the second disk and mounted as /disk2 to fit all the images:
+
+ # mkdir /disk2/jumpstart
+ # mkdir /disk2/storeroom (our images)
+ # ln -s /disk2/jumpstart /jumpstart
+ # ln -s /disk2/storeroom /storeroom
+
+Setup NFS server
+
+ # echo "share -F nfs -o ro,anon=0 /disk2" >> /etc/dfs/dfstab
+ # svcadm enable nfs/server
+ # svcs nfs/server
+
+ # svcadm enable nfs/server
+
+ # exportfs
+ -               /disk2/jumpstart   ro,anon=0   "" 
+
+Setup bootp server:
+
+ # svcadm enable bootparams
+
+Configure jumpstart client
+
+ # cd /jumpstart/jumpstart_10_u8/Solaris_10/Tools
+
+Create add_client_155_44_249 with the following lines:
+
+ #!/bin/csh
+
+ #ARG1: MAC Address
+ #ARG2: hostname
+
+ # -p is path to sysidcfg
+ # -c is path to jumpstart dir
+ # -s is path to install image (solaris CD)
+
+ ./add_install_client -e $1 -s wdcpruv15:/jumpstart/jumpstart_10_u8 
+   -c wdcpruv15:/jumpstart/jumpstart_10_u8 
+   -p wdcpruv15:/jumpstart/jumpstart_10_u8/sysidcfg/sysidcfg_cfe_229 $2 sun4v
+
+ # ./add_client_155_44_249 0:21:28:26:e2:32  wdcpruv16
+ Adding Ethernet number for wdcpruv16 to /etc/ethers
+ saving original /etc/dfs/dfstab in /etc/dfs/dfstab.orig
+ Adding "share -F nfs -o ro,anon=0 /disk2/jumpstart/jumpstart_10_u8/Solaris_10/Tools/Boot" to /etc/dfs/dfstab
+ share_nfs: /disk2/jumpstart/jumpstart_10_u8/Solaris_10/Tools/Boot: parent-directory (/disk2/jumpstart) already shared
+ making /tftpboot
+ enabling network/rarp service
+ enabling network/rpc/bootparams service
+ updating /etc/bootparams
+ copying boot file to /tftpboot/inetboot.SUN4V.Solaris_10-1
+
+ # cat /etc/bootparams
+ wdcpruv16  root=wdcpruv15:/disk2/jumpstart/jumpstart_10_u8/Solaris_10/Tools/Boot install=wdcpruv15:/jumpstart/jumpstart_10_u8  boottype=:in sysid_config=wdcpruv15:/jumpstart/jumpstart_10_u8/sysidcfg/sysidcfg_cfe_229 install_config=wdcpruv15:/jumpstart /jumpstart_10_u8 rootopts=:rsize=8192 
+
+Now run the boot install from the new host:
+
+ ok boot net install
+
+
+ 
+T5140, No Keyboard
+Copyright 2009 Sun Microsystems, Inc.  All rights reserved.
+OpenBoot 4.30.4, 65312 MB memory available, Serial #89640754.
+Ethernet address 0:21:28:57:cf:32, Host ID: 8557cf32.
+
+
+
+{0} ok boot net install
+Boot device: /pci@500/pci@0/pci@8/network@0  File and args: install
+/pci@500/pci@0/pci@8/network@0: 1000 Mbps full duplex link up
+Requesting Internet Address for 0:21:28:26:e2:32
+Requesting Internet Address for 0:21:28:26:e2:32
+Requesting Internet Address for 0:21:28:26:e2:32
+Requesting Internet Address for 0:21:28:26:e2:32
+/pci@500/pci@0/pci@8/network@0: 1000 Mbps full duplex link up
+
+Requesting Internet address for 0:21:28:26:e2:32
+-
+
+and there it hangs forever.
+
+I also noticed these errors on the jump server:
+
+ 
+# svcs -x
+svc:/application/print/server:default (LP print server)
+ State: disabled since Tue Apr 13 11:52:27 2010
+Reason: Disabled by an administrator.
+   See: http://sun.com/msg/SMF-8000-05
+   See: lpsched(1M)
+Impact: 2 dependent services are not running.  (Use -v for list.)
+
+svc:/network/rpc/gss:default (Generic Security Service)
+ State: maintenance since Fri Apr 16 13:26:32 2010
+Reason: Restarter svc:/network/inetd:default gave no explanation.
+   See: http://sun.com/msg/SMF-8000-9C
+   See: gssd(1M)
+Impact: This service is not running.
+
+svc:/network/rpc/rstat:default (kernel statistics server)
+ State: maintenance since Fri Apr 16 13:26:32 2010
+Reason: Restarter svc:/network/inetd:default gave no explanation.
+   See: http://sun.com/msg/SMF-8000-9C
+   See: rpc.rstatd(1M)
+   See: rstatd(1M)
+Impact: This service is not running.
+
+svc:/network/rpc/cde-ttdbserver:tcp (ToolTalk database server)
+ State: maintenance since Fri Apr 16 13:26:32 2010
+Reason: Restarter svc:/network/inetd:default gave no explanation.
+   See: http://sun.com/msg/SMF-8000-9C
+   See: ttdbserver(1M)
+Impact: This service is not running.
+
+svc:/network/rpc/bootparams:default (boot parameter server)
+ State: maintenance since Fri Apr 16 10:27:52 2010
+Reason: Restarting too quickly.
+   See: http://sun.com/msg/SMF-8000-L5
+   See: rpc.bootparamd(1M)
+   See: /var/svc/log/network-rpc-bootparams:default.log
+Impact: This service is not running.
+
+svc:/network/rpc/smserver:default (removable media management)
+ State: maintenance since Fri Apr 16 13:26:32 2010
+Reason: Restarter svc:/network/inetd:default gave no explanation.
+   See: http://sun.com/msg/SMF-8000-9C
+   See: rpc.smserverd(1M)
+Impact: This service is not running.
+
+svc:/network/rpc/rusers:default (network user name service)
+ State: maintenance since Fri Apr 16 13:26:32 2010
+Reason: Restarter svc:/network/inetd:default gave no explanation.
+   See: http://sun.com/msg/SMF-8000-9C
+   See: rpc.rusersd(1M)
+   See: rusersd(1M)
+Impact: This service is not running.
+
+svc:/network/nfs/rquota:default (remote quota server)
+ State: maintenance since Fri Apr 16 13:26:32 2010
+Reason: Restarter svc:/network/inetd:default gave no explanation.
+   See: http://sun.com/msg/SMF-8000-9C
+   See: rquotad(1M)
+Impact: This service is not running.
+
+svc:/network/rpc/cde-calendar-manager:default (CDE calendar manager server)
+ State: maintenance since Fri Apr 16 13:26:32 2010
+Reason: Restarter svc:/network/inetd:default gave no explanation.
+   See: http://sun.com/msg/SMF-8000-9C
+   See: rpc.cmsd(1M)
+Impact: This service is not running.
